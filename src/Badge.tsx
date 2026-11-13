@@ -1,22 +1,34 @@
 import React from "react";
 import { Img, staticFile } from "remotion";
 import { BODY } from "./fonts";
-import { INK, RED, Theme } from "./theme";
+import { INK, Motif, RED, Theme, motifOf } from "./theme";
 
 const HEX = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
 
-// Бейдж с числом. В карандашной версии — нарисованный от руки шестиугольник.
+// Бейдж с числом. В карандашной версии форма зависит от темы: лапка, облако, шестиугольник.
+// Все формы вписаны в рамку x 50..430, y 70..570 макета 480x640; motif.textBox — где по высоте лежит текст.
 export const Badge: React.FC<{
   theme: Theme;
   prefix?: string;
   shown: string;
   unit: string;
   size?: number;
-}> = ({ theme, prefix, shown, unit, size = 232 }) => {
+  motif?: Motif;
+}> = ({ theme, prefix, shown, unit, size = 232, motif = motifOf() }) => {
   const k = size / 232;
   const h = 268 * k;
+  const pencil = theme === "pencil";
+  const m = pencil ? motif : motifOf("classic");
+  const tk = k * m.textScale;
   const isWord = unit.length > 7; // «жить вечно»
-  const numSize = (shown.length >= 3 ? 86 : shown === "∞" ? 128 : 108) * k;
+  const numSize = (shown.length >= 4 ? 66 : shown.length >= 3 ? 86 : shown === "∞" ? 128 : 108) * tk;
+  const art: React.CSSProperties = {
+    position: "absolute",
+    width: (480 * size) / 380,
+    left: (-50 * size) / 380,
+    top: (-70 * h) / 500,
+    height: (640 * h) / 500,
+  };
 
   return (
     <div style={{ position: "relative", width: size, height: h }}>
@@ -24,26 +36,19 @@ export const Badge: React.FC<{
         // бумажная подложка: карандашный цвет полупрозрачный, без неё просвечивает картинка
         <div
           style={{
-            position: "absolute",
-            inset: 3 * k,
-            clipPath: HEX,
+            ...art,
             backgroundColor: "#faf4e4",
             backgroundImage: `url(${staticFile("pencil/paper-thumb.jpg")})`,
+            WebkitMaskImage: `url(${staticFile("art/badge-mask.svg")})`,
+            WebkitMaskSize: "100% 100%",
+            maskImage: `url(${staticFile("art/badge-mask.svg")})`,
+            maskSize: "100% 100%",
           }}
         />
       ) : null}
       {theme === "pencil" ? (
         // badge.png: шестиугольник занимает x 50..430, y 70..570 в макете 480x640
-        <Img
-          src={staticFile("pencil/badge.png")}
-          style={{
-            position: "absolute",
-            width: (480 * size) / 380,
-            left: (-50 * size) / 380,
-            top: (-70 * h) / 500,
-            height: (640 * h) / 500,
-          }}
-        />
+        <Img src={staticFile("pencil/badge.png")} style={art} />
       ) : (
         <>
           <div style={{ position: "absolute", inset: 0, clipPath: HEX, backgroundColor: INK }} />
@@ -53,7 +58,10 @@ export const Badge: React.FC<{
       <div
         style={{
           position: "absolute",
-          inset: 0,
+          left: 0,
+          right: 0,
+          top: ((m.textBox[0] - 70) * h) / 500,
+          height: ((m.textBox[1] - m.textBox[0]) * h) / 500,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -61,18 +69,18 @@ export const Badge: React.FC<{
           fontFamily: BODY,
           color: "#fff",
           textAlign: "center",
-          textShadow: theme === "pencil" ? "0 2px 0 rgba(90,10,10,0.45)" : "none",
+          textShadow: pencil ? `0 2px 0 ${m.shadow}` : "none",
         }}
       >
         {prefix ? (
-          <div style={{ fontSize: 27 * k, fontWeight: 800, marginBottom: -8 * k, opacity: 0.95 }}>{prefix}</div>
+          <div style={{ fontSize: 27 * tk, fontWeight: 800, marginBottom: -8 * tk, opacity: 0.95 }}>{prefix}</div>
         ) : null}
         <div
           style={{
             fontSize: numSize,
             fontWeight: 900,
             lineHeight: shown === "∞" ? 0.9 : 1,
-            letterSpacing: -2 * k,
+            letterSpacing: -2 * tk,
             fontVariantNumeric: "tabular-nums",
           }}
         >
@@ -80,11 +88,11 @@ export const Badge: React.FC<{
         </div>
         <div
           style={{
-            fontSize: (isWord ? 25 : 30) * k,
+            fontSize: (isWord ? 25 : 30) * tk,
             fontWeight: 900,
             textTransform: "uppercase",
-            letterSpacing: 1.5 * k,
-            marginTop: 2 * k,
+            letterSpacing: 1.5 * tk,
+            marginTop: 2 * tk,
             lineHeight: 1,
           }}
         >

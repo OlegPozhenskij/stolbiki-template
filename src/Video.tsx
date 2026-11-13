@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Card } from "./Card";
 import { BODY, HAND } from "./fonts";
-import { GRAPHITE, PAPER, VideoProps, imageFor } from "./theme";
+import { GRAPHITE, PAPER, VideoProps, imageFor, motifOf } from "./theme";
 import { COL_W, VISIBLE, timing } from "./timing";
 import "./fonts";
 
@@ -36,13 +36,12 @@ const SLOTS = [
 ];
 // Сколько разных рисунков, столько и мест: повторов в заставке нет
 const SLOT_PICK: Record<number, number[]> = { 1: [3], 2: [1, 3], 3: [1, 3, 0], 4: [0, 1, 2, 3] };
-
-export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSub, items, short }) => {
+export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSub, items, short, motif: motifName }) => {
   const frame = useCurrentFrame();
+  const motif = motifOf(motifName);
   const n = items.length;
   const pencil = theme === "pencil";
   const { intro, cardStart, outroStart: outro, ctaAt, stripX } = timing(n, short);
-  const maxX = Math.max(0, (n - VISIBLE) * COL_W);
   const k = intro / 120; // заставка сжимается вместе с INTRO
   const introOut = intro - 20; // заставка уходит за 20 кадров до первого столбика
 
@@ -51,9 +50,8 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
   for (let i = VISIBLE; i < n; i++) {
     cameraX += interpolate(frame, [cardStart(i) - 8, cardStart(i) + 18], [0, COL_W], { ...clamp, easing: smooth });
   }
-  // Финал: лента быстро едет обратно к началу — видно весь путь от 1 дня до вечности
-  const rewind = interpolate(frame, [outro, outro + 100], [0, 1], { ...clamp, easing: smooth });
-  cameraX = cameraX - maxX * rewind;
+  // Перемотки назад нет: в финале последний (особый) столбик остаётся справа, вопрос — на трёх левых
+  const many = n > VISIBLE;
 
   const ctaIn = interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
   const introIds = [...new Set([items[0].id, items[Math.min(1, n - 1)].id, items[Math.max(0, n - 2)].id, items[n - 1].id])];
@@ -78,10 +76,13 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
                 theme={theme}
                 paperX={stripX + i * COL_W}
                 leftLine={i === 0 && stripX > 0}
+                motif={motif}
+                special={pencil && i === n - 1 && n > 2}
                 wash={
-                  // последний столбик не бледнеет: за ним никто не появляется
+                  // последний столбик не бледнеет: за ним никто не появляется.
+                  // Короткая лента (до 4 столбиков) в финале снова яркая целиком
                   (i < n - 1 ? interpolate(frame, [cardStart(i + 1), cardStart(i + 1) + 16], [0, 1], clamp) : 0) *
-                  (1 - interpolate(frame, [outro, outro + 30], [0, 1], clamp))
+                  (many ? 1 : 1 - interpolate(frame, [outro, outro + 30], [0, 1], clamp))
                 }
               />
             </div>
@@ -130,7 +131,8 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
             fontSize: pencil ? 170 : 128,
             lineHeight: 0.95,
             maxWidth: 1180,
-            color: pencil ? "#c4281f" : "#fff",
+            color: pencil ? motif.title : "#fff",
+            WebkitTextStroke: pencil ? `3px ${motif.title}` : undefined,
             scale: interpolate(frame, [0, 20], [0.7, 1], { ...clamp, easing: pop }),
             opacity: interpolate(frame, [0, 10], [0, 1], clamp),
             rotate: pencil ? "-2deg" : "0deg",
@@ -141,7 +143,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
         <div style={{ marginTop: 10 }}>
           <Scribble
             progress={interpolate(frame, [10, 10 + 30 * k], [0, 1], { ...clamp, easing: out })}
-            color={pencil ? "#f2b705" : "#ffd23f"}
+            color={pencil ? motif.line : "#ffd23f"}
             width={1100}
           />
         </div>
@@ -165,6 +167,8 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
       {/* Вопрос зрителю в конце */}
       <AbsoluteFill
         style={{
+          right: many ? COL_W : 0, // длинная лента: особый последний столбик справа остаётся открытым
+          width: "auto",
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: pencil ? "rgba(250,244,228,0.55)" : "rgba(10,9,20,0.55)",
@@ -173,7 +177,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
       >
         <div
           style={{
-            padding: "46px 80px 40px",
+            padding: many ? "40px 56px 36px" : "46px 80px 40px",
             backgroundColor: pencil ? PAPER : "#fffdf7",
             backgroundImage: pencil ? `url(${staticFile("pencil/paper.jpg")})` : undefined,
             border: `6px solid ${GRAPHITE}`,
@@ -181,11 +185,12 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
             boxShadow: "0 18px 40px rgba(0,0,0,0.25)",
             textAlign: "center",
             color: GRAPHITE,
+            position: "relative",
             scale: interpolate(frame, [ctaAt, ctaAt + 24], [0.6, 1], { ...clamp, easing: pop }),
             rotate: pencil ? "-1.5deg" : "0deg",
           }}
         >
-          <div style={{ fontFamily: pencil ? HAND : BODY, fontWeight: pencil ? 700 : 900, fontSize: pencil ? 120 : 86, lineHeight: 1, color: "#c4281f" }}>
+          <div style={{ fontFamily: pencil ? HAND : BODY, fontWeight: pencil ? 700 : 900, fontSize: pencil ? (many ? 96 : 120) : 86, lineHeight: 1, color: pencil ? motif.title : "#c4281f", WebkitTextStroke: pencil ? `3px ${motif.title}` : undefined }}>
             {cta}
           </div>
           {ctaSub ? (

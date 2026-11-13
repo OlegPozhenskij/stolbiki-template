@@ -1,7 +1,14 @@
 {
   "fps": 30,
-  "step": 120,
-  "normal": { "intro": 120, "holdLast": 60, "outro": 150 },
-  "short": { "intro": 60, "holdLast": 0, "outro": 120 },
-  "outroRewind": 240
+  "step": 150,
+  "normal": {
+    "intro": 150,
+    "holdLast": 75,
+    "outro": 225
+  },
+  "short": {
+    "intro": 75,
+    "holdLast": 0,
+    "outro": 150
+  }
 }

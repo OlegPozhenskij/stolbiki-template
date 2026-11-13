@@ -1,0 +1,35 @@
+{
+  "animals": {
+    "badge": "#ef7a2b",
+    "title": "#b8441a",
+    "line": "#f2b705",
+    "shadow": "rgba(110,40,5,0.5)",
+    "textBox": [
+      236,
+      530
+    ],
+    "textScale": 1.0
+  },
+  "sky": {
+    "badge": "#3f8fe0",
+    "title": "#1d5ea8",
+    "line": "#7cc4ff",
+    "shadow": "rgba(10,40,90,0.5)",
+    "textBox": [
+      236,
+      532
+    ],
+    "textScale": 0.92
+  },
+  "classic": {
+    "badge": "#e5332a",
+    "title": "#c4281f",
+    "line": "#f2b705",
+    "shadow": "rgba(90,10,10,0.45)",
+    "textBox": [
+      70,
+      570
+    ],
+    "textScale": 1
+  }
+}

@@ -31,8 +31,8 @@ export const RemotionRoot: React.FC = () => {
         durationInFrames={timing(base.items.length, base.short).total}
         defaultProps={{ ...base, theme: "photo" } as VideoProps}
       />
-      <Still id="ThumbPencil" component={Thumb} width={1280} height={720} defaultProps={{ ...thumb, theme: "pencil" } as ThumbProps} />
-      <Still id="ThumbPhoto" component={Thumb} width={1280} height={720} defaultProps={{ ...thumb, theme: "photo" } as ThumbProps} />
+      <Still id="ThumbPencil" component={Thumb} width={1280} height={720} defaultProps={{ ...thumb, motif: rest.motif, theme: "pencil" } as ThumbProps} />
+      <Still id="ThumbPhoto" component={Thumb} width={1280} height={720} defaultProps={{ ...thumb, motif: rest.motif, theme: "photo" } as ThumbProps} />
     </>
   );
 };

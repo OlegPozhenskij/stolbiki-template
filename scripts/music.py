@@ -1,22 +1,22 @@
-"""Саундтрек под ролик: светлая мелодия 120 BPM (укулеле, бас, колокольчики, лёгкие барабаны)
+"""Саундтрек под ролик: светлая мелодия (темп из pace.json: столбик = 2 такта) (укулеле, бас, колокольчики, лёгкие барабаны)
 + звуки на появление каждого столбика. Тайминг совпадает с src/timing.ts:
-один столбик = 2 такта = 4 секунды. Всё синтезируется кодом, никаких чужих сэмплов."""
+один столбик = 2 такта (при step 150 это 5 секунд, 96 BPM). Всё синтезируется кодом, никаких чужих сэмплов."""
 import json, pathlib, subprocess, numpy as np
 from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SR = 44100
-BPM = 120
-BEAT = 60 / BPM
-BAR = 4 * BEAT
 # Темп берётся из того же src/pace.json, что и src/timing.ts (формулы те же)
 data = json.load(open(ROOT / "src/data.json"))
 pace = json.load(open(ROOT / "src/pace.json"))
 n_items = len(data["items"])
 p = pace["short"] if data.get("short") else pace["normal"]
 FPS, STEP, INTRO, HOLD_LAST = pace["fps"], pace["step"], p["intro"], p["holdLast"]
-OUTRO = pace["outroRewind"] if n_items > 4 else p["outro"]
+OUTRO = p["outro"]
+BAR = STEP / FPS / 2  # столбик = 2 такта
+BEAT = BAR / 4
+BPM = 60 / BEAT
 card_t = [(INTRO + i * STEP) / FPS for i in range(n_items)]
 outro_t = (INTRO + n_items * STEP + HOLD_LAST) / FPS
 total = outro_t + OUTRO / FPS
@@ -141,6 +141,12 @@ for i, t in enumerate(card_t):
     put(whoosh(), t - 0.12, 0.22, pan=-0.2 + 0.4 * (i % 2))
     put(pop(scale[i % len(scale)]), t + 12 / FPS, 0.28)
     put(glock(scale[i % len(scale)] - 12), t + 12 / FPS, 0.07)
+# Особый последний столбик: звенящее арпеджио вверх, как фанфары из колокольчиков
+if n_items > 1:
+    t_last = card_t[-1] + 20 / FPS
+    for k, m in enumerate([72, 76, 79, 84, 88, 91, 96]):
+        put(glock(m, 2.2), t_last + k * 0.07, 0.13, pan=-0.3 + 0.1 * k)
+    put(whoosh(1.0), card_t[-1] - 0.3, 0.3)
 put(whoosh(1.4), outro_t, 0.25)
 
 # Немного зала (реверберация) и мягкий лимитер

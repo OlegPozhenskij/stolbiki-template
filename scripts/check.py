@@ -12,9 +12,8 @@ p = pace["short"] if data.get("short") else pace["normal"]
 intro, step = p["intro"], pace["step"]
 card = lambda i: intro + i * step
 outro = card(n) + p["holdLast"]
-rewind = n > 4
-total = outro + (pace["outroRewind"] if rewind else p["outro"])
-cta = outro + (96 if rewind else 30)
+total = outro + p["outro"]
+cta = outro + 30
 
 frames = {"заставка": int(intro * 0.45), "1-й столбик": card(0) + 60}
 if n >= 3:

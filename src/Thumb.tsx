@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, Img, staticFile } from "remotion";
 import { Badge } from "./Badge";
 import { BODY, HAND } from "./fonts";
-import { Theme, ThumbProps, imageFor } from "./theme";
+import { Theme, ThumbProps, imageFor, motifOf } from "./theme";
 import "./fonts";
 
 // Обложка 1280x720. Три элемента: вопрос, веер размытых карточек со странными существами, бейдж «∞».
@@ -66,8 +66,9 @@ const FAN: Record<number, { x: number; y: number; w: number; rot: number; blur: 
   ],
 };
 
-export const Thumb: React.FC<ThumbProps> = ({ theme, title, ids, badge }) => {
+export const Thumb: React.FC<ThumbProps> = ({ theme, title, ids, badge, motif: motifName }) => {
   const pencil = theme === "pencil";
+  const motif = motifOf(motifName);
   return (
     <AbsoluteFill
       style={{
@@ -80,7 +81,7 @@ export const Thumb: React.FC<ThumbProps> = ({ theme, title, ids, badge }) => {
         <Mystery key={j} theme={theme} id={ids[j]} {...c} />
       ))}
       <div style={{ position: "absolute", left: 930, top: 20, zIndex: 3, rotate: "8deg", filter: "drop-shadow(0 8px 0 rgba(0,0,0,0.3))" }}>
-        <Badge theme={theme} {...badge} size={210} />
+        <Badge theme={theme} {...badge} size={210} motif={motif} />
       </div>
       <div
         style={{
@@ -92,9 +93,9 @@ export const Thumb: React.FC<ThumbProps> = ({ theme, title, ids, badge }) => {
           fontWeight: pencil ? 700 : 900,
           fontSize: pencil ? 170 : 116,
           lineHeight: 0.9,
-          color: pencil ? "#c4281f" : "#ffd23f",
+          color: pencil ? motif.title : "#ffd23f",
           rotate: "-4deg",
-          WebkitTextStroke: pencil ? undefined : "4px #14121f",
+          WebkitTextStroke: pencil ? `4px ${motif.title}` : "4px #14121f",
           textShadow: pencil ? "4px 5px 0 rgba(255,255,255,0.95)" : "0 8px 0 #14121f",
         }}
       >
