@@ -1,9 +1,10 @@
 """Стоп-кадры до рендера: заставка, первый столбик, середина, последний столбик, финал и обложка.
 Кадры считаются из src/pace.json и src/data.json, как в src/timing.ts. Итог: out/check.jpg."""
-import os, json, pathlib, subprocess
+import os, json, pathlib, shutil, subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+NPX = shutil.which("npx") or "npx"  # на Windows это npx.cmd
 CHROME = "--browser-executable=" + os.environ.get("CHROME", "/usr/bin/google-chrome")
 data = json.load(open(ROOT / "src/data.json"))
 pace = json.load(open(ROOT / "src/pace.json"))
@@ -22,10 +23,10 @@ frames["последний"] = card(n - 1) + 60
 frames["перед вопросом"] = cta - 2
 frames["финал"] = total - 10
 out = ROOT / "out"; out.mkdir(exist_ok=True)
-subprocess.run(["npx", "remotion", "bundle", "--out-dir=build", "--log=error"], cwd=ROOT, check=True)
+subprocess.run([NPX, "remotion", "bundle", "--out-dir=build", "--log=error"], cwd=ROOT, check=True)
 for name, f in frames.items():
-    subprocess.run(["npx", "remotion", "still", "build", "Pencil", f"out/check-{f}.png", f"--frame={f}", CHROME, "--log=error"], cwd=ROOT, check=True)
-subprocess.run(["npx", "remotion", "still", "build", "ThumbPencil", "out/thumb.png", CHROME, "--log=error"], cwd=ROOT, check=True)
+    subprocess.run([NPX, "remotion", "still", "build", "Pencil", f"out/check-{f}.png", f"--frame={f}", CHROME, "--log=error"], cwd=ROOT, check=True)
+subprocess.run([NPX, "remotion", "still", "build", "ThumbPencil", "out/thumb.png", CHROME, "--log=error"], cwd=ROOT, check=True)
 
 rows = (len(frames) + 1) // 2 + 1
 sheet = Image.new("RGB", (1920, 540 * rows), "white")
@@ -33,7 +34,10 @@ d = ImageDraw.Draw(sheet)
 try:  # шрифт с кириллицей, иначе подписи выйдут квадратиками
     font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 26)
 except OSError:
-    font = ImageFont.load_default()
+    try:
+        font = ImageFont.truetype("arialbd.ttf", 26)  # Windows
+    except OSError:
+        font = ImageFont.load_default()
 for j, (name, f) in enumerate(frames.items()):
     im = Image.open(out / f"check-{f}.png").convert("RGB").resize((960, 540))
     x, y = (j % 2) * 960, (j // 2) * 540
