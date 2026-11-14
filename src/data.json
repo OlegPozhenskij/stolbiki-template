@@ -1,11 +1,29 @@
 {
   "motif": "animals",
-  "short": true,
+  "short": false,
   "title": "Кто живёт дольше всех?",
-  "subtitle": "от 15 лет до вечности!",
+  "subtitle": "от трёх лет до вечности!",
   "cta": "Кто тебя удивил сильнее всех?",
   "ctaSub": "Пиши в комментариях!",
   "items": [
+    {
+      "id": "hamster",
+      "prefix": "до",
+      "value": 3,
+      "unit": "лет",
+      "title": "Хомяк",
+      "fact": "Носит еду за щеками, как в рюкзаке!",
+      "move": "hop"
+    },
+    {
+      "id": "capybara",
+      "prefix": "до",
+      "value": 10,
+      "unit": "лет",
+      "title": "Капибара",
+      "fact": "Сидит под водой до 5 минут!",
+      "move": "wiggle"
+    },
     {
       "id": "axolotl",
       "prefix": "до",
@@ -13,15 +31,6 @@
       "unit": "лет",
       "title": "Аксолотль",
       "fact": "Потерял лапу? Отрастит новую!",
-      "move": "wiggle"
-    },
-    {
-      "id": "koala",
-      "prefix": "до",
-      "value": 18,
-      "unit": "лет",
-      "title": "Коала",
-      "fact": "Спит до 20 часов в сутки!",
       "move": "wiggle"
     },
     {
@@ -34,6 +43,24 @@
       "move": "hop"
     },
     {
+      "id": "elephant",
+      "prefix": "до",
+      "value": 70,
+      "unit": "лет",
+      "title": "Слон",
+      "fact": "Не умеет прыгать. Ни разу в жизни!",
+      "move": "hop"
+    },
+    {
+      "id": "human",
+      "prefix": "рекорд",
+      "value": 122,
+      "unit": "года",
+      "title": "Человек",
+      "fact": "Рекорд у француженки Жанны Кальман!",
+      "move": "hop"
+    },
+    {
       "id": "tortoise",
       "prefix": "рекорд",
       "value": 194,
@@ -41,6 +68,15 @@
       "title": "Черепаха Джонатан",
       "fact": "Родился, когда не было телефонов!",
       "move": "wiggle"
+    },
+    {
+      "id": "shark",
+      "prefix": "рекорд",
+      "value": 392,
+      "unit": "года",
+      "title": "Гренландская акула",
+      "fact": "Плавает медленнее, чем ты ходишь!",
+      "move": "swim"
     },
     {
       "id": "jellyfish",
@@ -55,9 +91,9 @@
   "thumb": {
     "title": "Кто живёт вечно?",
     "ids": [
-      "jellyfish",
-      "tortoise",
-      "axolotl"
+      "axolotl",
+      "shark",
+      "jellyfish"
     ],
     "badge": {
       "prefix": "может",
