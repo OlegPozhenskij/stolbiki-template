@@ -1,0 +1,32 @@
+{
+  "hamster": {
+    "scene": "hamster"
+  },
+  "capybara": {
+    "scene": "capybara"
+  },
+  "cat": {
+    "scene": "cat"
+  },
+  "axolotl": {
+    "scene": "axolotl"
+  },
+  "elephant": {
+    "scene": "elephant"
+  },
+  "kakapo": {
+    "scene": "kakapo"
+  },
+  "tortoise": {
+    "scene": "tortoise"
+  },
+  "whale": {
+    "scene": "whale"
+  },
+  "shark": {
+    "scene": "shark"
+  },
+  "jellyfish": {
+    "scene": "jellyfish"
+  }
+}

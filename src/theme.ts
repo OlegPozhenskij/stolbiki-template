@@ -1,4 +1,5 @@
-export type Theme = "pencil" | "photo";
+export type Theme = "pencil" | "photo" | "vector";
+export type MediaAsset = {composite:string;background?:string;foreground?:string;bounds?:{x:number;y:number;w:number;h:number}};
 
 import motifs from "./motifs.json";
 
@@ -20,6 +21,9 @@ export type Item = {
 };
 
 export type VideoProps = {
+  design?: string;
+  assets?: Record<string,MediaAsset>;
+  pace?: import('./engine/timeline.mjs').Pace;
   theme: Theme;
   title: string;
   subtitle?: string;
@@ -31,6 +35,8 @@ export type VideoProps = {
 };
 
 export type ThumbProps = {
+  design?: string;
+  assets?: Record<string,MediaAsset>;
   theme: Theme;
   title: string; // 2–3 слова
   ids: string[]; // 1–3 размытые карточки, последняя — по центру. Только разные существа, без повторов
@@ -38,8 +44,8 @@ export type ThumbProps = {
   motif?: string;
 };
 
-export const imageFor = (theme: Theme, id: string) =>
-  theme === "pencil" ? `pencil/${id}.jpg` : `photo/${id}.jpg`;
+export const imageFor = (theme: Theme, id: string, assets?:Record<string,MediaAsset>) =>
+  assets?.[id]?.composite ?? (theme === "pencil" ? `pencil/${id}.jpg` : `photo/${id}.jpg`);
 
 export const PAPER = "#faf4e4";
 export const GRAPHITE = "#2f2a27";

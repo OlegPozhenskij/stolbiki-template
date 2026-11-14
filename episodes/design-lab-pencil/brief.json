@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "engine": "cards-v1",
+  "kind": "demo",
+  "title": "Проверка оформления",
+  "audience": "Проверка дизайна",
+  "seconds": 18,
+  "design": "pencil-album",
+  "world": "native",
+  "media": "pencil",
+  "music": "bright",
+  "timing": {
+    "fps": 30,
+    "intro": 60,
+    "step": 90,
+    "holdLast": 0,
+    "outro": 120
+  }
+}

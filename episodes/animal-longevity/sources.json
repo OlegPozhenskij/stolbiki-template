@@ -1,0 +1,107 @@
+{
+  "hamster": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters"
+    ],
+    "scope": "Обычно 2 года; некоторые живут дольше",
+    "fact": "Переносит еду в защёчных мешках",
+    "refresh": false
+  },
+  "capybara": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://animals.sandiegozoo.org/animals/capybara"
+    ],
+    "scope": "До 12 лет при профессиональном уходе, до 10 в природе",
+    "fact": "Может оставаться под водой до пяти минут",
+    "refresh": false
+  },
+  "cat": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.rvc.ac.uk/Media/Default/VetCompass/Documents/VetCompass%20Longevity%20and%20Mortality%20of%20Cats%20in%20England.pdf",
+      "https://vcahospitals.com/resources/lifestyle-cat/facts-about-your-feline-friend"
+    ],
+    "scope": "14 лет — медиана для беспородных кошек в исследованной британской выборке; на экране «обычно», это не предел жизни",
+    "fact": "Не воспринимает сладкий вкус; торт приведён как знакомый образ, а не рекомендация по кормлению",
+    "refresh": false
+  },
+  "axolotl": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.nhm.ac.uk/discover/axolotls-amphibians-that-never-grow-up.html"
+    ],
+    "scope": "Источник даёт 10–15 лет",
+    "fact": "Восстанавливает утраченные конечности",
+    "refresh": false
+  },
+  "elephant": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.nature.org/en-us/get-involved/how-to-help/animals-we-protect/african-bush-elephant/",
+      "https://animals.sandiegozoo.org/animals/elephant"
+    ],
+    "scope": "До 70 лет",
+    "fact": "Уши помогают отводить тепло; вентилятор — понятное сравнение, тепло также отдаётся через кровеносные сосуды",
+    "refresh": false
+  },
+  "kakapo": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo"
+    ],
+    "scope": "До 90 лет, оценка 60–90 лет",
+    "fact": "Нелетающий попугай",
+    "refresh": false
+  },
+  "tortoise": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.guinnessworldrecords.com/news/2026/6/shellabration-time-why-long-lived-jonathan-the-tortoise-has-been-named-a-gwr-icon"
+    ],
+    "scope": "Не меньше 194 лет по оценке Guinness на 2026 год; точная дата рождения неизвестна",
+    "fact": "Появился на свет около 1832 года, до телефона и лампы накаливания",
+    "refresh": true,
+    "validUntil": "2026-11-30"
+  },
+  "whale": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.fisheries.noaa.gov/species/bowhead-whale"
+    ],
+    "scope": "Есть свидетельства жизни более 200 лет",
+    "fact": "Пробивает морской лёд толстой головой",
+    "refresh": false
+  },
+  "shark": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://oceanservice.noaa.gov/facts/greenland-shark.html",
+      "https://pubmed.ncbi.nlm.nih.gov/27516602/"
+    ],
+    "scope": "Не меньше 272 лет: нижняя граница оценки возраста крупнейшей особи в исследовании, интервал 272–512 лет. Это не точный возраст и не универсальный предел вида",
+    "fact": "Максимальная скорость менее 2,9 км/ч; сравнение с обычной прогулкой приблизительное",
+    "refresh": false
+  },
+  "jellyfish": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://www.nhm.ac.uk/discover/immortal-jellyfish-secret-to-cheating-death.html",
+      "https://www.visitsealife.com/brighton/conservation/breed-rescue-protect/jellyfish/"
+    ],
+    "scope": "∞ — условный знак теоретически повторяемых циклов, не измеренное бесконечное время жизни. На экране «в теории» и «циклов»",
+    "fact": "Возвращается к ранней стадии развития; хищники могут её съесть",
+    "refresh": false
+  }
+}

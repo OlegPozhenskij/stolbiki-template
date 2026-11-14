@@ -2,114 +2,17 @@ import React from "react";
 import { Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Badge } from "./Badge";
 import { BODY } from "./fonts";
-import { GRAPHITE, INK, Item, Motif, Move, PAPER, Theme, imageFor } from "./theme";
+import { Item, Motif, Theme, imageFor } from "./theme";
 import { COL_W, HEIGHT } from "./timing";
-import meta from "../public/pencil/meta.json";
+import {MOTION_START,subjectMotion} from "./engine/motion";
+import {SpecialBack,SpecialFront} from "./designs/Celebration";
+import {designOf} from "./designs/registry";
+import {counterValue} from "./engine/numbers.mjs";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const out = Easing.bezier(0.16, 1, 0.3, 1);
 const HEADER_H = 178;
 const IMG: React.CSSProperties = { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" };
-
-// Короткое движение животного при появлении: 1 секунда, затухает и останавливается.
-const MOTION_START = 12;
-const MOTION_LEN = 30;
-const animalMotion = (id: string, type: Move, t: number): React.CSSProperties => {
-  const m = (meta as Record<string, { x: number; y: number; w: number; h: number }>)[id];
-  const centered = type === "fly" || type === "pulse" || type === "swim";
-  const origin = m ? `${(m.x + m.w / 2) * 100}% ${(m.y + (centered ? m.h / 2 : m.h)) * 100}%` : "50% 90%";
-  if (t <= 0 || t >= MOTION_LEN) return { transformOrigin: origin };
-  const p = t / MOTION_LEN;
-  const k = (1 - p) * (1 - p); // затухание
-  const w = p * Math.PI * 2;
-  let x = 0, y = 0, r = 0, sx = 1, sy = 1;
-  if (type === "hop") {
-    y = -26 * Math.abs(Math.sin(w * 1.5)) * k;
-    r = 3 * Math.sin(w * 1.5) * k;
-    sy = 1 + 0.07 * Math.sin(w * 3) * k;
-    sx = 1 - 0.035 * Math.sin(w * 3) * k;
-  } else if (type === "fly") {
-    x = 16 * Math.sin(w * 2) * k;
-    y = -12 * Math.sin(w * 4) * k;
-    r = 6 * Math.sin(w * 2) * k;
-  } else if (type === "swim") {
-    x = 18 * Math.sin(w * 1.5) * k;
-    y = 6 * Math.sin(w * 3) * k;
-    r = 4 * Math.sin(w * 1.5 + 0.8) * k;
-  } else if (type === "pulse") {
-    sy = 1 - 0.1 * Math.sin(w * 2) * k;
-    sx = 1 + 0.06 * Math.sin(w * 2) * k;
-    y = -16 * Math.sin(w) * k;
-  } else {
-    r = 5 * Math.sin(w * 2.5) * k;
-    y = -8 * Math.abs(Math.sin(w * 2.5)) * k;
-    sx = 1 + 0.04 * Math.sin(w * 5) * k;
-  }
-  return { transformOrigin: origin, transform: `translate(${x}px, ${y}px) rotate(${r}deg) scale(${sx}, ${sy})` };
-};
-const PIC_H = 600;
-
-// Один столбик. Кадр 0 — момент появления.
-// ---------- Особый последний столбик: лучи, вспышка, звёздочки ----------
-const STAR = "M0 -1 L0.24 -0.32 L0.95 -0.31 L0.38 0.12 L0.59 0.81 L0 0.4 L-0.59 0.81 L-0.38 0.12 L-0.95 -0.31 L-0.24 -0.32Z";
-const SPARKS = Array.from({ length: 16 }, (_, i) => ({
-  a: (i / 16) * Math.PI * 2 + (i % 2) * 0.2,
-  r: 170 + (i % 3) * 60,
-  size: 16 + (i % 4) * 7,
-  c: ["#ffd23f", "#ff8fb1", "#7cc8e8", "#ffffff"][i % 4],
-}));
-const CX = COL_W / 2;
-const CY = HEADER_H + PIC_H / 2;
-
-const SpecialBack: React.FC<{ frame: number }> = ({ frame }) => {
-  const on = interpolate(frame, [14, 40], [0, 1], clamp);
-  return (
-    <div
-      style={{
-        position: "absolute",
-        left: CX - 700,
-        top: CY - 700,
-        width: 1400,
-        height: 1400,
-        opacity: 0.55 * on,
-        rotate: `${frame * 0.4}deg`,
-        background:
-          "repeating-conic-gradient(from 0deg, rgba(255,214,90,0.75) 0deg 9deg, rgba(255,214,90,0) 9deg 22.5deg)",
-        WebkitMaskImage: "radial-gradient(circle, #000 18%, transparent 62%)",
-        maskImage: "radial-gradient(circle, #000 18%, transparent 62%)",
-      }}
-    />
-  );
-};
-
-const SpecialFront: React.FC<{ frame: number }> = ({ frame }) => {
-  const burst = interpolate(frame, [22, 60], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-  const flash = interpolate(frame, [20, 26, 44], [0, 0.85, 0], clamp);
-  return (
-    <>
-      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 45%, #fff 0%, rgba(255,246,200,0.6) 40%, transparent 75%)", opacity: flash }} />
-      <svg width={COL_W} height={HEIGHT} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
-        {SPARKS.map((p, i) => {
-          const x = CX + Math.cos(p.a) * p.r * burst;
-          const y = CY + Math.sin(p.a) * p.r * burst * 1.25;
-          const tw = 0.75 + 0.25 * Math.sin(frame / 5 + i);
-          const sc = p.size * (burst < 1 ? burst * 1.2 : tw);
-          return (
-            <path
-              key={i}
-              d={STAR}
-              transform={`translate(${x} ${y}) rotate(${frame * 2 + i * 20}) scale(${sc})`}
-              fill={p.c}
-              stroke="#1d1b2e"
-              strokeWidth={2 / Math.max(sc, 1)}
-              opacity={interpolate(frame, [22, 30], [0, 1], clamp)}
-            />
-          );
-        })}
-      </svg>
-    </>
-  );
-};
 
 export const Card: React.FC<{
   item: Item;
@@ -119,21 +22,25 @@ export const Card: React.FC<{
   paperX: number; // где столбик стоит в кадре: чтобы зерно бумаги совпадало с фоном
   leftLine?: boolean; // линия слева: у первого столбика, когда лента стоит по центру
   motif: Motif;
+  design?: string;
+  assets?: Record<string, import("./theme").MediaAsset>;
   special?: boolean; // последний столбик: появляется с лучами, вспышкой и звёздочками
-}> = ({ item, index, theme, wash, paperX, leftLine, motif, special }) => {
+}> = ({ item, index, theme, wash, paperX, leftLine, motif, special, design, assets }) => {
   const frame = useCurrentFrame();
-  const pencil = theme === "pencil";
+  const skin = designOf(design,theme);
+  const pencil = skin.layout === "album";
+  const asset = assets?.[item.id];
+  const PIC_H = 600;
 
   const t = interpolate(frame, [12, 36], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-  const shown =
-    typeof item.value === "number" ? String(Math.max(1, Math.round(item.value * t))) : item.value;
+  const shown = counterValue(item.value,t);
 
   const tilt = pencil ? [-1.2, 0.9, -0.6, 1.3, -1, 0.7][index % 6] : 0;
   // Заголовок печатным шрифтом (рукописный дети читают плохо), заметно крупнее факта.
   // Влезает в одну строку от 48 px — одна строка до 64 px; иначе две строки по 48 px, а факт мельче.
   const oneLine = Math.min(64, Math.floor(420 / (0.62 * item.title.length)));
-  const twoLines = pencil && oneLine < 48;
-  const titleSize = pencil ? (twoLines ? 48 : oneLine) : Math.max(42, Math.min(52, Math.floor(820 / item.title.length)));
+  const twoLines = oneLine < 48;
+  const titleSize = twoLines ? 48 : oneLine;
   const n = item.fact.length;
   const factSize = twoLines ? (n <= 30 ? 36 : 32) : n <= 36 ? 42 : n <= 44 ? 38 : 34;
 
@@ -145,8 +52,8 @@ export const Card: React.FC<{
         width: COL_W,
         height: HEIGHT,
         overflow: "hidden",
-        backgroundColor: pencil ? PAPER : INK,
-        backgroundImage: pencil ? `url(${staticFile("pencil/paper.jpg")})` : undefined,
+        backgroundColor: skin.background,
+        backgroundImage: skin.texture ? `url(${staticFile("pencil/paper.jpg")})` : undefined,
         backgroundPosition: `${-(paperX % 1920)}px 0px`,
         translate: interpolate(frame, [0, 24], [`0px ${HEIGHT}px`, "0px 0px"], { ...clamp, easing: out }),
       }}
@@ -180,13 +87,13 @@ export const Card: React.FC<{
             }),
           }}
         >
-          {pencil ? (
+          {(asset?.foreground || (!asset && theme === "pencil")) ? (
             <>
-              <Img src={staticFile(`pencil/${item.id}-bg.jpg`)} style={IMG} />
-              <Img src={staticFile(`pencil/${item.id}-fg.png`)} style={{ ...IMG, ...animalMotion(item.id, item.move ?? "hop", frame - MOTION_START) }} />
+              <Img src={staticFile(asset?.background ?? `pencil/${item.id}-bg.jpg`)} style={IMG} />
+              <Img src={staticFile(asset?.foreground ?? `pencil/${item.id}-fg.png`)} style={{ ...IMG, ...subjectMotion(item.move ?? "hop", frame - MOTION_START, asset?.bounds) }} />
             </>
           ) : (
-            <Img src={staticFile(imageFor(theme, item.id))} style={IMG} />
+            <Img src={staticFile(imageFor(theme, item.id, assets))} style={IMG} />
           )}
         </div>
       </div>
@@ -208,9 +115,9 @@ export const Card: React.FC<{
           padding: pencil ? "4px 26px 0" : "18px 24px 0",
           boxSizing: "border-box",
           textAlign: "center",
-          backgroundColor: pencil ? "transparent" : "#fffdf7",
-          borderTop: pencil ? undefined : `6px solid ${INK}`,
-          color: pencil ? GRAPHITE : INK,
+          backgroundColor: "transparent",
+          borderTop: pencil ? undefined : `3px solid ${skin.accent}`,
+          color: skin.ink,
         }}
       >
         <div
@@ -220,7 +127,7 @@ export const Card: React.FC<{
             fontSize: titleSize,
             lineHeight: 1.04,
             textWrap: "balance",
-            color: pencil ? motif.title : INK,
+            color: skin.title ?? motif.title,
             opacity: interpolate(frame, [18, 30], [0, 1], clamp),
             translate: interpolate(frame, [18, 34], ["0px 24px", "0px 0px"], { ...clamp, easing: out }),
           }}
@@ -250,7 +157,7 @@ export const Card: React.FC<{
         style={{
           position: "absolute",
           inset: 0,
-          backgroundColor: pencil ? PAPER : "#0b0a14",
+          backgroundColor: skin.background,
           opacity: wash * (pencil ? 0.3 : 0.38),
         }}
       />
@@ -264,8 +171,8 @@ export const Card: React.FC<{
         </>
       ) : (
         <>
-          <div style={{ position: "absolute", right: 0, top: 0, width: 3, height: HEIGHT, background: INK }} />
-          {leftLine ? <div style={{ position: "absolute", left: 0, top: 0, width: 3, height: HEIGHT, background: INK }} /> : null}
+          <div style={{ position: "absolute", right: 0, top: 0, width: 3, height: HEIGHT, background: skin.accent }} />
+          {leftLine ? <div style={{ position: "absolute", left: 0, top: 0, width: 3, height: HEIGHT, background: skin.accent }} /> : null}
         </>
       )}
 
@@ -280,7 +187,7 @@ export const Card: React.FC<{
           filter: pencil ? undefined : "drop-shadow(0 10px 0 rgba(0,0,0,0.35))",
         }}
       >
-        <Badge theme={theme} prefix={item.prefix} shown={shown} unit={item.unit} motif={motif} />
+        <Badge design={design} theme={theme} prefix={item.prefix} shown={shown} unit={item.unit} motif={motif} />
       </div>
     </div>
   );

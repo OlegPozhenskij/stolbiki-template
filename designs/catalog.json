@@ -1,0 +1,26 @@
+{
+  "pencil-album": {
+    "name": "Карандашный альбом",
+    "layout": "album",
+    "background": "#faf4e4",
+    "ink": "#2f2a27",
+    "title": null,
+    "accent": "#f2b705",
+    "badge": null,
+    "heading": "hand",
+    "badgeShape": "hex",
+    "texture": true
+  },
+  "space-atlas": {
+    "name": "Космический атлас",
+    "layout": "panel",
+    "background": "#0b1630",
+    "ink": "#e8f3ff",
+    "title": "#7ce8ff",
+    "accent": "#f5c95e",
+    "badge": "#176186",
+    "heading": "body",
+    "badgeShape": "round",
+    "texture": false
+  }
+}

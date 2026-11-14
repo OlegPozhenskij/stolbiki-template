@@ -1,0 +1,443 @@
+{
+  "cat": {
+    "module": "assets/scenes/cat.mjs",
+    "label": "cat",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "jellyfish": {
+    "module": "assets/scenes/jellyfish.mjs",
+    "label": "jellyfish",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "mayfly": {
+    "module": "assets/scenes/mayfly.mjs",
+    "label": "mayfly",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "bee": {
+    "module": "assets/scenes/bee.mjs",
+    "label": "bee",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "axolotl": {
+    "module": "assets/scenes/axolotl.mjs",
+    "label": "axolotl",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "platypus": {
+    "module": "assets/scenes/platypus.mjs",
+    "label": "platypus",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "molerat": {
+    "module": "assets/scenes/molerat.mjs",
+    "label": "molerat",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "elephant": {
+    "module": "assets/scenes/elephant.mjs",
+    "label": "elephant",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "kakapo": {
+    "module": "assets/scenes/kakapo.mjs",
+    "label": "kakapo",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "tortoise": {
+    "module": "assets/scenes/tortoise.mjs",
+    "label": "tortoise",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "whale": {
+    "module": "assets/scenes/whale.mjs",
+    "label": "whale",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "shark": {
+    "module": "assets/scenes/shark.mjs",
+    "label": "shark",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "mosquito": {
+    "module": "assets/scenes/mosquito.mjs",
+    "label": "mosquito",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "housefly": {
+    "module": "assets/scenes/housefly.mjs",
+    "label": "housefly",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "chameleon": {
+    "module": "assets/scenes/chameleon.mjs",
+    "label": "chameleon",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "octopus": {
+    "module": "assets/scenes/octopus.mjs",
+    "label": "octopus",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "hamster": {
+    "module": "assets/scenes/hamster.mjs",
+    "label": "hamster",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "guineapig": {
+    "module": "assets/scenes/guineapig.mjs",
+    "label": "guineapig",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "capybara": {
+    "module": "assets/scenes/capybara.mjs",
+    "label": "capybara",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "rabbit": {
+    "module": "assets/scenes/rabbit.mjs",
+    "label": "rabbit",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "hummingbird": {
+    "module": "assets/scenes/hummingbird.mjs",
+    "label": "hummingbird",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "dog": {
+    "module": "assets/scenes/dog.mjs",
+    "label": "dog",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "lion": {
+    "module": "assets/scenes/lion.mjs",
+    "label": "lion",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "koala": {
+    "module": "assets/scenes/koala.mjs",
+    "label": "koala",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "penguin": {
+    "module": "assets/scenes/penguin.mjs",
+    "label": "penguin",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "giraffe": {
+    "module": "assets/scenes/giraffe.mjs",
+    "label": "giraffe",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "polarbear": {
+    "module": "assets/scenes/polarbear.mjs",
+    "label": "polarbear",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "antqueen": {
+    "module": "assets/scenes/antqueen.mjs",
+    "label": "antqueen",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "horse": {
+    "module": "assets/scenes/horse.mjs",
+    "label": "horse",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "panda": {
+    "module": "assets/scenes/panda.mjs",
+    "label": "panda",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "ostrich": {
+    "module": "assets/scenes/ostrich.mjs",
+    "label": "ostrich",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "hippo": {
+    "module": "assets/scenes/hippo.mjs",
+    "label": "hippo",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "gorilla": {
+    "module": "assets/scenes/gorilla.mjs",
+    "label": "gorilla",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "dolphin": {
+    "module": "assets/scenes/dolphin.mjs",
+    "label": "dolphin",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "crocodile": {
+    "module": "assets/scenes/crocodile.mjs",
+    "label": "crocodile",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "flamingo": {
+    "module": "assets/scenes/flamingo.mjs",
+    "label": "flamingo",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "tuatara": {
+    "module": "assets/scenes/tuatara.mjs",
+    "label": "tuatara",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "human": {
+    "module": "assets/scenes/human.mjs",
+    "label": "human",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "sturgeon": {
+    "module": "assets/scenes/sturgeon.mjs",
+    "label": "sturgeon",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "urchin": {
+    "module": "assets/scenes/urchin.mjs",
+    "label": "urchin",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "quahog": {
+    "module": "assets/scenes/quahog.mjs",
+    "label": "quahog",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "coral": {
+    "module": "assets/scenes/coral.mjs",
+    "label": "coral",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "butterfly": {
+    "module": "assets/scenes/butterfly.mjs",
+    "label": "butterfly",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "ladybug": {
+    "module": "assets/scenes/ladybug.mjs",
+    "label": "ladybug",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "sloth": {
+    "module": "assets/scenes/sloth.mjs",
+    "label": "sloth",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "sun": {
+    "module": "assets/scenes/sun.mjs",
+    "label": "sun",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "earth": {
+    "module": "assets/scenes/earth.mjs",
+    "label": "earth",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "saturn": {
+    "module": "assets/scenes/saturn.mjs",
+    "label": "saturn",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "neptune": {
+    "module": "assets/scenes/neptune.mjs",
+    "label": "neptune",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  }
+}

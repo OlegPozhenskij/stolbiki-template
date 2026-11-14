@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "engine": "cards-v1",
+  "kind": "episode",
+  "title": "Кто живёт дольше всех?",
+  "audience": "8–15 лет",
+  "seconds": 60,
+  "design": "pencil-album",
+  "world": "native",
+  "media": "pencil",
+  "music": "bright",
+  "timing": {
+    "fps": 30,
+    "step": 150,
+    "intro": 150,
+    "holdLast": 0,
+    "outro": 150
+  }
+}

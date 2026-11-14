@@ -1,0 +1,44 @@
+[
+  {
+    "skill": "anti-ai-writing",
+    "before_chars": 19509,
+    "after_chars": 2182,
+    "reduction_percent": 88.8
+  },
+  {
+    "skill": "brainstorming",
+    "before_chars": 15190,
+    "after_chars": 1777,
+    "reduction_percent": 88.3
+  },
+  {
+    "skill": "quality-filter",
+    "before_chars": 27792,
+    "after_chars": 2140,
+    "reduction_percent": 92.3
+  },
+  {
+    "skill": "video-idea-generator",
+    "before_chars": 35068,
+    "after_chars": 2000,
+    "reduction_percent": 94.3
+  },
+  {
+    "skill": "video-script-writer",
+    "before_chars": 29311,
+    "after_chars": 1951,
+    "reduction_percent": 93.3
+  },
+  {
+    "skill": "stolbiki-video",
+    "before_chars": 11385,
+    "after_chars": 2360,
+    "reduction_percent": 79.3
+  },
+  {
+    "skill": "video-producer",
+    "before_chars": 0,
+    "after_chars": 2833,
+    "reduction_percent": null
+  }
+]

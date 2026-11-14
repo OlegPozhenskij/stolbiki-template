@@ -3,8 +3,8 @@
   "step": 150,
   "normal": {
     "intro": 150,
-    "holdLast": 75,
-    "outro": 225
+    "holdLast": 0,
+    "outro": 150
   },
   "short": {
     "intro": 75,
