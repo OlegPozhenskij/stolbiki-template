@@ -1,119 +1,11 @@
 {
   "motif": "animals",
-  "short": false,
+  "short": true,
   "title": "Кто живёт дольше всех?",
-  "subtitle": "от трёх недель до вечности!",
+  "subtitle": "от 15 лет до вечности!",
   "cta": "Кто тебя удивил сильнее всех?",
   "ctaSub": "Пиши в комментариях!",
   "items": [
-    {
-      "id": "butterfly",
-      "prefix": "около",
-      "value": 3,
-      "unit": "недель",
-      "title": "Бабочка",
-      "fact": "Пробует еду лапками!",
-      "move": "fly"
-    },
-    {
-      "id": "bee",
-      "prefix": "около",
-      "value": 6,
-      "unit": "недель",
-      "title": "Пчела",
-      "fact": "За всю жизнь: мёда меньше ложки!",
-      "move": "fly"
-    },
-    {
-      "id": "chameleon",
-      "prefix": "около",
-      "value": 5,
-      "unit": "месяцев",
-      "title": "Хамелеон Ларда",
-      "fact": "Почти всю жизнь сидит в яйце!",
-      "move": "wiggle"
-    },
-    {
-      "id": "ladybug",
-      "prefix": "около",
-      "value": 1,
-      "unit": "года",
-      "title": "Божья коровка",
-      "fact": "Пятнышки не говорят, сколько ей лет!",
-      "move": "hop"
-    },
-    {
-      "id": "octopus",
-      "prefix": "около",
-      "value": 1,
-      "unit": "года",
-      "title": "Осьминог",
-      "fact": "Три сердца и голубая кровь!",
-      "move": "swim"
-    },
-    {
-      "id": "hamster",
-      "prefix": "до",
-      "value": 3,
-      "unit": "лет",
-      "title": "Хомяк",
-      "fact": "Носит еду за щеками, как в рюкзаке!",
-      "move": "hop"
-    },
-    {
-      "id": "guineapig",
-      "prefix": "до",
-      "value": 8,
-      "unit": "лет",
-      "title": "Морская свинка",
-      "fact": "Зубы растут всю жизнь!",
-      "move": "hop"
-    },
-    {
-      "id": "capybara",
-      "prefix": "до",
-      "value": 10,
-      "unit": "лет",
-      "title": "Капибара",
-      "fact": "Сидит под водой до 5 минут!",
-      "move": "wiggle"
-    },
-    {
-      "id": "rabbit",
-      "prefix": "до",
-      "value": 12,
-      "unit": "лет",
-      "title": "Кролик",
-      "fact": "Видит почти всё вокруг, даже сзади!",
-      "move": "hop"
-    },
-    {
-      "id": "hummingbird",
-      "prefix": "рекорд",
-      "value": 12,
-      "unit": "лет",
-      "title": "Колибри",
-      "fact": "Сердце бьётся 1260 раз в минуту!",
-      "move": "fly"
-    },
-    {
-      "id": "dog",
-      "prefix": "около",
-      "value": 13,
-      "unit": "лет",
-      "title": "Собака",
-      "fact": "Нос у каждой свой, как отпечаток пальца!",
-      "move": "hop"
-    },
-    {
-      "id": "lion",
-      "prefix": "до",
-      "value": 15,
-      "unit": "лет",
-      "title": "Лев",
-      "fact": "Рык слышно за 8 км!",
-      "move": "hop"
-    },
     {
       "id": "axolotl",
       "prefix": "до",
@@ -121,6 +13,15 @@
       "unit": "лет",
       "title": "Аксолотль",
       "fact": "Потерял лапу? Отрастит новую!",
+      "move": "wiggle"
+    },
+    {
+      "id": "koala",
+      "prefix": "до",
+      "value": 18,
+      "unit": "лет",
+      "title": "Коала",
+      "fact": "Спит до 20 часов в сутки!",
       "move": "wiggle"
     },
     {
@@ -133,237 +34,12 @@
       "move": "hop"
     },
     {
-      "id": "koala",
-      "prefix": "до",
-      "value": 18,
-      "unit": "лет",
-      "title": "Коала",
-      "fact": "Спит до 20 часов в сутки!",
-      "move": "wiggle"
-    },
-    {
-      "id": "penguin",
-      "prefix": "до",
-      "value": 20,
-      "unit": "лет",
-      "title": "Пингвин",
-      "fact": "Папа греет яйцо на лапах 2 месяца!",
-      "move": "hop"
-    },
-    {
-      "id": "platypus",
-      "prefix": "до",
-      "value": 24,
-      "unit": "лет",
-      "title": "Утконос",
-      "fact": "Зверь, а несёт яйца. Как курица!",
-      "move": "wiggle"
-    },
-    {
-      "id": "giraffe",
-      "prefix": "до",
-      "value": 25,
-      "unit": "лет",
-      "title": "Жираф",
-      "fact": "Язык синий и длиной полметра!",
-      "move": "wiggle"
-    },
-    {
-      "id": "polarbear",
-      "prefix": "до",
-      "value": 25,
-      "unit": "лет",
-      "title": "Белый медведь",
-      "fact": "Кожа чёрная, а шерсть прозрачная!",
-      "move": "hop"
-    },
-    {
-      "id": "antqueen",
-      "prefix": "рекорд",
-      "value": 28,
-      "unit": "лет",
-      "title": "Царица муравьёв",
-      "fact": "А рабочие муравьи живут год-два!",
-      "move": "wiggle"
-    },
-    {
-      "id": "horse",
-      "prefix": "до",
-      "value": 30,
-      "unit": "лет",
-      "title": "Лошадь",
-      "fact": "Умеет спать стоя!",
-      "move": "hop"
-    },
-    {
-      "id": "panda",
-      "prefix": "до",
-      "value": 30,
-      "unit": "лет",
-      "title": "Панда",
-      "fact": "Ест бамбук по 12 часов в день!",
-      "move": "wiggle"
-    },
-    {
-      "id": "sloth",
-      "prefix": "до",
-      "value": 30,
-      "unit": "лет",
-      "title": "Ленивец",
-      "fact": "Спускается с дерева раз в неделю!",
-      "move": "wiggle"
-    },
-    {
-      "id": "ostrich",
-      "prefix": "до",
-      "value": 40,
-      "unit": "лет",
-      "title": "Страус",
-      "fact": "Глаз больше, чем его мозг!",
-      "move": "hop"
-    },
-    {
-      "id": "hippo",
-      "prefix": "до",
-      "value": 40,
-      "unit": "лет",
-      "title": "Бегемот",
-      "fact": "Пот у него красный!",
-      "move": "wiggle"
-    },
-    {
-      "id": "gorilla",
-      "prefix": "до",
-      "value": 50,
-      "unit": "лет",
-      "title": "Горилла",
-      "fact": "Узор на носу у каждой свой!",
-      "move": "hop"
-    },
-    {
-      "id": "dolphin",
-      "prefix": "до",
-      "value": 50,
-      "unit": "лет",
-      "title": "Дельфин",
-      "fact": "Спит с одним открытым глазом!",
-      "move": "swim"
-    },
-    {
-      "id": "elephant",
-      "prefix": "до",
-      "value": 70,
-      "unit": "лет",
-      "title": "Слон",
-      "fact": "Не умеет прыгать. Ни разу в жизни!",
-      "move": "hop"
-    },
-    {
-      "id": "crocodile",
-      "prefix": "до",
-      "value": 70,
-      "unit": "лет",
-      "title": "Крокодил",
-      "fact": "Не может высунуть язык!",
-      "move": "wiggle"
-    },
-    {
-      "id": "kakapo",
-      "prefix": "до",
-      "value": 80,
-      "unit": "лет",
-      "title": "Попугай какапо",
-      "fact": "Не летает. Зато пахнет мёдом!",
-      "move": "hop"
-    },
-    {
-      "id": "flamingo",
-      "prefix": "рекорд",
-      "value": 83,
-      "unit": "года",
-      "title": "Фламинго",
-      "fact": "Розовый от еды! Ест рачков.",
-      "move": "hop"
-    },
-    {
-      "id": "tuatara",
-      "prefix": "больше",
-      "value": 110,
-      "unit": "лет",
-      "title": "Туатара",
-      "fact": "Стал папой в 111 лет!",
-      "move": "wiggle"
-    },
-    {
-      "id": "human",
-      "prefix": "рекорд",
-      "value": 122,
-      "unit": "года",
-      "title": "Человек",
-      "fact": "Рекорд у француженки Жанны Кальман!",
-      "move": "hop"
-    },
-    {
-      "id": "sturgeon",
-      "prefix": "рекорд",
-      "value": 152,
-      "unit": "года",
-      "title": "Осётр",
-      "fact": "Его предки плавали с динозаврами!",
-      "move": "swim"
-    },
-    {
       "id": "tortoise",
       "prefix": "рекорд",
       "value": 194,
       "unit": "года",
       "title": "Черепаха Джонатан",
-      "fact": "Родилась, когда не было телефонов!",
-      "move": "wiggle"
-    },
-    {
-      "id": "urchin",
-      "prefix": "до",
-      "value": 200,
-      "unit": "лет",
-      "title": "Морской ёж",
-      "fact": "Ходит на сотнях ножек-присосок!",
-      "move": "wiggle"
-    },
-    {
-      "id": "whale",
-      "prefix": "больше",
-      "value": 200,
-      "unit": "лет",
-      "title": "Гренландский кит",
-      "fact": "Ломает лёд головой. Вот это лоб!",
-      "move": "swim"
-    },
-    {
-      "id": "shark",
-      "prefix": "около",
-      "value": 400,
-      "unit": "лет",
-      "title": "Гренландская акула",
-      "fact": "Плавает медленнее, чем ты ходишь!",
-      "move": "swim"
-    },
-    {
-      "id": "quahog",
-      "prefix": "рекорд",
-      "value": 507,
-      "unit": "лет",
-      "title": "Моллюск Мин",
-      "fact": "Возраст узнали по полоскам раковины!",
-      "move": "wiggle"
-    },
-    {
-      "id": "coral",
-      "prefix": "около",
-      "value": 4000,
-      "unit": "лет",
-      "title": "Чёрный коралл",
-      "fact": "Это животное, а не растение!",
+      "fact": "Родился, когда не было телефонов!",
       "move": "wiggle"
     },
     {
@@ -379,9 +55,9 @@
   "thumb": {
     "title": "Кто живёт вечно?",
     "ids": [
-      "tuatara",
-      "coral",
-      "jellyfish"
+      "jellyfish",
+      "tortoise",
+      "axolotl"
     ],
     "badge": {
       "prefix": "может",
