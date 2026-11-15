@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "engine": "cards-v1",
+  "kind": "episode",
+  "title": "Планеты с характером",
+  "audience": "Семейное научно-популярное видео",
+  "seconds": 20,
+  "design": "planet-journal-v2",
+  "world": "native",
+  "media": "vector",
+  "music": "calm",
+  "timezone": "Europe/Moscow",
+  "timing": {
+    "fps": 30,
+    "intro": 60,
+    "step": 150,
+    "holdLast": 0,
+    "outro": 90
+  },
+  "production": {
+    "reviewCycles": 3,
+    "pilotCards": [
+      "earth",
+      "saturn",
+      "jupiter"
+    ],
+    "provider": "ManyMotions free editor + local Remotion",
+    "paidGeneration": false,
+    "illustrationsToScale": false
+  }
+}

@@ -32,13 +32,19 @@
   {
     "skill": "stolbiki-video",
     "before_chars": 11385,
-    "after_chars": 2360,
-    "reduction_percent": 79.3
+    "after_chars": 2741,
+    "reduction_percent": 75.9
   },
   {
     "skill": "video-producer",
     "before_chars": 0,
-    "after_chars": 2833,
+    "after_chars": 3594,
+    "reduction_percent": null
+  },
+  {
+    "skill": "manymotions-video-generation",
+    "before_chars": 0,
+    "after_chars": 2190,
     "reduction_percent": null
   }
 ]

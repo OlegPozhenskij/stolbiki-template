@@ -8,7 +8,7 @@ export type MotifName = keyof typeof motifs;
 export type Motif = (typeof motifs)[MotifName];
 export const motifOf = (name?: string): Motif => motifs[(name && name in motifs ? name : "classic") as MotifName];
 
-export type Move = "hop" | "fly" | "swim" | "pulse" | "wiggle";
+export type Move = "hop" | "fly" | "swim" | "pulse" | "wiggle" | "float";
 
 export type Item = {
   id: string;
@@ -17,6 +17,11 @@ export type Item = {
   unit: string;
   title: string;
   fact: string;
+  accent?: string;
+  tag?: string;
+  metricLabel?: string;
+  finaleLabel?: string;
+  details?: {at:number;text:string}[]; // локальные кадры, подписи из источников
   move?: Move; // короткое движение животного при появлении
 };
 

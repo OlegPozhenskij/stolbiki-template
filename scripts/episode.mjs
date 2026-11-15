@@ -73,7 +73,7 @@ export function verifyVideo(file,t){
  return info;
 }
 async function soundtrack(ep,t){
- const key=hash(t,ep.brief.music,fileHash('scripts/music.py'));
+ const key=hash(t,ep.brief.music,fileHash('scripts/music.py'),fileHash('scripts/music_timing.py'));
  const dir=`out/${ep.id}`,audio=`${dir}/soundtrack.wav`,stamp=`${dir}/music-cache.json`;
  if(!fs.existsSync(path.join(ROOT,audio))||!fs.existsSync(path.join(ROOT,stamp))||read(stamp).key!==key){
   run(PYTHON,['scripts/music.py'],{env:environment({TIMELINE_PATH:path.join(ROOT,dir,'timeline.json'),OUTPUT_AUDIO:path.join(ROOT,audio),MUSIC_PRESET:ep.brief.music}),quiet:true});write(stamp,{key});log('Музыка: создана');

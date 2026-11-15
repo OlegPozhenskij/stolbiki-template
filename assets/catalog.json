@@ -439,5 +439,131 @@
       "foreground"
     ],
     "license": "project-original"
+  },
+  "planet-earth-v1": {
+    "module": "assets/scenes/planet-earth-v1.mjs",
+    "label": "Земля · иллюстрация 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-saturn-v1": {
+    "module": "assets/scenes/planet-saturn-v1.mjs",
+    "label": "Сатурн · иллюстрация 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-jupiter-v1": {
+    "module": "assets/scenes/planet-jupiter-v1.mjs",
+    "label": "Юпитер · иллюстрация 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-earth-v2": {
+    "module": "assets/scenes/planet-earth-v2.mjs",
+    "label": "Земля · иллюстрация 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-saturn-v2": {
+    "module": "assets/scenes/planet-saturn-v2.mjs",
+    "label": "Сатурн · иллюстрация 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-jupiter-v2": {
+    "module": "assets/scenes/planet-jupiter-v2.mjs",
+    "label": "Юпитер · иллюстрация 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-earth-v3": {
+    "module": "assets/scenes/planet-earth-v3.mjs",
+    "label": "Земля · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-saturn-v3": {
+    "module": "assets/scenes/planet-saturn-v3.mjs",
+    "label": "Сатурн · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-jupiter-v3": {
+    "module": "assets/scenes/planet-jupiter-v3.mjs",
+    "label": "Юпитер · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-mercury-v3": {
+    "module": "assets/scenes/planet-mercury-v3.mjs",
+    "label": "Меркурий · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-mars-v3": {
+    "module": "assets/scenes/planet-mars-v3.mjs",
+    "label": "Марс · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-venus-v3": {
+    "module": "assets/scenes/planet-venus-v3.mjs",
+    "label": "Венера · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-neptune-v3": {
+    "module": "assets/scenes/planet-neptune-v3.mjs",
+    "label": "Нептун · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-uranus-v3": {
+    "module": "assets/scenes/planet-uranus-v3.mjs",
+    "label": "Уран · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
   }
 }

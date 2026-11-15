@@ -22,5 +22,47 @@
     "heading": "body",
     "badgeShape": "round",
     "texture": false
+  },
+  "planet-journal-v1": {
+    "name": "Иллюстрированный журнал · 1",
+    "layout": "panel",
+    "background": "#142b40",
+    "ink": "#fff5df",
+    "title": "#fff5df",
+    "accent": "#e1b477",
+    "badge": "#ad7953",
+    "heading": "body",
+    "badgeShape": "round",
+    "texture": false,
+    "cardStyle": "journal",
+    "revision": 1
+  },
+  "planet-journal-v2": {
+    "name": "Иллюстрированный журнал · 2",
+    "layout": "panel",
+    "background": "#142b40",
+    "ink": "#fff5df",
+    "title": "#fff5df",
+    "accent": "#e1b477",
+    "badge": "#ad7953",
+    "heading": "body",
+    "badgeShape": "round",
+    "texture": false,
+    "cardStyle": "journal",
+    "revision": 2
+  },
+  "planet-journal-v3": {
+    "name": "Иллюстрированный журнал · 3",
+    "layout": "panel",
+    "background": "#142b40",
+    "ink": "#fff5df",
+    "title": "#fff5df",
+    "accent": "#e1b477",
+    "badge": "#ad7953",
+    "heading": "body",
+    "badgeShape": "round",
+    "texture": false,
+    "cardStyle": "journal",
+    "revision": 3
   }
 }

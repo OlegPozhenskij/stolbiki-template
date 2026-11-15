@@ -4,7 +4,7 @@ export const MOTION_START = 12;
 export const MOTION_LEN = 30;
 export const subjectMotion = (type: Move, t: number, bounds?: {x:number;y:number;w:number;h:number}): React.CSSProperties => {
   const m = bounds;
-  const centered = type === "fly" || type === "pulse" || type === "swim";
+  const centered = type === "fly" || type === "pulse" || type === "swim" || type === "float";
   const origin = m ? `${(m.x + m.w / 2) * 100}% ${(m.y + (centered ? m.h / 2 : m.h)) * 100}%` : "50% 90%";
   if (t <= 0 || t >= MOTION_LEN) return { transformOrigin: origin };
   const p = t / MOTION_LEN;
@@ -28,6 +28,9 @@ export const subjectMotion = (type: Move, t: number, bounds?: {x:number;y:number
     sy = 1 - 0.1 * Math.sin(w * 2) * k;
     sx = 1 + 0.06 * Math.sin(w * 2) * k;
     y = -16 * Math.sin(w) * k;
+  } else if (type === "float") {
+    y = -10 * Math.sin(w) * k;
+    r = 2 * Math.sin(w) * k;
   } else {
     r = 5 * Math.sin(w * 2.5) * k;
     y = -8 * Math.abs(Math.sin(w * 2.5)) * k;

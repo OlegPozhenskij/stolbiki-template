@@ -8,6 +8,7 @@ import {MOTION_START,subjectMotion} from "./engine/motion";
 import {SpecialBack,SpecialFront} from "./designs/Celebration";
 import {designOf} from "./designs/registry";
 import {counterValue} from "./engine/numbers.mjs";
+import {JournalCard} from "./designs/JournalCard";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const out = Easing.bezier(0.16, 1, 0.3, 1);
@@ -43,6 +44,8 @@ export const Card: React.FC<{
   const titleSize = twoLines ? 48 : oneLine;
   const n = item.fact.length;
   const factSize = twoLines ? (n <= 30 ? 36 : 32) : n <= 36 ? 42 : n <= 44 ? 38 : 34;
+
+  if (skin.cardStyle === "journal") return <JournalCard item={item} index={index} wash={wash} skin={skin} asset={asset} special={special} />;
 
 
   return (

@@ -2,6 +2,7 @@
 + звуки на появление каждого столбика. Тайминг совпадает с src/timing.ts:
 один столбик = 2 такта (при step 150 это 5 секунд, 96 BPM). Всё синтезируется кодом, никаких чужих сэмплов."""
 import json, pathlib, subprocess, os, numpy as np
+from music_timing import bar_seconds
 from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
@@ -11,7 +12,7 @@ SR = 44100
 timeline=json.loads(pathlib.Path(os.environ.get("TIMELINE_PATH",ROOT/"src/generated/timeline.json")).read_text())
 n_items=len(timeline["cardStarts"])
 FPS,STEP,INTRO,HOLD_LAST,OUTRO=(timeline[k] for k in ["fps","step","intro","holdLast","outro"])
-BAR = STEP / FPS / 2  # столбик = 2 такта
+BAR = bar_seconds(STEP, FPS)
 BEAT = BAR / 4
 BPM = 60 / BEAT
 card_t = [f / FPS for f in timeline["cardStarts"]]

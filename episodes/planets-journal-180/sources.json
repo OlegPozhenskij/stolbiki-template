@@ -1,0 +1,90 @@
+{
+  "mercury": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/mercury/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Ночью холоднее, чем в морозилке! Ближе всех планет к Солнцу. Год длится всего 88 земных суток.",
+    "refresh": false
+  },
+  "mars": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/mars/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Красный цвет ему придаёт ржавчина. Олимп — крупнейший вулкан нашей системы. Его спутники — Фобос и Деймос.",
+    "refresh": false
+  },
+  "venus": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Солнце встаёт на западе! Самая горячая планета нашей системы. Её скрывает плотная пелена облаков.",
+    "refresh": false
+  },
+  "earth": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/earth/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Океаны жидкой воды на поверхности. Крупнейшая из каменистых планет. Вокруг неё обращается одна Луна.",
+    "refresh": false
+  },
+  "neptune": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Ветры быстрее скорости звука! Дальше всех планет от Солнца. Год длится около 165 земных лет.",
+    "refresh": false
+  },
+  "uranus": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Вращается почти лёжа на боку! Его открыли с помощью телескопа. У него есть узкие тёмные кольца.",
+    "refresh": false
+  },
+  "saturn": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/saturn/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Кольца изо льда и камней. На северном полюсе — шестиугольник. Его средняя плотность ниже, чем у воды.",
+    "refresh": false
+  },
+  "jupiter": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/jupiter/jupiter-facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Красное пятно — гигантский шторм. Это самая большая планета системы. Оборот вокруг оси — меньше 10 часов.",
+    "refresh": false
+  }
+}

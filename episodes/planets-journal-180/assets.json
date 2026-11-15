@@ -1,0 +1,26 @@
+{
+  "mercury": {
+    "scene": "planet-mercury-v3"
+  },
+  "mars": {
+    "scene": "planet-mars-v3"
+  },
+  "venus": {
+    "scene": "planet-venus-v3"
+  },
+  "earth": {
+    "scene": "planet-earth-v3"
+  },
+  "neptune": {
+    "scene": "planet-neptune-v3"
+  },
+  "uranus": {
+    "scene": "planet-uranus-v3"
+  },
+  "saturn": {
+    "scene": "planet-saturn-v3"
+  },
+  "jupiter": {
+    "scene": "planet-jupiter-v3"
+  }
+}

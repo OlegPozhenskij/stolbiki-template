@@ -1,0 +1,53 @@
+{
+  "service": "ManyMotions",
+  "projectId": "vp_10a4f2995b004400bed9",
+  "mainVideoId": "vv_1409c98723cc4c55b005",
+  "mode": "Free editor import; local SVG and Remotion generation",
+  "paidGeneration": false,
+  "targetSeconds": 180,
+  "pilots": [
+    {
+      "episode": "planets-pilot-1",
+      "seconds": 20,
+      "videoId": "vv_96a07dbd519e47659724",
+      "ok": true,
+      "asset_id": "va_91e7ab1cd9b64c9aab0b",
+      "name": "Pilot 1 - baseline",
+      "kind": "video",
+      "url": "https://v3b.fal.media/files/b/0ab29615/EdwN32dOFQe71Req1C9oq_Pilot%201%20-%20baseline"
+    },
+    {
+      "episode": "planets-pilot-2",
+      "seconds": 20,
+      "videoId": "vv_ea470738c30340139fe7",
+      "ok": true,
+      "asset_id": "va_ff3fb233db2e462b8c70",
+      "name": "Pilot 2 - larger planets and expressions",
+      "kind": "video",
+      "url": "https://v3b.fal.media/files/b/0ab2961c/2FQBpleRPV3Kn8T3rNoMb_Pilot%202%20-%20larger%20planets%20and%20expressions"
+    },
+    {
+      "episode": "planets-pilot-3",
+      "seconds": 20,
+      "videoId": "vv_1c60e4dc42624c648b9a",
+      "ok": true,
+      "asset_id": "va_476ef347730b4f0a8fa1",
+      "name": "Pilot 3 - selected journal",
+      "kind": "video",
+      "url": "https://v3b.fal.media/files/b/0ab2961e/YUmxctMH5jrmfSx5OyqWc_Pilot%203%20-%20selected%20journal"
+    }
+  ],
+  "final": {
+    "status": "imported",
+    "assetId": "va_c359ca2a211440e1962f",
+    "url": "https://v3b.fal.media/files/b/0ab2966d/ckz0CDlRe3ueloUfrSSE-_Planets%20-%20final%20180%20seconds",
+    "clipId": "vc_6b43416a37614c78b3d7",
+    "videoId": "vv_1409c98723cc4c55b005",
+    "localFile": "out/planets-journal-180/video.mp4",
+    "seconds": 180,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "futureReviewPolicy": {"defaultCycles": 1, "pilotCards": 3, "extraCycles": "Only on request or a visible defect"}
+}
