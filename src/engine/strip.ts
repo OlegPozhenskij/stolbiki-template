@@ -2,9 +2,9 @@ import {Easing,interpolate} from 'remotion';
 import {Timeline} from './timeline.mjs';
 const clamp={extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
 const smooth=Easing.bezier(.65,0,.35,1);
-export function cameraOffset(frame:number,count:number,t:Timeline){
+export function cameraOffset(frame:number,count:number,t:Timeline,layout={visible:4,width:480}){
  let x=0;
- for(let i=4;i<count;i++)x+=interpolate(frame,[t.cardStarts[i]-8,t.cardStarts[i]+18],[0,480],{...clamp,easing:smooth});
+ for(let i=layout.visible;i<count;i++)x+=interpolate(frame,[t.cardStarts[i]-8,t.cardStarts[i]+18],[0,layout.width],{...clamp,easing:smooth});
  return x;
 }
 export function cardWash(frame:number,index:number,count:number,t:Timeline){

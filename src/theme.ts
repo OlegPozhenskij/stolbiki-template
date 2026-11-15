@@ -27,6 +27,8 @@ export type Item = {
   artWidth?: number;
   portraitWidth?: number;
   emotion?: number;
+  photoCredit?: string;
+  contextKind?: string;
   move?: Move; // короткое движение животного при появлении
 };
 

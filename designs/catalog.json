@@ -77,5 +77,19 @@
     "badgeShape": "hex",
     "texture": false,
     "cardStyle": "cosmic"
+  },
+  "cosmic-photo-stickers": {
+    "name": "Космос · реальные фотостикеры",
+    "layout": "panel",
+    "background": "#080c24",
+    "ink": "#fffaf2",
+    "title": "#fffaf2",
+    "accent": "#ffe29a",
+    "badge": "#172447",
+    "heading": "body",
+    "badgeShape": "hex",
+    "texture": false,
+    "cardStyle": "sticker",
+    "columns": 3
   }
 }

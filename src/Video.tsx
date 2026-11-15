@@ -1,12 +1,13 @@
 import {cameraOffset,cardWash} from "./engine/strip";
 import {designOf} from "./designs/registry";
 import {comparisonState} from './engine/scale.mjs';
+import {SpaceBackdrop} from './designs/SpaceBackdrop';
 import React from "react";
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Card } from "./Card";
 import { BODY, HAND } from "./fonts";
 import { GRAPHITE, VideoProps, imageFor, motifOf } from "./theme";
-import { COL_W, VISIBLE, timing } from "./timing";
+import { VISIBLE, timing } from "./timing";
 import "./fonts";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -46,17 +47,18 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
   const skin=designOf(design,theme);
   const pencil=skin.layout === "album";
   const timeline=timing(n,short,pace);
-  const {intro,cardStart,ctaAt,stripX}=timeline;
+  const {intro,cardStart,ctaAt}=timeline;
+  const visible=skin.columns??VISIBLE,colW=1920/visible,stripX=n<visible?(1920-n*colW)/2:0;
   const k = intro / 120; // заставка сжимается вместе с INTRO
   const introOut = intro - 20; // заставка уходит за 20 кадров до первого столбика
 
   // Лента сдвигается, когда новому столбику не хватает места
-  const cameraX=cameraOffset(frame,n,timeline);
-  const comparison=skin.cardStyle==='cosmic'?comparisonState(frame,items,timeline):undefined;
+  const cameraX=cameraOffset(frame,n,timeline,{visible,width:colW});
+  const comparison=['cosmic','sticker'].includes(skin.cardStyle??'')?comparisonState(frame,items,timeline,{visible,maxPixels:skin.cardStyle==='sticker'?580:400}):undefined;
   // Перемотки назад нет: в финале последний (особый) столбик остаётся справа, вопрос — на трёх левых
-  const many = n > VISIBLE;
+  const many = n > visible;
 
-  const ctaIn = intro===0&&n<=4?0:interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
+  const ctaIn = intro===0&&(n<=4||skin.cardStyle==='sticker')?0:interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
   const introIds = [...new Set([items[0].id, items[Math.min(1, n - 1)].id, items[Math.max(0, n - 2)].id, items[n - 1].id])];
   const introPics = introIds.map((id, j) => ({ id, ...SLOTS[SLOT_PICK[introIds.length][j]], d: Math.round((4 + 6 * j) * k) }));
   const textColor = skin.ink;
@@ -68,18 +70,19 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
         backgroundImage: skin.texture ? `url(${staticFile("pencil/paper.jpg")})` : undefined,
       }}
     >
+      {skin.cardStyle==='sticker'&&<SpaceBackdrop seed="intro-starfield" width={1920} height={1080} frame={frame}/>}
       {/* Лента столбиков: всегда на весь кадр */}
       <div style={{ position: "absolute", left: stripX, top: 0, translate: `${-cameraX}px 0px` }}>
         {items.map((item, i) => (
-          <Sequence key={item.id} from={cardStart(i)} durationInFrames={(i+4<n?cardStart(i+4)+30:timeline.total)-cardStart(i)} layout="none">
-            <div style={{ position: "absolute", left: i * COL_W, top: 0 }}>
+          <Sequence key={item.id} from={cardStart(i)} durationInFrames={(i+visible<n?cardStart(i+visible)+30:timeline.total)-cardStart(i)} layout="none">
+            <div style={{ position: "absolute", left: i * colW, top: 0 }}>
               <Card
                 item={item}
                 index={i}
                 theme={theme}
                 design={design}
                 assets={assets}
-                paperX={stripX + i * COL_W}
+                paperX={stripX + i * colW}
                 leftLine={i === 0 && stripX > 0}
                 motif={motif}
                 special={i === n - 1 && n > 2}
@@ -91,7 +94,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
         ))}
       </div>
 
-      {intro===0&&skin.cardStyle==='cosmic'&&frame<timeline.step&&<div style={{position:'absolute',left:560,right:80,top:230,bottom:230,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center',fontFamily:BODY,color:skin.ink,opacity:interpolate(frame,[0,14,timeline.step-24,timeline.step],[0,1,1,0],clamp)}}>
+      {intro===0&&['cosmic','sticker'].includes(skin.cardStyle??'')&&frame<timeline.step&&<div style={{position:'absolute',left:colW+80,right:80,top:230,bottom:230,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center',fontFamily:BODY,color:skin.ink,opacity:interpolate(frame,[0,14,timeline.step-24,timeline.step],[0,1,1,0],clamp)}}>
         <div style={{fontSize:100,fontWeight:900,lineHeight:1.08,maxWidth:1150}}>{title}</div>
         <div style={{fontSize:44,fontWeight:800,marginTop:34}}>От меньшего к большему · {n} героев</div>
       </div>}
@@ -177,7 +180,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
       {/* Вопрос зрителю в конце */}
       <AbsoluteFill
         style={{
-          right: many ? COL_W : 0, // длинная лента: особый последний столбик справа остаётся открытым
+          right: many ? colW : 0, // длинная лента: особый последний столбик справа остаётся открытым
           width: "auto",
           justifyContent: "center",
           alignItems: "center",

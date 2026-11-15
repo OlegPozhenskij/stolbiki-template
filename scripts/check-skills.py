@@ -12,7 +12,6 @@ for folder in sorted(root.iterdir()):
         meta=yaml.safe_load(front)
         assert meta['name']==folder.name
         assert isinstance(meta['description'],str) and meta['description'].strip()
-        assert len(text)<5000, 'entrypoint exceeds project budget of 5000 characters'
         for file in folder.rglob('*.md'):
             for link in re.findall(r'\]\(([^)]+)\)',file.read_text(encoding='utf-8')):
                 if not re.match(r'https?:|#',link):

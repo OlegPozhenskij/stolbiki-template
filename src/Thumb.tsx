@@ -5,6 +5,7 @@ import { Badge } from "./Badge";
 import { BODY, HAND } from "./fonts";
 import { Theme, ThumbProps, imageFor, motifOf } from "./theme";
 import "./fonts";
+import {StickerCover} from './designs/StickerCover';
 
 // Обложка 1280x720. Три элемента: вопрос, веер размытых карточек со странными существами, бейдж «∞».
 // Существа видны только силуэтом: зритель понимает, что там кто-то необычный, но не понимает кто.
@@ -69,6 +70,7 @@ const FAN: Record<number, { x: number; y: number; w: number; rot: number; blur: 
 
 export const Thumb: React.FC<ThumbProps> = ({ theme, title, ids, badge, motif: motifName, design, assets }) => {
   const skin=designOf(design,theme);
+  if(skin.cardStyle==='sticker')return <StickerCover theme={theme} title={title} ids={ids} badge={badge} motif={motifName} design={design} assets={assets}/>;
   const pencil=skin.layout === "album";
   const motif = motifOf(motifName);
   return (

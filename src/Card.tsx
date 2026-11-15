@@ -10,6 +10,7 @@ import {designOf} from "./designs/registry";
 import {counterValue} from "./engine/numbers.mjs";
 import {JournalCard} from "./designs/JournalCard";
 import {CosmicCard} from "./designs/CosmicCard";
+import {StickerCard} from "./designs/StickerCard";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const out = Easing.bezier(0.16, 1, 0.3, 1);
@@ -49,6 +50,7 @@ export const Card: React.FC<{
 
   if (skin.cardStyle === "journal") return <JournalCard item={item} index={index} wash={wash} skin={skin} asset={asset} special={special} />;
   if (skin.cardStyle === "cosmic") return <CosmicCard item={item} index={index} wash={wash} skin={skin} asset={asset} comparison={comparison} />;
+  if (skin.cardStyle === "sticker") return <StickerCard item={item} index={index} wash={wash} skin={skin} asset={asset} comparison={comparison} />;
 
 
   return (
