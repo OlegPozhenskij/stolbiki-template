@@ -34,6 +34,7 @@ export function validateEpisode(ep,{assetsRequired=true,now=new Date()}={}){
   if(!i.title || !i.fact || [...i.fact].length>45)errors.push(`${i.id}: заголовок и факт до 45 знаков обязательны`);
   if(!((typeof i.value==='number'&&Number.isFinite(i.value))||(typeof i.value==='string'&&i.value.length>0)))errors.push(`${i.id}: нужно число или непустой текст value`);
   if(typeof i.unit!=='string')errors.push(`${i.id}: нужна единица unit`);
+  if(skin?.cardStyle==='cosmic'&&(!(i.physicalSizeKm>0)||!Number.isFinite(i.physicalSizeKm)||!(i.artWidth>0)))errors.push(`${i.id}: нужны физический размер и ширина рисунка для реальных пропорций`);
   if(i.move&&!['hop','fly','swim','pulse','wiggle','float'].includes(i.move))errors.push(`${i.id}: неизвестное движение`);
   if(i.details){
    if(!Array.isArray(i.details))errors.push(`${i.id}: details должны быть массивом`);

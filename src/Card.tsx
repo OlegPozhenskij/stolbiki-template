@@ -9,6 +9,7 @@ import {SpecialBack,SpecialFront} from "./designs/Celebration";
 import {designOf} from "./designs/registry";
 import {counterValue} from "./engine/numbers.mjs";
 import {JournalCard} from "./designs/JournalCard";
+import {CosmicCard} from "./designs/CosmicCard";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const out = Easing.bezier(0.16, 1, 0.3, 1);
@@ -25,8 +26,9 @@ export const Card: React.FC<{
   motif: Motif;
   design?: string;
   assets?: Record<string, import("./theme").MediaAsset>;
+  comparison?: import('./engine/scale.mjs').Comparison;
   special?: boolean; // последний столбик: появляется с лучами, вспышкой и звёздочками
-}> = ({ item, index, theme, wash, paperX, leftLine, motif, special, design, assets }) => {
+}> = ({ item, index, theme, wash, paperX, leftLine, motif, special, design, assets, comparison }) => {
   const frame = useCurrentFrame();
   const skin = designOf(design,theme);
   const pencil = skin.layout === "album";
@@ -46,6 +48,7 @@ export const Card: React.FC<{
   const factSize = twoLines ? (n <= 30 ? 36 : 32) : n <= 36 ? 42 : n <= 44 ? 38 : 34;
 
   if (skin.cardStyle === "journal") return <JournalCard item={item} index={index} wash={wash} skin={skin} asset={asset} special={special} />;
+  if (skin.cardStyle === "cosmic") return <CosmicCard item={item} index={index} wash={wash} skin={skin} asset={asset} comparison={comparison} />;
 
 
   return (

@@ -22,6 +22,11 @@ export type Item = {
   metricLabel?: string;
   finaleLabel?: string;
   details?: {at:number;text:string}[]; // локальные кадры, подписи из источников
+  physicalSizeKm?: number;
+  scaleGroup?: number;
+  artWidth?: number;
+  portraitWidth?: number;
+  emotion?: number;
   move?: Move; // короткое движение животного при появлении
 };
 

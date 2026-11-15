@@ -1,5 +1,6 @@
 import {cameraOffset,cardWash} from "./engine/strip";
 import {designOf} from "./designs/registry";
+import {comparisonState} from './engine/scale.mjs';
 import React from "react";
 import { AbsoluteFill, Easing, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Card } from "./Card";
@@ -51,10 +52,11 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
 
   // Лента сдвигается, когда новому столбику не хватает места
   const cameraX=cameraOffset(frame,n,timeline);
+  const comparison=skin.cardStyle==='cosmic'?comparisonState(frame,items,timeline):undefined;
   // Перемотки назад нет: в финале последний (особый) столбик остаётся справа, вопрос — на трёх левых
   const many = n > VISIBLE;
 
-  const ctaIn = interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
+  const ctaIn = intro===0&&n<=4?0:interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
   const introIds = [...new Set([items[0].id, items[Math.min(1, n - 1)].id, items[Math.max(0, n - 2)].id, items[n - 1].id])];
   const introPics = introIds.map((id, j) => ({ id, ...SLOTS[SLOT_PICK[introIds.length][j]], d: Math.round((4 + 6 * j) * k) }));
   const textColor = skin.ink;
@@ -69,7 +71,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
       {/* Лента столбиков: всегда на весь кадр */}
       <div style={{ position: "absolute", left: stripX, top: 0, translate: `${-cameraX}px 0px` }}>
         {items.map((item, i) => (
-          <Sequence key={item.id} from={cardStart(i)} layout="none">
+          <Sequence key={item.id} from={cardStart(i)} durationInFrames={(i+4<n?cardStart(i+4)+30:timeline.total)-cardStart(i)} layout="none">
             <div style={{ position: "absolute", left: i * COL_W, top: 0 }}>
               <Card
                 item={item}
@@ -82,12 +84,19 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
                 motif={motif}
                 special={i === n - 1 && n > 2}
                 wash={cardWash(frame,i,n,timeline)}
+                comparison={comparison?.[i]}
               />
             </div>
           </Sequence>
         ))}
       </div>
 
+      {intro===0&&skin.cardStyle==='cosmic'&&frame<timeline.step&&<div style={{position:'absolute',left:560,right:80,top:230,bottom:230,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center',fontFamily:BODY,color:skin.ink,opacity:interpolate(frame,[0,14,timeline.step-24,timeline.step],[0,1,1,0],clamp)}}>
+        <div style={{fontSize:100,fontWeight:900,lineHeight:1.08,maxWidth:1150}}>{title}</div>
+        <div style={{fontSize:44,fontWeight:800,marginTop:34}}>От меньшего к большему · {n} героев</div>
+      </div>}
+
+      {intro>0&&<>
       {/* Заставка: рисунки вокруг заголовка */}
       {introPics.map((p, j) => (
         <div
@@ -164,6 +173,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
         ) : null}
       </AbsoluteFill>
 
+      </>}
       {/* Вопрос зрителю в конце */}
       <AbsoluteFill
         style={{

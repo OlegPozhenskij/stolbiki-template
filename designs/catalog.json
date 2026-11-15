@@ -64,5 +64,18 @@
     "texture": false,
     "cardStyle": "journal",
     "revision": 3
+  },
+  "cosmic-pencil-hex": {
+    "name": "Карандашный космос · шестиугольник",
+    "layout": "panel",
+    "background": "#172b46",
+    "ink": "#fff5df",
+    "title": "#fff5df",
+    "accent": "#e2b97f",
+    "badge": "#e1bd82",
+    "heading": "body",
+    "badgeShape": "hex",
+    "texture": false,
+    "cardStyle": "cosmic"
   }
 }

@@ -106,7 +106,7 @@ export async function preview(ep,options={}){
  const {t}=await prepare(ep);bundle();
  const selected=options.cards?String(options.cards).split(','):ep.content.items.map(i=>i.id);
  for(const id of selected)if(!ep.content.items.some(i=>i.id===id))throw new Error(`Карточка не найдена: ${id}`);
- const frames=[Math.floor(t.intro*.45),...ep.content.items.flatMap((item,i)=>selected.includes(item.id)?[t.cardStarts[i]+60]:[]),t.total-10];
+ const frames=[t.intro?Math.floor(t.intro*.45):45,...ep.content.items.flatMap((item,i)=>selected.includes(item.id)?[t.cardStarts[i]+60]:[]),t.total-10];
  for(const f of new Set(frames))remotion(['still','build','Episode',`out/${ep.id}/check-${String(f).padStart(6,'0')}.png`,`--frame=${f}`,`--browser-executable=${chrome()}`,'--log=error'],{quiet:true});
  remotion(['still','build','Cover',`out/${ep.id}/thumb.png`,`--browser-executable=${chrome()}`,'--log=error'],{quiet:true});
  write(`out/${ep.id}/contact-frames.json`,[...new Set(frames)].map(f=>`check-${String(f).padStart(6,'0')}.png`));

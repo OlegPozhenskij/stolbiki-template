@@ -28,6 +28,9 @@ def hz(m): return 440 * 2 ** ((m - 69) / 12)
 
 def put(sig, t, gain=1.0, pan=0.0):
     i = int(t * SR)
+    if i < 0:
+        sig = sig[-i:]
+        i = 0
     if i >= N: return
     sig = sig[: N - i] * gain
     mixL[i:i + len(sig)] += sig * np.sqrt((1 - pan) / 2)
