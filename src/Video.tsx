@@ -58,7 +58,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
   // Перемотки назад нет: в финале последний (особый) столбик остаётся справа, вопрос — на трёх левых
   const many = n > visible;
 
-  const ctaIn = intro===0&&(n<=4||skin.cardStyle==='sticker')?0:interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
+  const ctaIn = intro===0&&(n<=4||(skin.cardStyle==='sticker'&&n<=6))?0:interpolate(frame, [ctaAt, ctaAt + 20], [0, 1], { ...clamp, easing: out });
   const introIds = [...new Set([items[0].id, items[Math.min(1, n - 1)].id, items[Math.max(0, n - 2)].id, items[n - 1].id])];
   const introPics = introIds.map((id, j) => ({ id, ...SLOTS[SLOT_PICK[introIds.length][j]], d: Math.round((4 + 6 * j) * k) }));
   const textColor = skin.ink;

@@ -1,5 +1,6 @@
 export type Theme = "pencil" | "photo" | "vector";
-export type MediaAsset = {composite:string;background?:string;foreground?:string;bounds?:{x:number;y:number;w:number;h:number}};
+export type ContextSticker={image:string;x:number;y:number;size:number;rotate?:number};
+export type MediaAsset = {composite:string;background?:string;foreground?:string;contexts?:ContextSticker[];bounds?:{x:number;y:number;w:number;h:number}};
 
 import motifs from "./motifs.json";
 

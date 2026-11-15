@@ -1,0 +1,452 @@
+[
+  {
+    "id": "ingenuity",
+    "source": "public/media/cosmic-stickers-300/ingenuity.svg",
+    "target": "public/generated/sticker-cache/50d84f0c96d8ad1ca18d4971.png"
+  },
+  {
+    "id": "curiosity",
+    "source": "public/media/cosmic-stickers-300/curiosity.svg",
+    "target": "public/generated/sticker-cache/6fb3e99ca0b37c49c18d9ba6.png"
+  },
+  {
+    "id": "hubble",
+    "source": "public/media/cosmic-stickers-300/hubble.svg",
+    "target": "public/generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png"
+  },
+  {
+    "id": "iss",
+    "source": "public/media/cosmic-stickers-300/iss.svg",
+    "target": "public/generated/sticker-cache/cec1a12f58844357b28e6824.png"
+  },
+  {
+    "id": "bennu",
+    "source": "public/media/cosmic-stickers-300/bennu.svg",
+    "target": "public/generated/sticker-cache/c1960b870695a5db410c4a46.png"
+  },
+  {
+    "id": "itokawa",
+    "source": "public/media/cosmic-stickers-300/itokawa.svg",
+    "target": "public/generated/sticker-cache/e134b64159eb2394ed20ae1d.png"
+  },
+  {
+    "id": "ryugu",
+    "source": "public/media/cosmic-stickers-300/ryugu.svg",
+    "target": "public/generated/sticker-cache/c704b837542d8364a1ea7944.png"
+  },
+  {
+    "id": "hartley-2",
+    "source": "public/media/cosmic-stickers-300/hartley-2.svg",
+    "target": "public/generated/sticker-cache/0510b617b8e5123e0fe81f03.png"
+  },
+  {
+    "id": "67p",
+    "source": "public/media/cosmic-stickers-300/67p.svg",
+    "target": "public/generated/sticker-cache/5e031f071fc8598880b28380.png"
+  },
+  {
+    "id": "toutatis",
+    "source": "public/media/cosmic-stickers-300/toutatis.svg",
+    "target": "public/generated/sticker-cache/a48c468464bd894f50b709f2.png"
+  },
+  {
+    "id": "geographos",
+    "source": "public/media/cosmic-stickers-300/geographos.svg",
+    "target": "public/generated/sticker-cache/c6fa4bc87e589bd0804c7260.png"
+  },
+  {
+    "id": "halley",
+    "source": "public/media/cosmic-stickers-300/halley.svg",
+    "target": "public/generated/sticker-cache/0a1b50264a1b014837ba7bd4.png"
+  },
+  {
+    "id": "crab-pulsar-beams",
+    "source": "public/media/cosmic-stickers-300/crab-pulsar-beams.svg",
+    "target": "public/generated/sticker-cache/90636a329ee2baa7264a8647.png"
+  },
+  {
+    "id": "crab-pulsar",
+    "source": "public/media/cosmic-stickers-300/crab-pulsar.svg",
+    "target": "public/generated/sticker-cache/f9ee5d3ac778ec0d19c5a0da.png"
+  },
+  {
+    "id": "eros",
+    "source": "public/media/cosmic-stickers-300/eros.svg",
+    "target": "public/generated/sticker-cache/c76c6dbb434986989a535880.png"
+  },
+  {
+    "id": "ida",
+    "source": "public/media/cosmic-stickers-300/ida.svg",
+    "target": "public/generated/sticker-cache/d651d2614ea30b2b5b8459b4.png"
+  },
+  {
+    "id": "lutetia",
+    "source": "public/media/cosmic-stickers-300/lutetia.svg",
+    "target": "public/generated/sticker-cache/c0da3eeee7eeeb9d3131c884.png"
+  },
+  {
+    "id": "mimas",
+    "source": "public/media/cosmic-stickers-300/mimas.svg",
+    "target": "public/generated/sticker-cache/2568057f64285e5eaad51c80.png"
+  },
+  {
+    "id": "hyperion",
+    "source": "public/media/cosmic-stickers-300/hyperion.svg",
+    "target": "public/generated/sticker-cache/367c9e452f6ed0293176db39.png"
+  },
+  {
+    "id": "hygiea",
+    "source": "public/media/cosmic-stickers-300/hygiea.svg",
+    "target": "public/generated/sticker-cache/eb2f0f795168eecede6c98a9.png"
+  },
+  {
+    "id": "miranda",
+    "source": "public/media/cosmic-stickers-300/miranda.svg",
+    "target": "public/generated/sticker-cache/6dd3971490cbe755fea28e75.png"
+  },
+  {
+    "id": "enceladus",
+    "source": "public/media/cosmic-stickers-300/enceladus.svg",
+    "target": "public/generated/sticker-cache/06a291ad1987b91acc2fa404.png"
+  },
+  {
+    "id": "pallas",
+    "source": "public/media/cosmic-stickers-300/pallas.svg",
+    "target": "public/generated/sticker-cache/0dd9b1fc2ad9b501d0766801.png"
+  },
+  {
+    "id": "vesta",
+    "source": "public/media/cosmic-stickers-300/vesta.svg",
+    "target": "public/generated/sticker-cache/3fe59eb59f474e74439b4249.png"
+  },
+  {
+    "id": "ceres",
+    "source": "public/media/cosmic-stickers-300/ceres.svg",
+    "target": "public/generated/sticker-cache/ab56aa253ec52e0bd9a8f56e.png"
+  },
+  {
+    "id": "sedna",
+    "source": "public/media/cosmic-stickers-300/sedna.svg",
+    "target": "public/generated/sticker-cache/5a5aa29c88876c0604219313.png"
+  },
+  {
+    "id": "quaoar-system",
+    "source": "public/media/cosmic-stickers-300/quaoar-system.svg",
+    "target": "public/generated/sticker-cache/19c600f7f8668f4f836803fa.png"
+  },
+  {
+    "id": "quaoar",
+    "source": "public/media/cosmic-stickers-300/quaoar.svg",
+    "target": "public/generated/sticker-cache/ec8915b435e7237188da338c.png"
+  },
+  {
+    "id": "dione",
+    "source": "public/media/cosmic-stickers-300/dione.svg",
+    "target": "public/generated/sticker-cache/b8ff52e5406a8bf25c049f90.png"
+  },
+  {
+    "id": "umbriel",
+    "source": "public/media/cosmic-stickers-300/umbriel.svg",
+    "target": "public/generated/sticker-cache/3626b2aef106075ad598f298.png"
+  },
+  {
+    "id": "charon",
+    "source": "public/media/cosmic-stickers-300/charon.svg",
+    "target": "public/generated/sticker-cache/0dcdbbbabf292b5d23c2eb1d.png"
+  },
+  {
+    "id": "makemake",
+    "source": "public/media/cosmic-stickers-300/makemake.svg",
+    "target": "public/generated/sticker-cache/21ef4930f298b63457ca1c4c.png"
+  },
+  {
+    "id": "iapetus",
+    "source": "public/media/cosmic-stickers-300/iapetus.svg",
+    "target": "public/generated/sticker-cache/c03b9ec4c119694fb19497e6.png"
+  },
+  {
+    "id": "rhea",
+    "source": "public/media/cosmic-stickers-300/rhea.svg",
+    "target": "public/generated/sticker-cache/b890402636fb5c412609c5bf.png"
+  },
+  {
+    "id": "titania",
+    "source": "public/media/cosmic-stickers-300/titania.svg",
+    "target": "public/generated/sticker-cache/249b918e7d01a40bf0e69735.png"
+  },
+  {
+    "id": "haumea",
+    "source": "public/media/cosmic-stickers-300/haumea.svg",
+    "target": "public/generated/sticker-cache/2ebd67cc8527080ac8c2d961.png"
+  },
+  {
+    "id": "eris",
+    "source": "public/media/cosmic-stickers-300/eris.svg",
+    "target": "public/generated/sticker-cache/c0e9dccd927ea632f467d3a8.png"
+  },
+  {
+    "id": "pluto",
+    "source": "public/media/cosmic-stickers-300/pluto.svg",
+    "target": "public/generated/sticker-cache/bb4d4520669086df67442517.png"
+  },
+  {
+    "id": "triton",
+    "source": "public/media/cosmic-stickers-300/triton.svg",
+    "target": "public/generated/sticker-cache/9bc3b1f1734e50d40c449545.png"
+  },
+  {
+    "id": "europa",
+    "source": "public/media/cosmic-stickers-300/europa.svg",
+    "target": "public/generated/sticker-cache/a36821181ebefbcfe70a2ccd.png"
+  },
+  {
+    "id": "moon",
+    "source": "public/media/cosmic-stickers-300/moon.svg",
+    "target": "public/generated/sticker-cache/c456c0bc26c687325d77745e.png"
+  },
+  {
+    "id": "io",
+    "source": "public/media/cosmic-stickers-300/io.svg",
+    "target": "public/generated/sticker-cache/3b7f57e6943662d52b0995ca.png"
+  },
+  {
+    "id": "callisto",
+    "source": "public/media/cosmic-stickers-300/callisto.svg",
+    "target": "public/generated/sticker-cache/fde6ff5deddca030a75ffe71.png"
+  },
+  {
+    "id": "mercury",
+    "source": "public/media/cosmic-stickers-300/mercury.svg",
+    "target": "public/generated/sticker-cache/9d364136a15c0de558d82138.png"
+  },
+  {
+    "id": "titan",
+    "source": "public/media/cosmic-stickers-300/titan.svg",
+    "target": "public/generated/sticker-cache/602acad6b014eb321467ddce.png"
+  },
+  {
+    "id": "ganymede",
+    "source": "public/media/cosmic-stickers-300/ganymede.svg",
+    "target": "public/generated/sticker-cache/8e96ba2f2941f6fb43569be3.png"
+  },
+  {
+    "id": "mars",
+    "source": "public/media/cosmic-stickers-300/mars.svg",
+    "target": "public/generated/sticker-cache/bb132d25913bd1a1d49f4ab3.png"
+  },
+  {
+    "id": "sirius-b",
+    "source": "public/media/cosmic-stickers-300/sirius-b.svg",
+    "target": "public/generated/sticker-cache/10262a65c713595ff35ee3a6.png"
+  },
+  {
+    "id": "venus",
+    "source": "public/media/cosmic-stickers-300/venus.svg",
+    "target": "public/generated/sticker-cache/1927ab7ccd53cd92da3f45ed.png"
+  },
+  {
+    "id": "earth",
+    "source": "public/media/cosmic-stickers-300/earth.svg",
+    "target": "public/generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png"
+  },
+  {
+    "id": "neptune",
+    "source": "public/media/cosmic-stickers-300/neptune.svg",
+    "target": "public/generated/sticker-cache/670a478605fa9be9b30a1825.png"
+  },
+  {
+    "id": "uranus",
+    "source": "public/media/cosmic-stickers-300/uranus.svg",
+    "target": "public/generated/sticker-cache/5d24709d2264674f73d84f93.png"
+  },
+  {
+    "id": "saturn",
+    "source": "public/media/cosmic-stickers-300/saturn.svg",
+    "target": "public/generated/sticker-cache/4cafa43856e103ca5ea63766.png"
+  },
+  {
+    "id": "jupiter",
+    "source": "public/media/cosmic-stickers-300/jupiter.svg",
+    "target": "public/generated/sticker-cache/eed9dabde71df65c84eb6996.png"
+  },
+  {
+    "id": "sun",
+    "source": "public/media/cosmic-stickers-300/sun.svg",
+    "target": "public/generated/sticker-cache/319b6f1381a7391ddbdb90a1.png"
+  },
+  {
+    "id": "sirius",
+    "source": "public/media/cosmic-stickers-300/sirius.svg",
+    "target": "public/generated/sticker-cache/b8af843cf18a56448ade0605.png"
+  },
+  {
+    "id": "sagittarius-a",
+    "source": "public/media/cosmic-stickers-300/sagittarius-a.svg",
+    "target": "public/generated/sticker-cache/5da9aaba96bdb1ef1a915698.png"
+  },
+  {
+    "id": "aldebaran",
+    "source": "public/media/cosmic-stickers-300/aldebaran.svg",
+    "target": "public/generated/sticker-cache/8ed0412fd4f05e808fa8596e.png"
+  },
+  {
+    "id": "antares",
+    "source": "public/media/cosmic-stickers-300/antares.svg",
+    "target": "public/generated/sticker-cache/e78968f96e3f292e282c9618.png"
+  },
+  {
+    "id": "betelgeuse",
+    "source": "public/media/cosmic-stickers-300/betelgeuse.svg",
+    "target": "public/generated/sticker-cache/0bb952397ba7cb59d42bc6fa.png"
+  },
+  {
+    "id": "m87-black-hole",
+    "source": "public/media/cosmic-stickers-300/m87-black-hole.svg",
+    "target": "public/generated/sticker-cache/b499cbe12987b540978fccdb.png"
+  },
+  {
+    "id": "ring-nebula",
+    "source": "public/media/cosmic-stickers-300/ring-nebula.svg",
+    "target": "public/generated/sticker-cache/0e715eec3cd826268eff45b3.png"
+  },
+  {
+    "id": "helix-nebula",
+    "source": "public/media/cosmic-stickers-300/helix-nebula.svg",
+    "target": "public/generated/sticker-cache/39f3af4ad19294a733cee074.png"
+  },
+  {
+    "id": "crab-nebula",
+    "source": "public/media/cosmic-stickers-300/crab-nebula.svg",
+    "target": "public/generated/sticker-cache/cc32ee4c3b8483e45b28a2a9.png"
+  },
+  {
+    "id": "pleiades",
+    "source": "public/media/cosmic-stickers-300/pleiades.svg",
+    "target": "public/generated/sticker-cache/35b5ef5538c6f3962562423a.png"
+  },
+  {
+    "id": "orion-nebula",
+    "source": "public/media/cosmic-stickers-300/orion-nebula.svg",
+    "target": "public/generated/sticker-cache/39c6f2951c84a3689690c00f.png"
+  },
+  {
+    "id": "eagle-nebula",
+    "source": "public/media/cosmic-stickers-300/eagle-nebula.svg",
+    "target": "public/generated/sticker-cache/19c59ff0087c0e39ff120de5.png"
+  },
+  {
+    "id": "tuc47",
+    "source": "public/media/cosmic-stickers-300/tuc47.svg",
+    "target": "public/generated/sticker-cache/55ea4768e1004d06b8eb29d4.png"
+  },
+  {
+    "id": "m13",
+    "source": "public/media/cosmic-stickers-300/m13.svg",
+    "target": "public/generated/sticker-cache/101d87dc1db26b428f2f454d.png"
+  },
+  {
+    "id": "triangulum",
+    "source": "public/media/cosmic-stickers-300/triangulum.svg",
+    "target": "public/generated/sticker-cache/38e1d788d3911da848a7037e.png"
+  },
+  {
+    "id": "milky-way",
+    "source": "public/media/cosmic-stickers-300/milky-way.svg",
+    "target": "public/generated/sticker-cache/61c1bc5480632d507226711d.png"
+  },
+  {
+    "id": "andromeda",
+    "source": "public/media/cosmic-stickers-300/andromeda.svg",
+    "target": "public/generated/sticker-cache/4b3c08f536ff1073049b7392.png"
+  },
+  {
+    "id": "rosetta",
+    "source": "public/media/cosmic-stickers-300/rosetta.svg",
+    "target": "public/generated/sticker-cache/67c89248b009dec170d6e17f.png"
+  },
+  {
+    "id": "osiris",
+    "source": "public/media/cosmic-stickers-300/osiris.svg",
+    "target": "public/generated/sticker-cache/aa96793c8fc6a9684eeed891.png"
+  },
+  {
+    "id": "cassini",
+    "source": "public/media/cosmic-stickers-300/cassini.svg",
+    "target": "public/generated/sticker-cache/2f2a1698e45dcdf4befcf903.png"
+  },
+  {
+    "id": "voyager",
+    "source": "public/media/cosmic-stickers-300/voyager.svg",
+    "target": "public/generated/sticker-cache/d37cc728bf94306b6824b501.png"
+  },
+  {
+    "id": "new-horizons",
+    "source": "public/media/cosmic-stickers-300/new-horizons.svg",
+    "target": "public/generated/sticker-cache/242ef01cf3de00c95955c2d0.png"
+  },
+  {
+    "id": "jwst",
+    "source": "public/media/cosmic-stickers-300/jwst.svg",
+    "target": "public/generated/sticker-cache/1f34a6d7bfef2ffc46c98c93.png"
+  },
+  {
+    "id": "dimorphos",
+    "source": "public/media/cosmic-stickers-300/dimorphos.svg",
+    "target": "public/generated/sticker-cache/1dff8fff60965b42af22a00e.png"
+  },
+  {
+    "id": "didymos",
+    "source": "public/media/cosmic-stickers-300/didymos.svg",
+    "target": "public/generated/sticker-cache/ffc336d3d271d6d00d59e591.png"
+  },
+  {
+    "id": "falcon-heavy",
+    "source": "public/media/cosmic-stickers-300/falcon-heavy.svg",
+    "target": "public/generated/sticker-cache/23152191434201a6db66bbe5.png"
+  },
+  {
+    "id": "dawn",
+    "source": "public/media/cosmic-stickers-300/dawn.svg",
+    "target": "public/generated/sticker-cache/828734a04d7bab8ed6c5757b.png"
+  },
+  {
+    "id": "near",
+    "source": "public/media/cosmic-stickers-300/near.svg",
+    "target": "public/generated/sticker-cache/f7fa5bb39c669c6292bfcdb0.png"
+  },
+  {
+    "id": "galileo",
+    "source": "public/media/cosmic-stickers-300/galileo.svg",
+    "target": "public/generated/sticker-cache/8337ee953b1049374ad2b68a.png"
+  },
+  {
+    "id": "hayabusa",
+    "source": "public/media/cosmic-stickers-300/hayabusa.svg",
+    "target": "public/generated/sticker-cache/9f9bc22dfd772b898d4081a7.png"
+  },
+  {
+    "id": "hayabusa2",
+    "source": "public/media/cosmic-stickers-300/hayabusa2.svg",
+    "target": "public/generated/sticker-cache/ba6f003ffe5fb7575c8dc10a.png"
+  },
+  {
+    "id": "epoxi",
+    "source": "public/media/cosmic-stickers-300/epoxi.svg",
+    "target": "public/generated/sticker-cache/b573e727b212c6b963ae4d02.png"
+  },
+  {
+    "id": "lunar",
+    "source": "public/media/cosmic-stickers-300/lunar.svg",
+    "target": "public/generated/sticker-cache/d2041e2f623db84a7215aa62.png"
+  },
+  {
+    "id": "md2011",
+    "source": "public/media/cosmic-stickers-300/md2011.svg",
+    "target": "public/generated/sticker-cache/565ba74d97aa1c0fff0dc465.png"
+  },
+  {
+    "id": "tethys",
+    "source": "public/media/cosmic-stickers-300/tethys.svg",
+    "target": "public/generated/sticker-cache/3c2d699655fc176f97d1e22d.png"
+  }
+]

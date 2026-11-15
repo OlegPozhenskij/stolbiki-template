@@ -12,7 +12,8 @@ export async function prepareAssets(ep){
  for(const item of ep.content.items){
   const asset=ep.assets[item.id];
   if(!asset.scene){
-   result[item.id]={...asset,key:hash(asset,...['composite','background','foreground'].filter(k=>asset[k]).map(k=>fileHash(publicPath(asset[k]))))};continue;
+   const files=[...['composite','background','foreground'].filter(k=>asset[k]).map(k=>asset[k]),...(asset.contexts??[]).map(c=>c.image)];
+   result[item.id]={...asset,key:hash(asset,...files.map(file=>fileHash(publicPath(file))))};continue;
   }
   const module=catalog[asset.scene].module;
   const key=hash(fileHash(module),fileHash('assets/scenes/helpers.mjs'),fileHash(renderer),ep.brief.media,world,asset.scene);

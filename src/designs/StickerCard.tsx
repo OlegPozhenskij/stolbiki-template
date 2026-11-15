@@ -22,15 +22,15 @@ const Context:React.FC<{item:Item;f:number}>=({item,f})=>{
 };
 
 export const StickerCard:React.FC<{item:Item;index:number;wash:number;skin:Design;asset?:MediaAsset;comparison?:Comparison}>=({item,index,wash,skin,asset,comparison})=>{
- const f=useCurrentFrame(),accent=item.accent??'#9bdfff',portrait=item.portraitWidth??550;
+ const f=useCurrentFrame(),accent=item.accent??'#9bdfff',portrait=item.portraitWidth??550,updated=(skin.revision??1)>=2;
  const settled=interpolate(f,[34,60],[0,1],{...clamp,easing:ease});
  const bodyWidth=portrait+((comparison?.referencePixels??portrait)*(comparison?.ratio??1)-portrait)*settled;
  const number=typeof item.value==='number'?item.value.toLocaleString('ru-RU'):item.value;
  const valueSize=String(number).length>5?43:57;
  return <div style={{position:'absolute',width:640,height:1080,overflow:'hidden',fontFamily:BODY,color:'#fff8ef',background:skin.background,translate:interpolate(f,[0,22],['0px 1080px','0px 0px'],{...clamp,easing:ease})}}>
-  <SpaceBackdrop seed={item.id} width={640} height={1080} frame={f}/>
-  <Context item={item} f={f}/>
-  <div style={{position:'absolute',left:0,top:242,width:640,height:640,transformOrigin:'320px 320px',transform:`translateY(${Math.sin(f/17)*2}px) rotate(${f<45?Math.sin(f/10)*(1-f/45)*2:0}deg) scale(${bodyWidth/(item.artWidth??570)})`,opacity:comparison?.visible===false?0:1,filter:`drop-shadow(0 7px 0 #111527) drop-shadow(0 0 15px ${accent}55)`}}>
+  <SpaceBackdrop seed={item.id} width={640} height={1080} frame={f} varied={updated}/>
+  {updated?<>{asset?.contexts?.map((c,j)=><div key={j} style={{position:'absolute',left:c.x-c.size/2,top:c.y-c.size/2,width:c.size,height:c.size,opacity:interpolate(f,[10,32],[0,1],clamp),transform:`translate(${Math.sin(f/31+j)*7}px,${Math.sin(f/23+j*2)*9}px) rotate(${(c.rotate??0)+Math.sin(f/37+j)*4}deg)`,filter:'drop-shadow(0 4px 3px #0008)'}}><Img src={staticFile(c.image)} style={{width:'100%',height:'100%',objectFit:'contain'}}/></div>)}</>:<Context item={item} f={f}/>}
+  <div style={{position:'absolute',left:0,top:242,width:640,height:640,transformOrigin:'320px 320px',transform:`translate(${updated?Math.sin(f/29+index)*4:0}px,${Math.sin(f/17)*(updated?6:2)}px) rotate(${updated?Math.sin(f/29+index*.8)*1.6+Math.sin(f/8)*4*Math.exp(-f/25):f<45?Math.sin(f/10)*(1-f/45)*2:0}deg) scale(${bodyWidth/(item.artWidth??570)})`,opacity:comparison?.visible===false?0:1,filter:`drop-shadow(0 7px 0 #111527) drop-shadow(0 0 ${updated?13+Math.sin(f/20)*3:15}px ${accent}55)`}}>
    {asset&&<Img src={staticFile(asset.composite)} style={{width:640,height:640,objectFit:'contain'}}/>}
   </div>
   <div style={{position:'absolute',top:17,left:213,width:214,height:246,filter:'drop-shadow(0 7px 0 #0007)'}}>
@@ -41,9 +41,9 @@ export const StickerCard:React.FC<{item:Item;index:number;wash:number;skin:Desig
     <div style={{fontSize:item.unit.length>6?27:42,fontWeight:900,lineHeight:1.05}}>{item.unit}</div>
    </div>
   </div>
-  <div style={{position:'absolute',top:843,width:640,textAlign:'center',fontSize:16,fontWeight:800,color:'#d2def1',letterSpacing:.7}}>{f<60?'КРУПНЫЙ ПЛАН':'ОБЩИЙ МАСШТАБ'} · окружение условно</div>
-  <div style={{position:'absolute',top:870,width:640,textAlign:'center',fontSize:15,color:'#b6c9e1'}}>{item.photoCredit}</div>
-  <div style={{position:'absolute',left:9,right:9,top:907,bottom:9,borderRadius:'25px 25px 15px 15px',border:'1.5px solid #aec4fa55',background:'linear-gradient(115deg,#182c53ee,#222047f5 60%,#342344f5)',boxShadow:'inset 0 2px 0 #ffffff12,0 -14px 35px #0a102344',textAlign:'center',padding:'10px 26px',boxSizing:'border-box'}}>
+  {!updated&&<><div style={{position:'absolute',top:843,width:640,textAlign:'center',fontSize:16,fontWeight:800,color:'#d2def1',letterSpacing:.7}}>{f<60?'КРУПНЫЙ ПЛАН':'ОБЩИЙ МАСШТАБ'} · окружение условно</div>
+  <div style={{position:'absolute',top:870,width:640,textAlign:'center',fontSize:15,color:'#b6c9e1'}}>{item.photoCredit}</div></>}
+  <div style={{position:'absolute',left:9,right:9,top:updated?883:907,bottom:9,borderRadius:'25px 25px 15px 15px',border:'1.5px solid #aec4fa55',background:'linear-gradient(115deg,#182c53ee,#222047f5 60%,#342344f5)',boxShadow:'inset 0 2px 0 #ffffff12,0 -14px 35px #0a102344',textAlign:'center',padding:updated?'17px 26px':'10px 26px',boxSizing:'border-box'}}>
    <svg width="620" height="164" style={{position:'absolute',inset:0,pointerEvents:'none'}}><path d="M20 34L27 27 34 34 27 41Z M587 117l7-7 7 7-7 7Z" fill={accent}/><path d="M49 13Q310-3 570 13" fill="none" stroke={accent} strokeWidth="2" opacity=".65"/><circle cx="55" cy="132" r="1.5" fill="#fff"/><circle cx="580" cy="42" r="2" fill="#fff"/></svg>
    <div style={{position:'relative',height:59,display:'flex',alignItems:'center',justifyContent:'center',fontSize:item.title.length>14?42:54,fontWeight:900,lineHeight:1,color:'#fff8e8'}}>{item.title}</div>
    <div style={{position:'relative',height:77,display:'flex',alignItems:'center',justifyContent:'center',fontSize:34,fontWeight:800,lineHeight:1.12,textWrap:'balance',color:'#dfeaff'}}>{item.fact}</div>

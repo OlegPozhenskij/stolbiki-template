@@ -1,0 +1,16 @@
+{
+  "cycles": 1,
+  "basis": "approved cosmic-stickers-pilot with the user's latest changes",
+  "viewed": ["out/cosmic-stickers-300/stickers.jpg", "out/cosmic-stickers-300/check.jpg"],
+  "findings": [
+    "75 main objects, eight planets, increasing physical sizes; 24-second pilot preserved separately.",
+    "All auxiliary objects are image stickers. They show mission/parent-system context, with independent illustrative scale documented off-screen.",
+    "No close-up, common-scale, color or credit metadata under the portraits. Copyright and image-type information is retained in CREDITS.md.",
+    "Lower panel is 188 pixels high instead of164, only centered title and one fact. Hexagon geometry and large units are retained.",
+    "Rigid body floating and rotation are stronger; no stretching. Star positions are seeded per object, soft nebula colors vary.",
+    "Source charts, comparison labels and extraneous image annotations were excluded from the selected portrait crops. Moon retains a circular photographic mask.",
+    "Scientific visualizations explicitly permitted by the user, with provenance recorded. Source objects are not generatively repainted.",
+    "Both pre-existing layout families checked; 18 tests passed. TypeScript checked during preview."
+  ],
+  "verdict": "ready-for-render"
+}

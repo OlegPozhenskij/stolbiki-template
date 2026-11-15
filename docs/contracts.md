@@ -3,7 +3,7 @@
 ## Выпуск
 
 `brief.json`: schemaVersion=1, engine=cards-v1, kind=episode|demo, title, audience,
-seconds, design, world, media=pencil|vector|photo, music=bright|calm и timing.
+seconds, design, world, media=pencil|vector|photo, music=bright|calm|cosmic и timing.
 timing: fps=30, step, intro, holdLast, outro в целых кадрах. Единственный расчёт
 времени находится в src/engine/timeline.mjs. Python получает готовый timeline.json.
 intro=outro=0 включает непрерывный режим: длительность равна count×step/fps.
@@ -74,6 +74,10 @@ columns=3 задаёт три столбика по 640 px; отсутствие
 по 480 px. Камера и масштаб принимают ширину/число видимых столбиков оформления.
 Для фотостикеров исходники хранятся в assets/photos/, авторство и URL — в media.json;
 sticker-workshop.mjs создаёт отображаемые SVG-маски поверх неизменённых фото.
+Для cosmic-stickers-300: photo-shapes.py → photo-workshop.mjs → render-stickers.py.
+Растеризация SVG кэшируется по содержимому. contexts=[{image,x,y,size,rotate?}]
+передаёт отдельные стикеры окружения; их файлы входят в ключ кэша карточки.
+revision=2 убирает метаданные под портретом и увеличивает нижнюю панель до188px.
 physicalSizeKm задаёт исходный линейный размер; artWidth — соответствующий
 измеряемый размах в координатах SVG, portraitWidth ограничивает крупный план
 для колец/вынесенных деталей. Ширина и высота героя масштабируются равномерно.

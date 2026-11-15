@@ -1,0 +1,889 @@
+{
+  "ingenuity": {
+    "composite": "generated/sticker-cache/50d84f0c96d8ad1ca18d4971.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/bb132d25913bd1a1d49f4ab3.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "curiosity": {
+    "composite": "generated/sticker-cache/6fb3e99ca0b37c49c18d9ba6.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/bb132d25913bd1a1d49f4ab3.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "md2011": {
+    "composite": "generated/sticker-cache/565ba74d97aa1c0fff0dc465.png",
+    "contexts": []
+  },
+  "hubble": {
+    "composite": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "falcon-heavy": {
+    "composite": "generated/sticker-cache/23152191434201a6db66bbe5.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "iss": {
+    "composite": "generated/sticker-cache/cec1a12f58844357b28e6824.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/c456c0bc26c687325d77745e.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "dimorphos": {
+    "composite": "generated/sticker-cache/1dff8fff60965b42af22a00e.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/ffc336d3d271d6d00d59e591.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "bennu": {
+    "composite": "generated/sticker-cache/c1960b870695a5db410c4a46.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/aa96793c8fc6a9684eeed891.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "itokawa": {
+    "composite": "generated/sticker-cache/e134b64159eb2394ed20ae1d.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/9f9bc22dfd772b898d4081a7.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "didymos": {
+    "composite": "generated/sticker-cache/ffc336d3d271d6d00d59e591.png",
+    "contexts": []
+  },
+  "ryugu": {
+    "composite": "generated/sticker-cache/c704b837542d8364a1ea7944.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/ba6f003ffe5fb7575c8dc10a.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "hartley-2": {
+    "composite": "generated/sticker-cache/0510b617b8e5123e0fe81f03.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/b573e727b212c6b963ae4d02.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "67p": {
+    "composite": "generated/sticker-cache/5e031f071fc8598880b28380.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/67c89248b009dec170d6e17f.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "toutatis": {
+    "composite": "generated/sticker-cache/a48c468464bd894f50b709f2.png",
+    "contexts": []
+  },
+  "geographos": {
+    "composite": "generated/sticker-cache/c6fa4bc87e589bd0804c7260.png",
+    "contexts": []
+  },
+  "halley": {
+    "composite": "generated/sticker-cache/0a1b50264a1b014837ba7bd4.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "crab-pulsar": {
+    "composite": "generated/sticker-cache/f9ee5d3ac778ec0d19c5a0da.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/90636a329ee2baa7264a8647.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "eros": {
+    "composite": "generated/sticker-cache/c76c6dbb434986989a535880.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/f7fa5bb39c669c6292bfcdb0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "ida": {
+    "composite": "generated/sticker-cache/d651d2614ea30b2b5b8459b4.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8337ee953b1049374ad2b68a.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "lutetia": {
+    "composite": "generated/sticker-cache/c0da3eeee7eeeb9d3131c884.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/67c89248b009dec170d6e17f.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "mimas": {
+    "composite": "generated/sticker-cache/2568057f64285e5eaad51c80.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "hyperion": {
+    "composite": "generated/sticker-cache/367c9e452f6ed0293176db39.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "hygiea": {
+    "composite": "generated/sticker-cache/eb2f0f795168eecede6c98a9.png",
+    "contexts": []
+  },
+  "miranda": {
+    "composite": "generated/sticker-cache/6dd3971490cbe755fea28e75.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/5d24709d2264674f73d84f93.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "enceladus": {
+    "composite": "generated/sticker-cache/06a291ad1987b91acc2fa404.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "pallas": {
+    "composite": "generated/sticker-cache/0dd9b1fc2ad9b501d0766801.png",
+    "contexts": []
+  },
+  "vesta": {
+    "composite": "generated/sticker-cache/3fe59eb59f474e74439b4249.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/828734a04d7bab8ed6c5757b.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "ceres": {
+    "composite": "generated/sticker-cache/ab56aa253ec52e0bd9a8f56e.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/828734a04d7bab8ed6c5757b.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "sedna": {
+    "composite": "generated/sticker-cache/5a5aa29c88876c0604219313.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "tethys": {
+    "composite": "generated/sticker-cache/3c2d699655fc176f97d1e22d.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "quaoar": {
+    "composite": "generated/sticker-cache/ec8915b435e7237188da338c.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/19c600f7f8668f4f836803fa.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "dione": {
+    "composite": "generated/sticker-cache/b8ff52e5406a8bf25c049f90.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "umbriel": {
+    "composite": "generated/sticker-cache/3626b2aef106075ad598f298.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/5d24709d2264674f73d84f93.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "charon": {
+    "composite": "generated/sticker-cache/0dcdbbbabf292b5d23c2eb1d.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/bb4d4520669086df67442517.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "makemake": {
+    "composite": "generated/sticker-cache/21ef4930f298b63457ca1c4c.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "iapetus": {
+    "composite": "generated/sticker-cache/c03b9ec4c119694fb19497e6.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "rhea": {
+    "composite": "generated/sticker-cache/b890402636fb5c412609c5bf.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "titania": {
+    "composite": "generated/sticker-cache/249b918e7d01a40bf0e69735.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/5d24709d2264674f73d84f93.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "haumea": {
+    "composite": "generated/sticker-cache/2ebd67cc8527080ac8c2d961.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "eris": {
+    "composite": "generated/sticker-cache/c0e9dccd927ea632f467d3a8.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "pluto": {
+    "composite": "generated/sticker-cache/bb4d4520669086df67442517.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/242ef01cf3de00c95955c2d0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/0dcdbbbabf292b5d23c2eb1d.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "triton": {
+    "composite": "generated/sticker-cache/9bc3b1f1734e50d40c449545.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/670a478605fa9be9b30a1825.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "europa": {
+    "composite": "generated/sticker-cache/a36821181ebefbcfe70a2ccd.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/eed9dabde71df65c84eb6996.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "moon": {
+    "composite": "generated/sticker-cache/c456c0bc26c687325d77745e.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/d2041e2f623db84a7215aa62.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "io": {
+    "composite": "generated/sticker-cache/3b7f57e6943662d52b0995ca.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/eed9dabde71df65c84eb6996.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "callisto": {
+    "composite": "generated/sticker-cache/fde6ff5deddca030a75ffe71.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/eed9dabde71df65c84eb6996.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "mercury": {
+    "composite": "generated/sticker-cache/9d364136a15c0de558d82138.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "titan": {
+    "composite": "generated/sticker-cache/602acad6b014eb321467ddce.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "ganymede": {
+    "composite": "generated/sticker-cache/8e96ba2f2941f6fb43569be3.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/eed9dabde71df65c84eb6996.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "mars": {
+    "composite": "generated/sticker-cache/bb132d25913bd1a1d49f4ab3.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/6fb3e99ca0b37c49c18d9ba6.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/50d84f0c96d8ad1ca18d4971.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "sirius-b": {
+    "composite": "generated/sticker-cache/10262a65c713595ff35ee3a6.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/b8af843cf18a56448ade0605.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "venus": {
+    "composite": "generated/sticker-cache/1927ab7ccd53cd92da3f45ed.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "earth": {
+    "composite": "generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/c456c0bc26c687325d77745e.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/cec1a12f58844357b28e6824.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "neptune": {
+    "composite": "generated/sticker-cache/670a478605fa9be9b30a1825.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/d37cc728bf94306b6824b501.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/9bc3b1f1734e50d40c449545.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "uranus": {
+    "composite": "generated/sticker-cache/5d24709d2264674f73d84f93.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/d37cc728bf94306b6824b501.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/249b918e7d01a40bf0e69735.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "saturn": {
+    "composite": "generated/sticker-cache/4cafa43856e103ca5ea63766.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/602acad6b014eb321467ddce.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/06a291ad1987b91acc2fa404.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "jupiter": {
+    "composite": "generated/sticker-cache/eed9dabde71df65c84eb6996.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/3b7f57e6943662d52b0995ca.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/a36821181ebefbcfe70a2ccd.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "sun": {
+    "composite": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/93c746e7b1d3e3b5ba72eaa1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/9d364136a15c0de558d82138.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "sirius": {
+    "composite": "generated/sticker-cache/b8af843cf18a56448ade0605.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/10262a65c713595ff35ee3a6.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "sagittarius-a": {
+    "composite": "generated/sticker-cache/5da9aaba96bdb1ef1a915698.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/61c1bc5480632d507226711d.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "aldebaran": {
+    "composite": "generated/sticker-cache/8ed0412fd4f05e808fa8596e.png",
+    "contexts": []
+  },
+  "antares": {
+    "composite": "generated/sticker-cache/e78968f96e3f292e282c9618.png",
+    "contexts": []
+  },
+  "betelgeuse": {
+    "composite": "generated/sticker-cache/0bb952397ba7cb59d42bc6fa.png",
+    "contexts": []
+  },
+  "m87-black-hole": {
+    "composite": "generated/sticker-cache/b499cbe12987b540978fccdb.png",
+    "contexts": []
+  },
+  "ring-nebula": {
+    "composite": "generated/sticker-cache/0e715eec3cd826268eff45b3.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/1f34a6d7bfef2ffc46c98c93.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "helix-nebula": {
+    "composite": "generated/sticker-cache/39f3af4ad19294a733cee074.png",
+    "contexts": []
+  },
+  "crab-nebula": {
+    "composite": "generated/sticker-cache/cc32ee4c3b8483e45b28a2a9.png",
+    "contexts": []
+  },
+  "pleiades": {
+    "composite": "generated/sticker-cache/35b5ef5538c6f3962562423a.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "orion-nebula": {
+    "composite": "generated/sticker-cache/39c6f2951c84a3689690c00f.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/1f34a6d7bfef2ffc46c98c93.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "eagle-nebula": {
+    "composite": "generated/sticker-cache/19c59ff0087c0e39ff120de5.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "tuc47": {
+    "composite": "generated/sticker-cache/55ea4768e1004d06b8eb29d4.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "m13": {
+    "composite": "generated/sticker-cache/101d87dc1db26b428f2f454d.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/8d629bf5f555e7d0d6769cc0.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  },
+  "triangulum": {
+    "composite": "generated/sticker-cache/38e1d788d3911da848a7037e.png",
+    "contexts": []
+  },
+  "milky-way": {
+    "composite": "generated/sticker-cache/61c1bc5480632d507226711d.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/319b6f1381a7391ddbdb90a1.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      },
+      {
+        "image": "generated/sticker-cache/5da9aaba96bdb1ef1a915698.png",
+        "x": 538,
+        "y": 338,
+        "size": 112,
+        "rotate": 12
+      }
+    ]
+  },
+  "andromeda": {
+    "composite": "generated/sticker-cache/4b3c08f536ff1073049b7392.png",
+    "contexts": [
+      {
+        "image": "generated/sticker-cache/38e1d788d3911da848a7037e.png",
+        "x": 96,
+        "y": 760,
+        "size": 147,
+        "rotate": -12
+      }
+    ]
+  }
+}

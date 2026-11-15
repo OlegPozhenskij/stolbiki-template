@@ -91,5 +91,20 @@
     "texture": false,
     "cardStyle": "sticker",
     "columns": 3
+  },
+  "cosmic-photo-stickers-v2": {
+    "name": "Космос · фотостикеры с окружением",
+    "layout": "panel",
+    "background": "#080c24",
+    "ink": "#fffaf2",
+    "title": "#fffaf2",
+    "accent": "#ffe29a",
+    "badge": "#172447",
+    "heading": "body",
+    "badgeShape": "hex",
+    "texture": false,
+    "cardStyle": "sticker",
+    "columns": 3,
+    "revision": 2
   }
 }

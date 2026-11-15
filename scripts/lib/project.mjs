@@ -26,7 +26,7 @@ export function validateEpisode(ep,{assetsRequired=true,now=new Date()}={}){
  if(c.motif && !read('src/motifs.json')[c.motif])errors.push(`Неизвестный motif: ${c.motif}`);
  if(!read('worlds/catalog.json')[b.world])errors.push(`Неизвестный world: ${b.world}`);
  if(!['pencil','vector','photo'].includes(b.media))errors.push('media: pencil, vector или photo');
- if(!['bright','calm'].includes(b.music))errors.push('music: bright или calm');
+ if(!['bright','calm','cosmic'].includes(b.music))errors.push('music: bright, calm или cosmic');
  if(!c.title || !c.cta || !Array.isArray(c.items)||!c.items.length)errors.push('Нужны title, cta и items');
  const items=c.items??[],ids=new Set(),catalog=read('assets/catalog.json');
  for(const i of items){
@@ -53,6 +53,7 @@ export function validateEpisode(ep,{assetsRequired=true,now=new Date()}={}){
   if(assetsRequired){const a=ep.assets[i.id];
    if(a?.scene){if(!catalog[a.scene])errors.push(`${i.id}: сцена ${a.scene} отсутствует в assets/catalog.json`);}
    else if(a?.composite){for(const key of ['composite','background','foreground'])if(a[key]&&!fs.existsSync(publicPath(a[key])))errors.push(`${i.id}: отсутствует public/${a[key]}`);
+    for(const context of a.contexts??[]){if(!context.image||!fs.existsSync(publicPath(context.image)))errors.push(`${i.id}: отсутствует стикер окружения`);if(![context.x,context.y,context.size].every(Number.isFinite)||context.size<=0)errors.push(`${i.id}: неверное размещение стикера окружения`);}
     if(Boolean(a.background)!==Boolean(a.foreground))errors.push(`${i.id}: background и foreground задаются вместе`);
     if(a.bounds&&(!['x','y','w','h'].every(k=>Number.isFinite(a.bounds[k])&&a.bounds[k]>=0&&a.bounds[k]<=1)||a.bounds.w===0||a.bounds.h===0))errors.push(`${i.id}: bounds должны содержать нормализованные x,y,w,h`);
    }else errors.push(`${i.id}: выберите scene или composite в assets.json`);
