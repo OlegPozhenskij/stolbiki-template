@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:odm="http://product.corel.com/CGS/11/cddns/" xml:space="preserve" width="772px" height="768px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd" viewBox="0 0 772 768">
+    <defs>
+	<radialGradient cx="61" cy="446" r="418" fx="61" fy="446" id="aldergradi" gradientUnits="userSpaceOnUse">
+	    <stop style="stop-color:#ff3300" offset="0"/>
+            <stop style="stop-color:#ff3300" offset="0.5"/>
+	    <stop style="stop-color:#c32600" offset="1"/>
+	</radialGradient>
+	<radialGradient cx="511" cy="180" r="11" fx="511" fy="180" id="sunrgradi" gradientUnits="userSpaceOnUse">
+	    <stop style="stop-color:#ffff00" offset="0"/>
+	    <stop style="stop-color:#d3d300" offset="1"/>
+	</radialGradient>
+    </defs>
+ <path class="fil0" d="M0 0l772 0 0 768 -772 0 0 -768z"/>
+ <g id="Layer 1">
+  <circle fill="#FF3300" cx="61" cy="446" r="418" style="fill:url(#aldergradi)"/>
+  <switch><text x="134" y="415" font-size="41" fill="#FFFFFF" id="trsvg3-my" systemLanguage="my"><tspan id="trsvg1-my">&#4129;&#4140;&#4114;&#4142;&#4120;&#4123;&#4116;&#4154;</tspan></text><text x="134" y="415" font-size="41" fill="#FFFFFF" id="trsvg3"><tspan id="trsvg1">Aldebaran</tspan></text></switch>
+  <switch><text x="477" y="140" font-size="41" fill="#FFFFFF" id="trsvg4-id" systemLanguage="id"><tspan id="trsvg2-id">Matahari</tspan></text><text x="477" y="140" font-size="41" fill="#FFFFFF" id="trsvg4-my" systemLanguage="my"><tspan id="trsvg2-my">&#4116;&#4145;</tspan></text><text x="477" y="140" font-size="41" fill="#FFFFFF" id="trsvg4-ca" systemLanguage="ca"><tspan id="trsvg2-ca">Sol</tspan></text><text x="477" y="140" font-size="41" fill="#FFFFFF" id="trsvg4"><tspan id="trsvg2">Sun</tspan></text></switch>
+  <circle fill="#FFFF00" cx="511" cy="180" r="11" style="fill:url(#sunrgradi)"/>
+ </g>
+</svg>

@@ -1,34 +1,36 @@
 """Саундтрек под ролик: светлая мелодия (темп из pace.json: столбик = 2 такта) (укулеле, бас, колокольчики, лёгкие барабаны)
 + звуки на появление каждого столбика. Тайминг совпадает с src/timing.ts:
 один столбик = 2 такта (при step 150 это 5 секунд, 96 BPM). Всё синтезируется кодом, никаких чужих сэмплов."""
-import json, pathlib, subprocess, numpy as np
+import json, pathlib, subprocess, os, numpy as np
+from music_timing import bar_seconds
 from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SR = 44100
 # Темп берётся из того же src/pace.json, что и src/timing.ts (формулы те же)
-data = json.load(open(ROOT / "src/data.json"))
-pace = json.load(open(ROOT / "src/pace.json"))
-n_items = len(data["items"])
-p = pace["short"] if data.get("short") else pace["normal"]
-FPS, STEP, INTRO, HOLD_LAST = pace["fps"], pace["step"], p["intro"], p["holdLast"]
-OUTRO = p["outro"]
-BAR = STEP / FPS / 2  # столбик = 2 такта
+timeline=json.loads(pathlib.Path(os.environ.get("TIMELINE_PATH",ROOT/"src/generated/timeline.json")).read_text())
+n_items=len(timeline["cardStarts"])
+FPS,STEP,INTRO,HOLD_LAST,OUTRO=(timeline[k] for k in ["fps","step","intro","holdLast","outro"])
+BAR = bar_seconds(STEP, FPS)
 BEAT = BAR / 4
 BPM = 60 / BEAT
-card_t = [(INTRO + i * STEP) / FPS for i in range(n_items)]
-outro_t = (INTRO + n_items * STEP + HOLD_LAST) / FPS
-total = outro_t + OUTRO / FPS
+card_t = [f / FPS for f in timeline["cardStarts"]]
+outro_t = timeline["outroStart"] / FPS
+total = timeline["total"] / FPS
 intro_bars = round(INTRO / FPS / BAR)
 N = int(total * SR) + SR
-rng = np.random.default_rng(7)
+rng = np.random.default_rng(17 if os.environ.get("MUSIC_PRESET") == "calm" else 7)
+CALM = os.environ.get("MUSIC_PRESET") == "calm"
 mixL, mixR = np.zeros(N), np.zeros(N)
 
 def hz(m): return 440 * 2 ** ((m - 69) / 12)
 
 def put(sig, t, gain=1.0, pan=0.0):
     i = int(t * SR)
+    if i < 0:
+        sig = sig[-i:]
+        i = 0
     if i >= N: return
     sig = sig[: N - i] * gain
     mixL[i:i + len(sig)] += sig * np.sqrt((1 - pan) / 2)
@@ -119,9 +121,9 @@ for b in range(n_bars):
         r = ROOTS[ci]
         for beat, m in [(0, r), (1.5, r), (2, r + 7 if ci != 2 else r + 3), (3, r)]:
             put(bass(m), t0 + beat * BEAT, 0.42)
-        for beat in (0, 2): put(kick(), t0 + beat * BEAT, 0.55)
-        for beat in (1, 3): put(clap(), t0 + beat * BEAT, 0.16, pan=0.1)
-        for e in range(8): put(shaker(), t0 + e * BEAT / 2, 0.05 + 0.03 * (e % 2), pan=0.4)
+        for beat in (0, 2): put(kick(), t0 + beat * BEAT, 0.16 if CALM else 0.55)
+        for beat in (1, 3): put(clap(), t0 + beat * BEAT, 0.03 if CALM else 0.16, pan=0.1)
+        for e in range(4 if CALM else 8): put(shaker(), t0 + e * BEAT / 2, 0.05 + 0.03 * (e % 2), pan=0.4)
     # колокольчики: заставка + каждые вторые 4 такта
     if b < intro_bars or (full and (b // 4) % 2 == 1) or b >= outro_bar:
         mel = MEL_A if (b // 8) % 2 == 0 else MEL_B
@@ -158,13 +160,14 @@ st = np.stack([L, R], 1)[: int(total * SR)]
 fade = int(0.8 * SR); st[-fade:] *= np.linspace(1, 0, fade)[:, None]
 st = st / np.abs(st).max() * 1.2
 st = np.tanh(st) / np.tanh(1.2) * 0.89
-out = ROOT / "public/audio/soundtrack.wav"
+out = pathlib.Path(os.environ.get("OUTPUT_AUDIO",ROOT/"public/audio/soundtrack.wav"))
+out.parent.mkdir(parents=True,exist_ok=True)
 raw = out.with_name("_raw.wav")
 wavfile.write(raw, SR, (st * 32767).astype(np.int16))
 
 # Громкость −14 LUFS (норма YouTube): два прохода ffmpeg loudnorm. Без этого короткий трек выходит тише нормы
 LN = "loudnorm=I=-14:TP=-1:LRA=11"
-log = subprocess.run(["ffmpeg", "-hide_banner", "-i", raw, "-af", LN + ":print_format=json", "-f", "null", "-"],
+log = subprocess.run(["ffmpeg", "-hide_banner", "-i", raw, "-af", LN + ":print_format=json", "-c:a", "pcm_s16le", "-f", "null", "-"],
                      capture_output=True, text=True).stderr
 m = json.loads(log[log.rindex("{"): log.rindex("}") + 1])
 LN += (f":measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"

@@ -1,0 +1,20 @@
+{
+  "iss": {
+    "composite": "media/cosmic-stickers-pilot/iss.svg"
+  },
+  "bennu": {
+    "composite": "media/cosmic-stickers-pilot/bennu.svg"
+  },
+  "67p": {
+    "composite": "media/cosmic-stickers-pilot/67p.svg"
+  },
+  "moon": {
+    "composite": "media/cosmic-stickers-pilot/moon.svg"
+  },
+  "saturn": {
+    "composite": "media/cosmic-stickers-pilot/saturn.svg"
+  },
+  "sun": {
+    "composite": "media/cosmic-stickers-pilot/sun.svg"
+  }
+}

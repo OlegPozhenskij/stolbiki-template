@@ -1,0 +1,69 @@
+{
+  "title": "Космос: от крошечного к огромному",
+  "subtitle": "",
+  "cta": "Кто удивил тебя?",
+  "ctaSub": "Выбери своего космического героя",
+  "motif": "sky",
+  "items": [
+    {
+      "id": "earth",
+      "title": "Земля",
+      "value": 12.8,
+      "unit": "тыс. км",
+      "prefix": "≈",
+      "fact": "Здесь океаны жидкой воды.",
+      "metricLabel": "РАЗМЕР",
+      "physicalSizeKm": 12756,
+      "scaleGroup": 0,
+      "artWidth": 376,
+      "portraitWidth": 380,
+      "emotion": 2,
+      "accent": "#287d75",
+      "move": "float"
+    },
+    {
+      "id": "saturn",
+      "title": "Сатурн",
+      "value": 121,
+      "unit": "тыс. км",
+      "prefix": "≈",
+      "fact": "Плавал бы в огромной ванне!",
+      "metricLabel": "РАЗМЕР",
+      "physicalSizeKm": 120536,
+      "scaleGroup": 0,
+      "artWidth": 304,
+      "portraitWidth": 310,
+      "emotion": 3,
+      "accent": "#9d693d",
+      "move": "float"
+    },
+    {
+      "id": "jupiter",
+      "title": "Юпитер",
+      "value": 143,
+      "unit": "тыс. км",
+      "prefix": "≈",
+      "fact": "Красное пятно — огромный шторм!",
+      "metricLabel": "РАЗМЕР",
+      "physicalSizeKm": 142984,
+      "scaleGroup": 0,
+      "artWidth": 382,
+      "portraitWidth": 380,
+      "emotion": 1,
+      "accent": "#ab6549",
+      "move": "float"
+    }
+  ],
+  "thumb": {
+    "title": "Огромный космос",
+    "ids": [
+      "jupiter",
+      "saturn",
+      "earth"
+    ],
+    "badge": {
+      "shown": "3",
+      "unit": "объектов"
+    }
+  }
+}

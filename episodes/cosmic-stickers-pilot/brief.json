@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "engine": "cards-v1",
+  "kind": "episode",
+  "title": "Космос крупным планом",
+  "audience": "Дети и семейная аудитория",
+  "seconds": 24,
+  "cardCount": 6,
+  "design": "cosmic-photo-stickers",
+  "world": "native",
+  "media": "photo",
+  "music": "calm",
+  "timezone": "Europe/Moscow",
+  "timing": {
+    "fps": 30,
+    "intro": 0,
+    "step": 120,
+    "holdLast": 0,
+    "outro": 0
+  },
+  "production": {
+    "reviewCycles": 1,
+    "deepseek": false,
+    "scriptAuthor": "Codex with video-producer and video-script-writer",
+    "order": "ascending-physical-span, six different families",
+    "processProfile": "photo-sticker-comparison",
+    "scope": "Only six-card pilot; wait for user review before the full episode"
+  }
+}

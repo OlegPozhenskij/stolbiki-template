@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "engine": "cards-v1",
+  "kind": "episode",
+  "title": "Космос: от крошечного к огромному",
+  "audience": "Дети и семейная аудитория",
+  "seconds": 300,
+  "cardCount": 75,
+  "design": "cosmic-plain-photos",
+  "world": "native",
+  "media": "photo",
+  "music": "cosmic",
+  "timezone": "Europe/Moscow",
+  "timing": {
+    "fps": 30,
+    "intro": 0,
+    "step": 120,
+    "holdLast": 0,
+    "outro": 0
+  },
+  "production": {
+    "reviewCycles": 1,
+    "deepseek": false,
+    "scriptAuthor": "Codex with video-producer and video-script-writer",
+    "order": "ascending-physical-span; avoid long uniform runs",
+    "processProfile": "large-photos",
+    "scope": "Same accepted five-minute video; large borderless images, no shrinking or companion objects",
+    "sideObjects": "none",
+    "metadata": "No text below portraits; credits in CREDITS.md",
+    "footerHeight": 188,
+    "background": "Seeded stars; subtle per-card nebula colors",
+    "animation": "Rigid floating, rotation and entrance; no shape deformation",
+    "auxiliaryScale": "not applicable",
+    "comparisonScale": "disabled; portraits stay large"
+  }
+}

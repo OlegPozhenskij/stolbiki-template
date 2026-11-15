@@ -5,3 +5,7 @@ tmp/
 public/
 scripts/sketch/bundle.js
 bench/
+
+src/generated/
+__pycache__/
+*.pyc

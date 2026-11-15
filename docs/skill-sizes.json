@@ -1,0 +1,50 @@
+[
+  {
+    "skill": "anti-ai-writing",
+    "current_chars": 19509,
+    "mode": "full-user-archive",
+    "source_archive": "anti-ai-writing-2.1.0-v2.zip",
+    "sha256": "47663e8c12eae77dc74cb91693745e642fd0b76f56821937503f9ca59bd34148"
+  },
+  {
+    "skill": "brainstorming",
+    "current_chars": 1777,
+    "mode": "project-skill"
+  },
+  {
+    "skill": "manymotions-video-generation",
+    "current_chars": 2190,
+    "mode": "project-skill"
+  },
+  {
+    "skill": "quality-filter",
+    "current_chars": 27792,
+    "mode": "full-user-archive",
+    "source_archive": "Quality filter-v1.zip",
+    "sha256": "f4e2b9bc62fbece016f821cf8177a5540552e1564febd6fe99fa2cc2f06f6150"
+  },
+  {
+    "skill": "stolbiki-video",
+    "current_chars": 2900,
+    "mode": "project-skill"
+  },
+  {
+    "skill": "video-idea-generator",
+    "current_chars": 35068,
+    "mode": "full-user-archive",
+    "source_archive": "Video idea generator-v2.zip",
+    "sha256": "6dd362497554757ccf462c69b7111d927eca201d0536df84fbb6de56ec081253"
+  },
+  {
+    "skill": "video-producer",
+    "current_chars": 3912,
+    "mode": "project-skill"
+  },
+  {
+    "skill": "video-script-writer",
+    "current_chars": 29311,
+    "mode": "full-user-archive",
+    "source_archive": "Video script writer-v2.zip",
+    "sha256": "766fcf1689f782317a18ea2f70d437d3c8a8336d316401854894ee6f3d4eca1a"
+  }
+]

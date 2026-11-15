@@ -7,9 +7,9 @@ from PIL import Image, ImageFilter, ImageChops
 from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-ART = ROOT / "public" / "art"
-OUT = ROOT / "public" / "pencil"
-OUT.mkdir(exist_ok=True)
+ART = pathlib.Path(os.environ.get("ART_DIR", ROOT / "public" / "art"))
+OUT = pathlib.Path(os.environ.get("OUTPUT_DIR", ROOT / "public" / "pencil"))
+OUT.mkdir(parents=True, exist_ok=True)
 W, H = 960, 1280  # 2x от 480x640 — с запасом под наезд камеры
 names = sys.argv[1:] or sorted({p.stem.removesuffix("-bg").removesuffix("-fg") for p in ART.glob("*.svg")})
 WHITE = {"badge"}  # эти рисуем на белом, в ролике они ложатся на бумагу режимом multiply

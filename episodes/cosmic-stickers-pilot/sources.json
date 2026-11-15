@@ -1,0 +1,74 @@
+{
+  "iss": {
+    "status": "verified",
+    "urls": [
+      "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/",
+      "https://www.csa-asc.gc.ca/eng/astronauts/living-in-space/sleeping-in-space.asp"
+    ],
+    "scope": "Максимальный размах станции с солнечными батареями 109 м.",
+    "fact": "Здесь космонавты спят на стене!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "bennu": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/asteroids/101955-bennu/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=101955&phys-par=1",
+      "https://science.nasa.gov/mission/osiris-rex/osiris-rex-faq/"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "Космический аппарат забрал его камни!",
+    "refresh": false,
+    "sizeEvidence": "0.5047 x 0.4918 x 0.4567 km; Daly, M.G., et al., Sci. Adv. 6, eabd3649 (2020)",
+    "checkedAt": "2026-11-15"
+  },
+  "67p": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/67p-churyumov-gerasimenko/",
+      "https://sci.esa.int/documents/34878/36335/1567260126246-Rosetta_PressKit_CometLanding_November2014_v4.pdf",
+      "https://www.esa.int/About_Us/ESAC/Comet_horizon"
+    ],
+    "scope": "Приблизительный размер ядра около4км; хвост и газ не входят.",
+    "fact": "Похожа на космическую уточку!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "moon": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/moon/facts/"
+    ],
+    "scope": "Средний диаметр 3474.8 км по JPL; тёмные моря — базальтовые равнины древних лавовых потоков, NASA Moon Facts.",
+    "fact": "Её тёмные «моря» — застывшая лава!",
+    "refresh": false,
+    "jplMeanRadiusKm": 1737.4,
+    "checkedAt": "2026-11-15"
+  },
+  "saturn": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/saturn/facts/",
+      "https://science.nasa.gov/mission/cassini/faq/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Его кольца — миллиарды льдинок!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "sun": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/sun/facts/",
+      "https://science.nasa.gov/earth/facts/"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Его свет летит к нам около 8 минут.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  }
+}

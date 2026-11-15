@@ -1,4 +1,6 @@
-export type Theme = "pencil" | "photo";
+export type Theme = "pencil" | "photo" | "vector";
+export type ContextSticker={image:string;x:number;y:number;size:number;rotate?:number};
+export type MediaAsset = {composite:string;background?:string;foreground?:string;contexts?:ContextSticker[];bounds?:{x:number;y:number;w:number;h:number}};
 
 import motifs from "./motifs.json";
 
@@ -7,7 +9,7 @@ export type MotifName = keyof typeof motifs;
 export type Motif = (typeof motifs)[MotifName];
 export const motifOf = (name?: string): Motif => motifs[(name && name in motifs ? name : "classic") as MotifName];
 
-export type Move = "hop" | "fly" | "swim" | "pulse" | "wiggle";
+export type Move = "hop" | "fly" | "swim" | "pulse" | "wiggle" | "float";
 
 export type Item = {
   id: string;
@@ -16,10 +18,25 @@ export type Item = {
   unit: string;
   title: string;
   fact: string;
+  accent?: string;
+  tag?: string;
+  metricLabel?: string;
+  finaleLabel?: string;
+  details?: {at:number;text:string}[]; // локальные кадры, подписи из источников
+  physicalSizeKm?: number;
+  scaleGroup?: number;
+  artWidth?: number;
+  portraitWidth?: number;
+  emotion?: number;
+  photoCredit?: string;
+  contextKind?: string;
   move?: Move; // короткое движение животного при появлении
 };
 
 export type VideoProps = {
+  design?: string;
+  assets?: Record<string,MediaAsset>;
+  pace?: import('./engine/timeline.mjs').Pace;
   theme: Theme;
   title: string;
   subtitle?: string;
@@ -31,6 +48,8 @@ export type VideoProps = {
 };
 
 export type ThumbProps = {
+  design?: string;
+  assets?: Record<string,MediaAsset>;
   theme: Theme;
   title: string; // 2–3 слова
   ids: string[]; // 1–3 размытые карточки, последняя — по центру. Только разные существа, без повторов
@@ -38,8 +57,8 @@ export type ThumbProps = {
   motif?: string;
 };
 
-export const imageFor = (theme: Theme, id: string) =>
-  theme === "pencil" ? `pencil/${id}.jpg` : `photo/${id}.jpg`;
+export const imageFor = (theme: Theme, id: string, assets?:Record<string,MediaAsset>) =>
+  assets?.[id]?.composite ?? (theme === "pencil" ? `pencil/${id}.jpg` : `photo/${id}.jpg`);
 
 export const PAPER = "#faf4e4";
 export const GRAPHITE = "#2f2a27";

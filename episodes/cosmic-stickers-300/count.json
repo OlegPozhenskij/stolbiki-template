@@ -1,0 +1,23 @@
+{
+  "cards": 75,
+  "secondsPerCard": 4,
+  "totalSeconds": 300,
+  "planets": 8,
+  "families": {
+    "spacecraft": 4,
+    "asteroid": 13,
+    "rocket": 1,
+    "moonlet": 1,
+    "comet": 3,
+    "pulsar": 1,
+    "moon": 18,
+    "dwarf": 5,
+    "small-world": 2,
+    "planet": 8,
+    "star": 6,
+    "black-hole": 2,
+    "nebula": 5,
+    "cluster": 3,
+    "galaxy": 3
+  }
+}

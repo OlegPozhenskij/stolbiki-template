@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+const folder='assets/photos/cosmic-stickers';fs.mkdirSync(folder,{recursive:true});
+const rows=[
+ {id:'iss',url:'https://images-assets.nasa.gov/image/s119e010350/s119e010350~orig.jpg',page:'https://images.nasa.gov/details/s119e010350',credit:'NASA',license:'NASA media use guidelines',note:'Photograph, STS-119, 2009; historical station configuration.'},
+ {id:'bennu',url:'https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/b/bennu_dec10.jpg',page:'https://science.nasa.gov/resource/bennu-mosaic/',credit:'NASA/Goddard/University of Arizona',license:'NASA media use guidelines',note:'OSIRIS-REx PolyCam mosaic, 12 images, 2018.'},
+ {id:'67p',url:'https://media.esa.int/legacy/web/images/esa_multimedia/images/2014/08/comet_on_3_august_2014_-_navcam/14700233-1-eng-GB/Comet_on_3_August_2014_-_NavCam.jpg',page:'https://www.esa.int/ESA_Multimedia/Images/2014/08/Comet_on_3_August_2014_-_NavCam',credit:'ESA/Rosetta/NAVCAM',license:'ESA Standard Licence',note:'Real NAVCAM photograph, 3 August 2014; decorative border and space context added.'},
+ {id:'moon',url:'https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2011/march/lroc_wac_nearside800.jpg',page:'https://science.nasa.gov/image-article/apod-2011-march-3-lunar-nearside/',credit:'NASA/GSFC/Arizona State University',license:'NASA media use guidelines',note:'LRO photographic mosaic.'},
+ {id:'saturn',url:'https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/i/IMG003379.jpg',page:'https://science.nasa.gov/resource/saturn-four-years-on/',credit:'NASA/JPL/Space Science Institute',license:'NASA media use guidelines',note:'Cassini natural-color mosaic, July 2008; ring span excluded from displayed body size.'},
+ {id:'sun',url:'https://svs.gsfc.nasa.gov/vis/a000000/a003900/a003980/SDOAIA171A_Jewelbox.01000.jpg',page:'https://svs.gsfc.nasa.gov/3980/',credit:'NASA/SDO, AIA',license:'NASA media use guidelines',note:'Real extreme-ultraviolet observation, 171 angstroms; mapped color, not visible-light color.'}
+];
+const previous=JSON.parse(fs.readFileSync('episodes/cosmic-stickers-pilot/media.json','utf8'));
+for(const row of rows){const file=`${folder}/${row.id}.jpg`;if(!fs.existsSync(file)||previous.find(x=>x.id===row.id)?.url!==row.url){const r=await fetch(row.url);if(!r.ok)throw Error(`${row.id}: ${r.status}`);if(!r.headers.get('content-type')?.startsWith('image/'))throw Error(`Not an image: ${row.id}`);fs.writeFileSync(file,Buffer.from(await r.arrayBuffer()));}row.file=file;console.log(`${row.id}: ${fs.statSync(file).size} bytes`);}
+fs.writeFileSync('episodes/cosmic-stickers-pilot/media.json',JSON.stringify(rows,null,2)+'\n');

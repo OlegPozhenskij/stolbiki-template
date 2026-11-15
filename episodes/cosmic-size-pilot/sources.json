@@ -1,0 +1,35 @@
+{
+  "earth": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/earth/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Здесь океаны жидкой воды.",
+    "refresh": false
+  },
+  "saturn": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/saturn/facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Плавал бы в огромной ванне!",
+    "refresh": false
+  },
+  "jupiter": {
+    "status": "verified",
+    "checkedAt": "2026-11-15",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/jupiter/jupiter-facts/"
+    ],
+    "scope": "Экваториальный диаметр, километры; единое определение для всех восьми планет. Иллюстрации не в масштабе.",
+    "fact": "Красное пятно — огромный шторм!",
+    "refresh": false
+  }
+}

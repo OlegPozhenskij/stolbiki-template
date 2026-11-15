@@ -1,0 +1,56 @@
+[
+  {
+    "id": "iss",
+    "url": "https://images-assets.nasa.gov/image/s119e010350/s119e010350~orig.jpg",
+    "page": "https://images.nasa.gov/details/s119e010350",
+    "credit": "NASA",
+    "license": "NASA media use guidelines",
+    "note": "Photograph, STS-119, 2009; historical station configuration.",
+    "file": "assets/photos/cosmic-stickers/iss.jpg"
+  },
+  {
+    "id": "bennu",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/b/bennu_dec10.jpg",
+    "page": "https://science.nasa.gov/resource/bennu-mosaic/",
+    "credit": "NASA/Goddard/University of Arizona",
+    "license": "NASA media use guidelines",
+    "note": "OSIRIS-REx PolyCam mosaic, 12 images, 2018.",
+    "file": "assets/photos/cosmic-stickers/bennu.jpg"
+  },
+  {
+    "id": "67p",
+    "url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2014/08/comet_on_3_august_2014_-_navcam/14700233-1-eng-GB/Comet_on_3_August_2014_-_NavCam.jpg",
+    "page": "https://www.esa.int/ESA_Multimedia/Images/2014/08/Comet_on_3_August_2014_-_NavCam",
+    "credit": "ESA/Rosetta/NAVCAM",
+    "license": "ESA Standard Licence",
+    "note": "Real NAVCAM photograph, 3 August 2014; decorative border and space context added.",
+    "file": "assets/photos/cosmic-stickers/67p.jpg"
+  },
+  {
+    "id": "moon",
+    "url": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2011/march/lroc_wac_nearside800.jpg",
+    "page": "https://science.nasa.gov/image-article/apod-2011-march-3-lunar-nearside/",
+    "credit": "NASA/GSFC/Arizona State University",
+    "license": "NASA media use guidelines",
+    "note": "LRO photographic mosaic.",
+    "file": "assets/photos/cosmic-stickers/moon.jpg"
+  },
+  {
+    "id": "saturn",
+    "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/i/IMG003379.jpg",
+    "page": "https://science.nasa.gov/resource/saturn-four-years-on/",
+    "credit": "NASA/JPL/Space Science Institute",
+    "license": "NASA media use guidelines",
+    "note": "Cassini natural-color mosaic, July 2008; ring span excluded from displayed body size.",
+    "file": "assets/photos/cosmic-stickers/saturn.jpg"
+  },
+  {
+    "id": "sun",
+    "url": "https://svs.gsfc.nasa.gov/vis/a000000/a003900/a003980/SDOAIA171A_Jewelbox.01000.jpg",
+    "page": "https://svs.gsfc.nasa.gov/3980/",
+    "credit": "NASA/SDO, AIA",
+    "license": "NASA media use guidelines",
+    "note": "Real extreme-ultraviolet observation, 171 angstroms; mapped color, not visible-light color.",
+    "file": "assets/photos/cosmic-stickers/sun.jpg"
+  }
+]

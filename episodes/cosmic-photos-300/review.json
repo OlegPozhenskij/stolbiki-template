@@ -1,0 +1,42 @@
+{
+  "cycles": 1,
+  "viewed": [
+    "out/cosmic-photos-300/check.jpg"
+  ],
+  "findings": [
+    "Same 75 accepted images, facts, music and layout; no new research",
+    "No sticker outlines or masks; no companion objects",
+    "Large fixed portraits preserve aspect ratio; previous cards do not shrink",
+    "18 tests and preview TypeScript passed"
+  ],
+  "verdict": "rendered-and-technically-verified",
+  "export": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "300.000000",
+        "nb_frames": "9000",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "duration": "300.000000",
+        "nb_frames": "12921"
+      }
+    ],
+    "format": {
+      "duration": "300.000000",
+      "size": "294085121"
+    }
+  }
+}

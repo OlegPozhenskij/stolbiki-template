@@ -1,0 +1,11 @@
+{
+  "earth": {
+    "scene": "planet-earth-v2"
+  },
+  "saturn": {
+    "scene": "planet-saturn-v2"
+  },
+  "jupiter": {
+    "scene": "planet-jupiter-v2"
+  }
+}

@@ -1,38 +1,14 @@
-import React from "react";
-import { Composition, Still } from "remotion";
-import { Thumb } from "./Thumb";
-import { Video } from "./Video";
-import data from "./data.json";
-import { ThumbProps, VideoProps } from "./theme";
-import { FPS, HEIGHT, WIDTH, timing } from "./timing";
-
-// Ролик целиком описан в src/data.json. theme: "pencil" — рисунки карандашом, "photo" — фото из public/photo/<id>.jpg
-const { thumb, ...rest } = data as Omit<VideoProps, "theme"> & { thumb: Omit<ThumbProps, "theme"> };
-const base = rest;
-
-export const RemotionRoot: React.FC = () => {
-  return (
-    <>
-      <Composition
-        id="Pencil"
-        component={Video}
-        width={WIDTH}
-        height={HEIGHT}
-        fps={FPS}
-        durationInFrames={timing(base.items.length, base.short).total}
-        defaultProps={{ ...base, theme: "pencil" } as VideoProps}
-      />
-      <Composition
-        id="Photo"
-        component={Video}
-        width={WIDTH}
-        height={HEIGHT}
-        fps={FPS}
-        durationInFrames={timing(base.items.length, base.short).total}
-        defaultProps={{ ...base, theme: "photo" } as VideoProps}
-      />
-      <Still id="ThumbPencil" component={Thumb} width={1280} height={720} defaultProps={{ ...thumb, motif: rest.motif, theme: "pencil" } as ThumbProps} />
-      <Still id="ThumbPhoto" component={Thumb} width={1280} height={720} defaultProps={{ ...thumb, motif: rest.motif, theme: "photo" } as ThumbProps} />
-    </>
-  );
-};
+import React from 'react';
+import {Composition,Still} from 'remotion';
+import {Video} from './Video';
+import {Thumb} from './Thumb';
+import runtime from './generated/episode.json';
+import {VideoProps,ThumbProps} from './theme';
+import {timing} from './timing';
+const base=runtime.video as VideoProps;
+const cover=runtime.thumb as ThumbProps;
+const t=timing(base.items.length,false,base.pace);
+export const RemotionRoot:React.FC=()=> <>
+  <Composition id="Episode" component={Video} width={1920} height={1080} fps={t.fps} durationInFrames={t.total} defaultProps={base}/>
+  <Still id="Cover" component={Thumb} width={1280} height={720} defaultProps={cover}/>
+</>;

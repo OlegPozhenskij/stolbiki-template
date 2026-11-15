@@ -1,0 +1,1244 @@
+{
+  "cat": {
+    "module": "assets/scenes/cat.mjs",
+    "label": "cat",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "jellyfish": {
+    "module": "assets/scenes/jellyfish.mjs",
+    "label": "jellyfish",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "mayfly": {
+    "module": "assets/scenes/mayfly.mjs",
+    "label": "mayfly",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "bee": {
+    "module": "assets/scenes/bee.mjs",
+    "label": "bee",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "axolotl": {
+    "module": "assets/scenes/axolotl.mjs",
+    "label": "axolotl",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "platypus": {
+    "module": "assets/scenes/platypus.mjs",
+    "label": "platypus",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "molerat": {
+    "module": "assets/scenes/molerat.mjs",
+    "label": "molerat",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "elephant": {
+    "module": "assets/scenes/elephant.mjs",
+    "label": "elephant",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "kakapo": {
+    "module": "assets/scenes/kakapo.mjs",
+    "label": "kakapo",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "tortoise": {
+    "module": "assets/scenes/tortoise.mjs",
+    "label": "tortoise",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "whale": {
+    "module": "assets/scenes/whale.mjs",
+    "label": "whale",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "shark": {
+    "module": "assets/scenes/shark.mjs",
+    "label": "shark",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "mosquito": {
+    "module": "assets/scenes/mosquito.mjs",
+    "label": "mosquito",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "housefly": {
+    "module": "assets/scenes/housefly.mjs",
+    "label": "housefly",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "chameleon": {
+    "module": "assets/scenes/chameleon.mjs",
+    "label": "chameleon",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "octopus": {
+    "module": "assets/scenes/octopus.mjs",
+    "label": "octopus",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "hamster": {
+    "module": "assets/scenes/hamster.mjs",
+    "label": "hamster",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "guineapig": {
+    "module": "assets/scenes/guineapig.mjs",
+    "label": "guineapig",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "capybara": {
+    "module": "assets/scenes/capybara.mjs",
+    "label": "capybara",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "rabbit": {
+    "module": "assets/scenes/rabbit.mjs",
+    "label": "rabbit",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "hummingbird": {
+    "module": "assets/scenes/hummingbird.mjs",
+    "label": "hummingbird",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "dog": {
+    "module": "assets/scenes/dog.mjs",
+    "label": "dog",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "lion": {
+    "module": "assets/scenes/lion.mjs",
+    "label": "lion",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "koala": {
+    "module": "assets/scenes/koala.mjs",
+    "label": "koala",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "penguin": {
+    "module": "assets/scenes/penguin.mjs",
+    "label": "penguin",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "giraffe": {
+    "module": "assets/scenes/giraffe.mjs",
+    "label": "giraffe",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "polarbear": {
+    "module": "assets/scenes/polarbear.mjs",
+    "label": "polarbear",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "antqueen": {
+    "module": "assets/scenes/antqueen.mjs",
+    "label": "antqueen",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "horse": {
+    "module": "assets/scenes/horse.mjs",
+    "label": "horse",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "panda": {
+    "module": "assets/scenes/panda.mjs",
+    "label": "panda",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "ostrich": {
+    "module": "assets/scenes/ostrich.mjs",
+    "label": "ostrich",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "hippo": {
+    "module": "assets/scenes/hippo.mjs",
+    "label": "hippo",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "gorilla": {
+    "module": "assets/scenes/gorilla.mjs",
+    "label": "gorilla",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "dolphin": {
+    "module": "assets/scenes/dolphin.mjs",
+    "label": "dolphin",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "crocodile": {
+    "module": "assets/scenes/crocodile.mjs",
+    "label": "crocodile",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "flamingo": {
+    "module": "assets/scenes/flamingo.mjs",
+    "label": "flamingo",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "tuatara": {
+    "module": "assets/scenes/tuatara.mjs",
+    "label": "tuatara",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "human": {
+    "module": "assets/scenes/human.mjs",
+    "label": "human",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "sturgeon": {
+    "module": "assets/scenes/sturgeon.mjs",
+    "label": "sturgeon",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "urchin": {
+    "module": "assets/scenes/urchin.mjs",
+    "label": "urchin",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "quahog": {
+    "module": "assets/scenes/quahog.mjs",
+    "label": "quahog",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "coral": {
+    "module": "assets/scenes/coral.mjs",
+    "label": "coral",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "butterfly": {
+    "module": "assets/scenes/butterfly.mjs",
+    "label": "butterfly",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "ladybug": {
+    "module": "assets/scenes/ladybug.mjs",
+    "label": "ladybug",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "sloth": {
+    "module": "assets/scenes/sloth.mjs",
+    "label": "sloth",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "sun": {
+    "module": "assets/scenes/sun.mjs",
+    "label": "sun",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "earth": {
+    "module": "assets/scenes/earth.mjs",
+    "label": "earth",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "saturn": {
+    "module": "assets/scenes/saturn.mjs",
+    "label": "saturn",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "neptune": {
+    "module": "assets/scenes/neptune.mjs",
+    "label": "neptune",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-earth-v1": {
+    "module": "assets/scenes/planet-earth-v1.mjs",
+    "label": "Земля · иллюстрация 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-saturn-v1": {
+    "module": "assets/scenes/planet-saturn-v1.mjs",
+    "label": "Сатурн · иллюстрация 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-jupiter-v1": {
+    "module": "assets/scenes/planet-jupiter-v1.mjs",
+    "label": "Юпитер · иллюстрация 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-earth-v2": {
+    "module": "assets/scenes/planet-earth-v2.mjs",
+    "label": "Земля · иллюстрация 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-saturn-v2": {
+    "module": "assets/scenes/planet-saturn-v2.mjs",
+    "label": "Сатурн · иллюстрация 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-jupiter-v2": {
+    "module": "assets/scenes/planet-jupiter-v2.mjs",
+    "label": "Юпитер · иллюстрация 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-earth-v3": {
+    "module": "assets/scenes/planet-earth-v3.mjs",
+    "label": "Земля · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-saturn-v3": {
+    "module": "assets/scenes/planet-saturn-v3.mjs",
+    "label": "Сатурн · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-jupiter-v3": {
+    "module": "assets/scenes/planet-jupiter-v3.mjs",
+    "label": "Юпитер · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-mercury-v3": {
+    "module": "assets/scenes/planet-mercury-v3.mjs",
+    "label": "Меркурий · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-mars-v3": {
+    "module": "assets/scenes/planet-mars-v3.mjs",
+    "label": "Марс · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-venus-v3": {
+    "module": "assets/scenes/planet-venus-v3.mjs",
+    "label": "Венера · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-neptune-v3": {
+    "module": "assets/scenes/planet-neptune-v3.mjs",
+    "label": "Нептун · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "planet-uranus-v3": {
+    "module": "assets/scenes/planet-uranus-v3.mjs",
+    "label": "Уран · иллюстрация 3",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-jupiter": {
+    "module": "assets/scenes/cosmic-jupiter.mjs",
+    "label": "Юпитер",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-saturn": {
+    "module": "assets/scenes/cosmic-saturn.mjs",
+    "label": "Сатурн",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-earth": {
+    "module": "assets/scenes/cosmic-earth.mjs",
+    "label": "Земля",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ingenuity": {
+    "module": "assets/scenes/cosmic-ingenuity.mjs",
+    "label": "Индженьюити",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-curiosity": {
+    "module": "assets/scenes/cosmic-curiosity.mjs",
+    "label": "Кьюриосити",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-new-horizons": {
+    "module": "assets/scenes/cosmic-new-horizons.mjs",
+    "label": "Новые горизонты",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-cassini": {
+    "module": "assets/scenes/cosmic-cassini.mjs",
+    "label": "Кассини",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-voyager": {
+    "module": "assets/scenes/cosmic-voyager.mjs",
+    "label": "Вояджер-1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-hubble": {
+    "module": "assets/scenes/cosmic-hubble.mjs",
+    "label": "Хаббл",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-jwst": {
+    "module": "assets/scenes/cosmic-jwst.mjs",
+    "label": "Джеймс Уэбб",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-iss": {
+    "module": "assets/scenes/cosmic-iss.mjs",
+    "label": "МКС",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-bennu": {
+    "module": "assets/scenes/cosmic-bennu.mjs",
+    "label": "Бенну",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-itokawa": {
+    "module": "assets/scenes/cosmic-itokawa.mjs",
+    "label": "Итокава",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ryugu": {
+    "module": "assets/scenes/cosmic-ryugu.mjs",
+    "label": "Рюгу",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-hartley-2": {
+    "module": "assets/scenes/cosmic-hartley-2.mjs",
+    "label": "Хартли 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-67p": {
+    "module": "assets/scenes/cosmic-67p.mjs",
+    "label": "Комета 67P",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-wild-2": {
+    "module": "assets/scenes/cosmic-wild-2.mjs",
+    "label": "Вильда 2",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-tempel-1": {
+    "module": "assets/scenes/cosmic-tempel-1.mjs",
+    "label": "Темпель 1",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-halley": {
+    "module": "assets/scenes/cosmic-halley.mjs",
+    "label": "Комета Галлея",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-crab-pulsar": {
+    "module": "assets/scenes/cosmic-crab-pulsar.mjs",
+    "label": "Крабовый пульсар",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-eros": {
+    "module": "assets/scenes/cosmic-eros.mjs",
+    "label": "Эрос",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ida": {
+    "module": "assets/scenes/cosmic-ida.mjs",
+    "label": "Ида",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-lutetia": {
+    "module": "assets/scenes/cosmic-lutetia.mjs",
+    "label": "Лютеция",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-mimas": {
+    "module": "assets/scenes/cosmic-mimas.mjs",
+    "label": "Мимас",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-hyperion": {
+    "module": "assets/scenes/cosmic-hyperion.mjs",
+    "label": "Гиперион",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-hygiea": {
+    "module": "assets/scenes/cosmic-hygiea.mjs",
+    "label": "Гигея",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-miranda": {
+    "module": "assets/scenes/cosmic-miranda.mjs",
+    "label": "Миранда",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-enceladus": {
+    "module": "assets/scenes/cosmic-enceladus.mjs",
+    "label": "Энцелад",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-pallas": {
+    "module": "assets/scenes/cosmic-pallas.mjs",
+    "label": "Паллада",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-vesta": {
+    "module": "assets/scenes/cosmic-vesta.mjs",
+    "label": "Веста",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ceres": {
+    "module": "assets/scenes/cosmic-ceres.mjs",
+    "label": "Церера",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-tethys": {
+    "module": "assets/scenes/cosmic-tethys.mjs",
+    "label": "Тефия",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-dione": {
+    "module": "assets/scenes/cosmic-dione.mjs",
+    "label": "Диона",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ariel": {
+    "module": "assets/scenes/cosmic-ariel.mjs",
+    "label": "Ариэль",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-umbriel": {
+    "module": "assets/scenes/cosmic-umbriel.mjs",
+    "label": "Умбриэль",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-charon": {
+    "module": "assets/scenes/cosmic-charon.mjs",
+    "label": "Харон",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-makemake": {
+    "module": "assets/scenes/cosmic-makemake.mjs",
+    "label": "Макемаке",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-iapetus": {
+    "module": "assets/scenes/cosmic-iapetus.mjs",
+    "label": "Япет",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-oberon": {
+    "module": "assets/scenes/cosmic-oberon.mjs",
+    "label": "Оберон",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-rhea": {
+    "module": "assets/scenes/cosmic-rhea.mjs",
+    "label": "Рея",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-titania": {
+    "module": "assets/scenes/cosmic-titania.mjs",
+    "label": "Титания",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-haumea": {
+    "module": "assets/scenes/cosmic-haumea.mjs",
+    "label": "Хаумеа",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-eris": {
+    "module": "assets/scenes/cosmic-eris.mjs",
+    "label": "Эрида",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-pluto": {
+    "module": "assets/scenes/cosmic-pluto.mjs",
+    "label": "Плутон",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-triton": {
+    "module": "assets/scenes/cosmic-triton.mjs",
+    "label": "Тритон",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-europa": {
+    "module": "assets/scenes/cosmic-europa.mjs",
+    "label": "Европа",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-moon": {
+    "module": "assets/scenes/cosmic-moon.mjs",
+    "label": "Луна",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-io": {
+    "module": "assets/scenes/cosmic-io.mjs",
+    "label": "Ио",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-callisto": {
+    "module": "assets/scenes/cosmic-callisto.mjs",
+    "label": "Каллисто",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-mercury": {
+    "module": "assets/scenes/cosmic-mercury.mjs",
+    "label": "Меркурий",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-titan": {
+    "module": "assets/scenes/cosmic-titan.mjs",
+    "label": "Титан",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ganymede": {
+    "module": "assets/scenes/cosmic-ganymede.mjs",
+    "label": "Ганимед",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-mars": {
+    "module": "assets/scenes/cosmic-mars.mjs",
+    "label": "Марс",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-sirius-b": {
+    "module": "assets/scenes/cosmic-sirius-b.mjs",
+    "label": "Сириус B",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-venus": {
+    "module": "assets/scenes/cosmic-venus.mjs",
+    "label": "Венера",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-neptune": {
+    "module": "assets/scenes/cosmic-neptune.mjs",
+    "label": "Нептун",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-uranus": {
+    "module": "assets/scenes/cosmic-uranus.mjs",
+    "label": "Уран",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-sun": {
+    "module": "assets/scenes/cosmic-sun.mjs",
+    "label": "Солнце",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-sirius": {
+    "module": "assets/scenes/cosmic-sirius.mjs",
+    "label": "Сириус А",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-sagittarius-a": {
+    "module": "assets/scenes/cosmic-sagittarius-a.mjs",
+    "label": "Стрелец A*",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-arcturus": {
+    "module": "assets/scenes/cosmic-arcturus.mjs",
+    "label": "Арктур",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-aldebaran": {
+    "module": "assets/scenes/cosmic-aldebaran.mjs",
+    "label": "Альдебаран",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-rigel": {
+    "module": "assets/scenes/cosmic-rigel.mjs",
+    "label": "Ригель",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-antares": {
+    "module": "assets/scenes/cosmic-antares.mjs",
+    "label": "Антарес",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-betelgeuse": {
+    "module": "assets/scenes/cosmic-betelgeuse.mjs",
+    "label": "Бетельгейзе",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-m87-black-hole": {
+    "module": "assets/scenes/cosmic-m87-black-hole.mjs",
+    "label": "Чёрная дыра M87*",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-ring-nebula": {
+    "module": "assets/scenes/cosmic-ring-nebula.mjs",
+    "label": "Туманность Кольцо",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-helix-nebula": {
+    "module": "assets/scenes/cosmic-helix-nebula.mjs",
+    "label": "Туманность Улитка",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-horsehead-nebula": {
+    "module": "assets/scenes/cosmic-horsehead-nebula.mjs",
+    "label": "Конская Голова",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-crab-nebula": {
+    "module": "assets/scenes/cosmic-crab-nebula.mjs",
+    "label": "Крабовидная туманность",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-orion-nebula": {
+    "module": "assets/scenes/cosmic-orion-nebula.mjs",
+    "label": "Туманность Ориона",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-eagle-nebula": {
+    "module": "assets/scenes/cosmic-eagle-nebula.mjs",
+    "label": "Туманность Орёл",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-triangulum": {
+    "module": "assets/scenes/cosmic-triangulum.mjs",
+    "label": "Галактика Треугольника",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-milky-way": {
+    "module": "assets/scenes/cosmic-milky-way.mjs",
+    "label": "Млечный Путь",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  },
+  "cosmic-andromeda": {
+    "module": "assets/scenes/cosmic-andromeda.mjs",
+    "label": "Андромеда",
+    "layers": [
+      "background",
+      "foreground"
+    ],
+    "license": "project-original"
+  }
+}

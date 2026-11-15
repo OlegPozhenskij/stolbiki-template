@@ -1,7 +1,8 @@
+import {designOf} from "./designs/registry";
 import React from "react";
 import { Img, staticFile } from "remotion";
 import { BODY } from "./fonts";
-import { INK, Motif, RED, Theme, motifOf } from "./theme";
+import { INK, Motif, Theme, motifOf } from "./theme";
 
 const HEX = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
 
@@ -9,15 +10,17 @@ const HEX = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
 // Все формы вписаны в рамку x 50..430, y 70..570 макета 480x640; motif.textBox — где по высоте лежит текст.
 export const Badge: React.FC<{
   theme: Theme;
+  design?: string;
   prefix?: string;
   shown: string;
   unit: string;
   size?: number;
   motif?: Motif;
-}> = ({ theme, prefix, shown, unit, size = 232, motif = motifOf() }) => {
+}> = ({ theme, prefix, shown, unit, size = 232, motif = motifOf(), design }) => {
   const k = size / 232;
   const h = 268 * k;
-  const pencil = theme === "pencil";
+  const skin=designOf(design,theme);
+  const pencil = skin.layout === "album";
   const m = pencil ? motif : motifOf("classic");
   const tk = k * m.textScale;
   const isWord = unit.length > 7; // «жить вечно»
@@ -32,7 +35,7 @@ export const Badge: React.FC<{
 
   return (
     <div style={{ position: "relative", width: size, height: h }}>
-      {theme === "pencil" ? (
+      {pencil ? (
         // бумажная подложка: карандашный цвет полупрозрачный, без неё просвечивает картинка
         <div
           style={{
@@ -46,13 +49,13 @@ export const Badge: React.FC<{
           }}
         />
       ) : null}
-      {theme === "pencil" ? (
+      {pencil ? (
         // badge.png: шестиугольник занимает x 50..430, y 70..570 в макете 480x640
         <Img src={staticFile("pencil/badge.png")} style={art} />
       ) : (
         <>
-          <div style={{ position: "absolute", inset: 0, clipPath: HEX, backgroundColor: INK }} />
-          <div style={{ position: "absolute", inset: 8 * k, clipPath: HEX, backgroundColor: RED }} />
+          <div style={{ position: "absolute", inset: 0, clipPath: skin.badgeShape === "round" ? undefined : HEX, borderRadius: skin.badgeShape === "round" ? 48 : undefined, backgroundColor: INK }} />
+          <div style={{ position: "absolute", inset: 8 * k, clipPath: skin.badgeShape === "round" ? undefined : HEX, borderRadius: skin.badgeShape === "round" ? 48 : undefined, backgroundColor: skin.badge ?? m.badge }} />
         </>
       )}
       <div

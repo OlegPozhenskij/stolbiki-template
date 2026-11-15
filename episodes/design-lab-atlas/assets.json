@@ -1,0 +1,14 @@
+{
+  "sun": {
+    "scene": "sun"
+  },
+  "earth": {
+    "scene": "earth"
+  },
+  "saturn": {
+    "scene": "saturn"
+  },
+  "neptune": {
+    "scene": "neptune"
+  }
+}

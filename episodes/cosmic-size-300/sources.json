@@ -1,0 +1,845 @@
+{
+  "ingenuity": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+    ],
+    "scope": "Диаметр несущих винтов1.2м; корпус меньше.",
+    "fact": "Впервые взлетел в небе Марса!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "curiosity": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/msl-curiosity/",
+      "https://science.nasa.gov/photojournal/nasa-mars-rover-curiosity-at-jpl-side-view/"
+    ],
+    "scope": "Длина марсохода около3м.",
+    "fact": "Сверлит камни на Марсе!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "new-horizons": {
+    "status": "verified",
+    "urls": [
+      "https://pluto.jhuapl.edu/Mission/Spacecraft.php",
+      "https://www.jhuapl.edu/sites/default/files/2024-09/37-01-Hersman.pdf"
+    ],
+    "scope": "Максимальный размер аппарата со штангами 3.2 м по схеме JHUAPL; не диаметр антенны.",
+    "fact": "Показал ледяное «сердце» Плутона!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "cassini": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/cassini/quick-facts/",
+      "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4227.pdf",
+      "https://science.nasa.gov/mission/cassini/"
+    ],
+    "scope": "Высота аппарата со связанной конфигурацией; требует проверки.",
+    "fact": "Нырнул в атмосферу Сатурна.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "voyager": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/voyager/frequently-asked-questions/",
+      "https://science.nasa.gov/mission/voyager/voyager-golden-record-overview/"
+    ],
+    "scope": "Длина с развёрнутыми выносными штангами; требует проверки.",
+    "fact": "Несёт золотую пластинку с Земли!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "hubble": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/hubble/overview/hubble-by-the-numbers/"
+    ],
+    "scope": "Длина корпуса телескопа около13 м; не диаметр зеркала.",
+    "fact": "Смотрит на звёзды выше облаков.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "jwst": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/webb/fact-sheet/"
+    ],
+    "scope": "Длина развёрнутого солнцезащитного экрана около21.2м.",
+    "fact": "Заглядывает в далёкое прошлое!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "iss": {
+    "status": "verified",
+    "urls": [
+      "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    ],
+    "scope": "Максимальный размах станции с солнечными батареями 109 м.",
+    "fact": "Облетает Землю за полтора часа!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "bennu": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/asteroids/101955-bennu/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=101955&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "Его камешки доставили на Землю!",
+    "refresh": false,
+    "sizeEvidence": "0.5047 x 0.4918 x 0.4567 km; Daly, M.G., et al., Sci. Adv. 6, eabd3649 (2020)",
+    "checkedAt": "2026-11-15"
+  },
+  "itokawa": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/asteroids/25143-itokawa/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=25143&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "С неё на Землю привезли пылинки!",
+    "refresh": false,
+    "sizeEvidence": "0.535x0.294x0.209 km; Science 312:1330-1334",
+    "checkedAt": "2026-11-15"
+  },
+  "ryugu": {
+    "status": "verified",
+    "urls": [
+      "https://www.hayabusa2.jaxa.jp/topics/20180619je/index_e.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=162173&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "Форма похожа на волчок!",
+    "refresh": false,
+    "sizeEvidence": "1.004x0.876 km; Watanabe, S.; Hirabayashi, M.; Hirata, N.; Hirata, Na.; et al. (2019) Science 364, 267-272.",
+    "checkedAt": "2026-11-15"
+  },
+  "hartley-2": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/103p-hartley-hartley-2/",
+      "https://science.nasa.gov/photojournal/tempel-1-and-hartley-2/"
+    ],
+    "scope": "Размер ледяного ядра, км. Хвост и газовая оболочка не входят в сравнение.",
+    "fact": "Газовые струи разбрасывают лёд!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "67p": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/67p-churyumov-gerasimenko/",
+      "https://sci.esa.int/documents/34878/36335/1567260126246-Rosetta_PressKit_CometLanding_November2014_v4.pdf"
+    ],
+    "scope": "Приблизительный размер ядра около4км; хвост и газ не входят.",
+    "fact": "Похожа на космическую уточку!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "wild-2": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/81p-wild/",
+      "https://ntrs.nasa.gov/api/citations/20210025665/downloads/AGU_Hyperwall_SmallSat1.pdf"
+    ],
+    "scope": "Размер ледяного ядра, км. Хвост и газовая оболочка не входят в сравнение.",
+    "fact": "Её пыль привезли на Землю!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "tempel-1": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/9p-tempel-1/",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=9P&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "В неё запустили медный ударник!",
+    "refresh": false,
+    "sizeEvidence": "7.6x4.9 km; A'Hearn, M.F. et al. (2005) Science 310:258-264",
+    "checkedAt": "2026-11-15"
+  },
+  "halley": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/comets/1p-halley/"
+    ],
+    "scope": "Размер ледяного ядра, км. Хвост и газовая оболочка не входят в сравнение.",
+    "fact": "Возвращается примерно раз в 76 лет.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "crab-pulsar": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/missions/hubble/the-crab-nebula/",
+      "https://chandra.harvard.edu/resources/faq/sources/snr/snr-24.html"
+    ],
+    "scope": "Оценка диаметра нейтронной звезды около20км; не размер всей туманности.",
+    "fact": "Вращается около 30 раз в секунду!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "eros": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/asteroids/433-eros/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=433&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "На неё первым сел земной зонд!",
+    "refresh": false,
+    "sizeEvidence": "34.4x11.2x11.2 km; Veverka et al. (2000) Science v.289,pp.2088-2097",
+    "checkedAt": "2026-11-15"
+  },
+  "ida": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/asteroids/243-ida/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=243&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "У неё есть собственный спутник!",
+    "refresh": false,
+    "sizeEvidence": "59.8x25.4x18.6 km; Thomas et al. (1996) Icarus v.120, pp.20-32",
+    "checkedAt": "2026-11-15"
+  },
+  "lutetia": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=21&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "Мимо неё пролетел зонд «Розетта».",
+    "refresh": false,
+    "sizeEvidence": "121 x 101 x 75 km; Sierks et al., Science 334, 487, 2011",
+    "checkedAt": "2026-11-15"
+  },
+  "mimas": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/mimas/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Огромный кратер делает его похожим на глаз.",
+    "refresh": false,
+    "jplMeanRadiusKm": 198.2,
+    "checkedAt": "2026-11-15"
+  },
+  "hyperion": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/saturn/moons/hyperion/"
+    ],
+    "scope": "Наибольшая ось410км; NASA указывает размеры410×260×220км, а средний радиус135км не используется для сравнения максимального размера.",
+    "fact": "Кувыркается, как брошенный камень!",
+    "refresh": false,
+    "jplMeanRadiusKm": 135,
+    "checkedAt": "2026-11-15"
+  },
+  "hygiea": {
+    "status": "verified",
+    "urls": [
+      "https://www.eso.org/public/news/eso1918/"
+    ],
+    "scope": "Приблизительный диаметр почти сферического тела, ESO: just over430km.",
+    "fact": "Она почти круглая, как планета!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "miranda": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/uranus/moons/miranda/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Пейзаж похож на лоскутное одеяло!",
+    "refresh": false,
+    "jplMeanRadiusKm": 235.8,
+    "checkedAt": "2026-11-15"
+  },
+  "enceladus": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Из трещин бьют ледяные фонтаны!",
+    "refresh": false,
+    "jplMeanRadiusKm": 252.1,
+    "checkedAt": "2026-11-15"
+  },
+  "pallas": {
+    "status": "verified",
+    "urls": [
+      "https://news.mit.edu/2020/pallas-golf-ball-asteroid-0210",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "Усыпана следами древних столкновений.",
+    "refresh": false,
+    "sizeEvidence": "568x532x448 km; Marsset et al., Nature Astronomy 4, 569-576 (2020)",
+    "checkedAt": "2026-11-15"
+  },
+  "vesta": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/asteroids/4-vesta/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=4&phys-par=1"
+    ],
+    "scope": "Наибольший линейный размер по JPL SBDB extent, км; не масса и не средний радиус.",
+    "fact": "На полюсе зияет огромный кратер!",
+    "refresh": false,
+    "sizeEvidence": "569.24 x 554.48 x 452.66 km; Park, R.S. et al. 2025, Nat Astron, DOI: 10.1038/s41550-025-02533-7",
+    "checkedAt": "2026-11-15"
+  },
+  "ceres": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/dwarf-planets/ceres/facts/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html"
+    ],
+    "scope": "Наибольшая ось 965 км из NASA Asteroid Fact Sheet.",
+    "fact": "Первая открытая в поясе астероидов.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "tethys": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/tethys/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "По ней тянется гигантский каньон!",
+    "refresh": false,
+    "jplMeanRadiusKm": 531.1,
+    "checkedAt": "2026-11-15"
+  },
+  "dione": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/dione/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Здесь сверкают ледяные обрывы.",
+    "refresh": false,
+    "jplMeanRadiusKm": 561.4,
+    "checkedAt": "2026-11-15"
+  },
+  "ariel": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/uranus/moons/ariel/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Назван в честь волшебного духа.",
+    "refresh": false,
+    "jplMeanRadiusKm": 578.9,
+    "checkedAt": "2026-11-15"
+  },
+  "umbriel": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/uranus/moons/umbriel/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Его имя взято из старинной поэмы.",
+    "refresh": false,
+    "jplMeanRadiusKm": 584.7,
+    "checkedAt": "2026-11-15"
+  },
+  "charon": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/dwarf-planets/pluto/moons/charon/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "С Плутоном всегда смотрят друг на друга.",
+    "refresh": false,
+    "jplMeanRadiusKm": 606,
+    "checkedAt": "2026-11-15"
+  },
+  "makemake": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/dwarf-planets/makemake/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html"
+    ],
+    "scope": "Оценка диаметра, км.",
+    "fact": "Она окрашена в красноватый цвет.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "iapetus": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/iapetus/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Одна половина тёмная, другая светлая!",
+    "refresh": false,
+    "jplMeanRadiusKm": 734.3,
+    "checkedAt": "2026-11-15"
+  },
+  "oberon": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/uranus/moons/oberon/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Назван в честь короля фей.",
+    "refresh": false,
+    "jplMeanRadiusKm": 761.4,
+    "checkedAt": "2026-11-15"
+  },
+  "rhea": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/rhea/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Её поверхность покрыта льдом.",
+    "refresh": false,
+    "jplMeanRadiusKm": 763.5,
+    "checkedAt": "2026-11-15"
+  },
+  "titania": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/uranus/moons/titania/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Названа в честь царицы фей.",
+    "refresh": false,
+    "jplMeanRadiusKm": 788.9,
+    "checkedAt": "2026-11-15"
+  },
+  "haumea": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/dwarf-planets/haumea/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+      "https://arxiv.org/abs/2006.03113"
+    ],
+    "scope": "Оценка наибольшего размера вытянутого тела; не сферический диаметр.",
+    "fact": "Вытянутая, словно яйцо!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "eris": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/dwarf-planets/eris/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html"
+    ],
+    "scope": "Оценка диаметра, км.",
+    "fact": "Её спутник зовут Дисномия.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "pluto": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html"
+    ],
+    "scope": "Оценка диаметра, км.",
+    "fact": "На нём есть ледяное «сердце»!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "triton": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Движется по орбите в обратную сторону!",
+    "refresh": false,
+    "jplMeanRadiusKm": 1352.6,
+    "checkedAt": "2026-11-15"
+  },
+  "europa": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Подо льдом, вероятно, скрыт океан.",
+    "refresh": false,
+    "jplMeanRadiusKm": 1560.8,
+    "checkedAt": "2026-11-15"
+  },
+  "moon": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/moon/facts/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Всегда смотрит на нас одной стороной.",
+    "refresh": false,
+    "jplMeanRadiusKm": 1737.4,
+    "checkedAt": "2026-11-15"
+  },
+  "io": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/jupiter/jupiter-moons/io/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Здесь сотни действующих вулканов!",
+    "refresh": false,
+    "jplMeanRadiusKm": 1821.49,
+    "checkedAt": "2026-11-15"
+  },
+  "callisto": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/jupiter/jupiter-moons/callisto/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Вся поверхность усыпана кратерами.",
+    "refresh": false,
+    "jplMeanRadiusKm": 2410.3,
+    "checkedAt": "2026-11-15"
+  },
+  "mercury": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/mercury/facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Год длится всего 88 земных суток!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "titan": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/saturn/moons/titan/facts/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "Здесь текут реки из метана!",
+    "refresh": false,
+    "jplMeanRadiusKm": 2574.76,
+    "checkedAt": "2026-11-15"
+  },
+  "ganymede": {
+    "status": "verified",
+    "urls": [
+      "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/"
+    ],
+    "scope": "Средний диаметр: удвоенный средний радиус JPL, км. Для Гипериона эквивалентный диаметр, не большая ось.",
+    "fact": "У него есть собственное магнитное поле!",
+    "refresh": false,
+    "jplMeanRadiusKm": 2631.2,
+    "checkedAt": "2026-11-15"
+  },
+  "mars": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/mars/facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Красный цвет ему придаёт ржавчина.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "sirius-b": {
+    "status": "verified",
+    "urls": [
+      "https://esahubble.org/images/heic0516b/"
+    ],
+    "scope": "Приблизительный диаметр белого карлика12000км.",
+    "fact": "Белый карлик — плотный звёздный кроха!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "venus": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Солнце встаёт на западе!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "earth": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/earth/facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Здесь океаны жидкой воды.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "neptune": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Ветры быстрее скорости звука!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "uranus": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Вращается почти лёжа на боку!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "saturn": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/saturn/facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Плавал бы в огромной ванне!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "jupiter": {
+    "status": "verified",
+    "urls": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://science.nasa.gov/jupiter/jupiter-facts/"
+    ],
+    "scope": "Экваториальный диаметр диска планеты без колец, км. Факт NASA.",
+    "fact": "Красное пятно — огромный шторм!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "sun": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/sun/facts/",
+      "https://science.nasa.gov/earth/facts/"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Его свет идёт к нам около 8 минут.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "sirius": {
+    "status": "verified",
+    "urls": [
+      "https://arxiv.org/abs/1010.3790",
+      "https://esahubble.org/images/heic0516b/"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Живёт в паре с белым карликом!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "sagittarius-a": {
+    "status": "verified",
+    "urls": [
+      "https://www.eso.org/public/news/eso2208/",
+      "https://science.nasa.gov/universe/glossary/"
+    ],
+    "scope": "Характерный диаметр горизонта2Rs для оценки массы4.3млн массСолнца в невращающейся модели;≈25.4млнкм. Не диаметр светлой тени.",
+    "fact": "Скрывается в центре нашей Галактики.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "arcturus": {
+    "status": "verified",
+    "urls": [
+      "https://arxiv.org/abs/1109.4425",
+      "https://nightsky.jpl.nasa.gov/media/documents/resources/ObserverCardsRed1.pdf"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Он помогал морякам находить путь.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "aldebaran": {
+    "status": "verified",
+    "urls": [
+      "https://arxiv.org/abs/astro-ph/0502181",
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Поверхность холоднее, чем у Солнца!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "rigel": {
+    "status": "verified",
+    "urls": [
+      "https://arxiv.org/abs/1201.0843",
+      "https://arxiv.org/pdf/1201.0843"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Голубой сверхгигант в Орионе.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "antares": {
+    "status": "verified",
+    "urls": [
+      "https://www.eso.org/public/news/eso1726/"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Его поверхность смогли сфотографировать!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "betelgeuse": {
+    "status": "verified",
+    "urls": [
+      "https://arxiv.org/abs/2006.09837"
+    ],
+    "scope": "Оценка диаметра фотосферы. Отношение радиусов в R☉ равно отношению диаметров; номинальный солнечный диаметр1 391 400км.",
+    "fact": "Красный сверхгигант меняет яркость.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "m87-black-hole": {
+    "status": "verified",
+    "urls": [
+      "https://www.eso.org/public/news/eso1907/"
+    ],
+    "scope": "Приблизительный размер горизонта событий, не светящегося диска и не тени.",
+    "fact": "Её «тень» первой попала на снимок.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "ring-nebula": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/missions/hubble/looking-down-a-barrel-of-gas-at-a-doomed-star/"
+    ],
+    "scope": "Приблизительный видимый размер газовой структуры; у Конской Головы высота, у Улитки яркое кольцо.",
+    "fact": "Газовое кольцо вокруг старой звезды.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "helix-nebula": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-63/"
+    ],
+    "scope": "Приблизительный видимый размер газовой структуры; у Конской Головы высота, у Улитки яркое кольцо.",
+    "fact": "Звезда сбросила светящуюся оболочку.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "horsehead-nebula": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/image-article/apod-2025-december-10-the-horsehead-nebula/"
+    ],
+    "scope": "Приблизительный видимый размер газовой структуры; у Конской Головы высота, у Улитки яркое кольцо.",
+    "fact": "Тёмный конь из космической пыли!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "crab-nebula": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/asset/hubble/crab-nebula-3/"
+    ],
+    "scope": "Приблизительный видимый размер газовой структуры; у Конской Головы высота, у Улитки яркое кольцо.",
+    "fact": "Остаток взорвавшейся звезды!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "orion-nebula": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/solar-system/skywatching/night-sky-network/a-flame-in-the-sky-the-orion-nebula/"
+    ],
+    "scope": "Приблизительный видимый размер газовой структуры; у Конской Головы высота, у Улитки яркое кольцо.",
+    "fact": "Её можно увидеть даже без телескопа!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "eagle-nebula": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-16/"
+    ],
+    "scope": "Приблизительный видимый размер газовой структуры; у Конской Головы высота, у Улитки яркое кольцо.",
+    "fact": "Здесь рождаются звёзды в газовых столпах.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "triangulum": {
+    "status": "verified",
+    "urls": [
+      "https://esahubble.org/news/heic1901/"
+    ],
+    "scope": "Приблизительный диаметр видимого звёздного диска, не протяжённого тёмного гало.",
+    "fact": "Здесь рождаются новые звёзды.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "milky-way": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/universe/galaxies/"
+    ],
+    "scope": "Приблизительный диаметр видимого звёздного диска, не протяжённого тёмного гало.",
+    "fact": "Здесь живёт наше Солнце.",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  },
+  "andromeda": {
+    "status": "verified",
+    "urls": [
+      "https://science.nasa.gov/missions/hubble/hubble-zooms-into-the-rosy-tendrils-of-andromeda/",
+      "https://science.nasa.gov/missions/hubble/nasas-hubble-traces-hidden-history-of-andromeda-galaxy/"
+    ],
+    "scope": "Приблизительный диаметр видимого звёздного диска, не протяжённого тёмного гало.",
+    "fact": "Её видно без телескопа!",
+    "refresh": false,
+    "checkedAt": "2026-11-15"
+  }
+}

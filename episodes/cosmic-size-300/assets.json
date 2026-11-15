@@ -1,0 +1,227 @@
+{
+  "ingenuity": {
+    "scene": "cosmic-ingenuity"
+  },
+  "curiosity": {
+    "scene": "cosmic-curiosity"
+  },
+  "new-horizons": {
+    "scene": "cosmic-new-horizons"
+  },
+  "cassini": {
+    "scene": "cosmic-cassini"
+  },
+  "voyager": {
+    "scene": "cosmic-voyager"
+  },
+  "hubble": {
+    "scene": "cosmic-hubble"
+  },
+  "jwst": {
+    "scene": "cosmic-jwst"
+  },
+  "iss": {
+    "scene": "cosmic-iss"
+  },
+  "bennu": {
+    "scene": "cosmic-bennu"
+  },
+  "itokawa": {
+    "scene": "cosmic-itokawa"
+  },
+  "ryugu": {
+    "scene": "cosmic-ryugu"
+  },
+  "hartley-2": {
+    "scene": "cosmic-hartley-2"
+  },
+  "67p": {
+    "scene": "cosmic-67p"
+  },
+  "wild-2": {
+    "scene": "cosmic-wild-2"
+  },
+  "tempel-1": {
+    "scene": "cosmic-tempel-1"
+  },
+  "halley": {
+    "scene": "cosmic-halley"
+  },
+  "crab-pulsar": {
+    "scene": "cosmic-crab-pulsar"
+  },
+  "eros": {
+    "scene": "cosmic-eros"
+  },
+  "ida": {
+    "scene": "cosmic-ida"
+  },
+  "lutetia": {
+    "scene": "cosmic-lutetia"
+  },
+  "mimas": {
+    "scene": "cosmic-mimas"
+  },
+  "hyperion": {
+    "scene": "cosmic-hyperion"
+  },
+  "hygiea": {
+    "scene": "cosmic-hygiea"
+  },
+  "miranda": {
+    "scene": "cosmic-miranda"
+  },
+  "enceladus": {
+    "scene": "cosmic-enceladus"
+  },
+  "pallas": {
+    "scene": "cosmic-pallas"
+  },
+  "vesta": {
+    "scene": "cosmic-vesta"
+  },
+  "ceres": {
+    "scene": "cosmic-ceres"
+  },
+  "tethys": {
+    "scene": "cosmic-tethys"
+  },
+  "dione": {
+    "scene": "cosmic-dione"
+  },
+  "ariel": {
+    "scene": "cosmic-ariel"
+  },
+  "umbriel": {
+    "scene": "cosmic-umbriel"
+  },
+  "charon": {
+    "scene": "cosmic-charon"
+  },
+  "makemake": {
+    "scene": "cosmic-makemake"
+  },
+  "iapetus": {
+    "scene": "cosmic-iapetus"
+  },
+  "oberon": {
+    "scene": "cosmic-oberon"
+  },
+  "rhea": {
+    "scene": "cosmic-rhea"
+  },
+  "titania": {
+    "scene": "cosmic-titania"
+  },
+  "haumea": {
+    "scene": "cosmic-haumea"
+  },
+  "eris": {
+    "scene": "cosmic-eris"
+  },
+  "pluto": {
+    "scene": "cosmic-pluto"
+  },
+  "triton": {
+    "scene": "cosmic-triton"
+  },
+  "europa": {
+    "scene": "cosmic-europa"
+  },
+  "moon": {
+    "scene": "cosmic-moon"
+  },
+  "io": {
+    "scene": "cosmic-io"
+  },
+  "callisto": {
+    "scene": "cosmic-callisto"
+  },
+  "mercury": {
+    "scene": "cosmic-mercury"
+  },
+  "titan": {
+    "scene": "cosmic-titan"
+  },
+  "ganymede": {
+    "scene": "cosmic-ganymede"
+  },
+  "mars": {
+    "scene": "cosmic-mars"
+  },
+  "sirius-b": {
+    "scene": "cosmic-sirius-b"
+  },
+  "venus": {
+    "scene": "cosmic-venus"
+  },
+  "earth": {
+    "scene": "cosmic-earth"
+  },
+  "neptune": {
+    "scene": "cosmic-neptune"
+  },
+  "uranus": {
+    "scene": "cosmic-uranus"
+  },
+  "saturn": {
+    "scene": "cosmic-saturn"
+  },
+  "jupiter": {
+    "scene": "cosmic-jupiter"
+  },
+  "sun": {
+    "scene": "cosmic-sun"
+  },
+  "sirius": {
+    "scene": "cosmic-sirius"
+  },
+  "sagittarius-a": {
+    "scene": "cosmic-sagittarius-a"
+  },
+  "arcturus": {
+    "scene": "cosmic-arcturus"
+  },
+  "aldebaran": {
+    "scene": "cosmic-aldebaran"
+  },
+  "rigel": {
+    "scene": "cosmic-rigel"
+  },
+  "antares": {
+    "scene": "cosmic-antares"
+  },
+  "betelgeuse": {
+    "scene": "cosmic-betelgeuse"
+  },
+  "m87-black-hole": {
+    "scene": "cosmic-m87-black-hole"
+  },
+  "ring-nebula": {
+    "scene": "cosmic-ring-nebula"
+  },
+  "helix-nebula": {
+    "scene": "cosmic-helix-nebula"
+  },
+  "horsehead-nebula": {
+    "scene": "cosmic-horsehead-nebula"
+  },
+  "crab-nebula": {
+    "scene": "cosmic-crab-nebula"
+  },
+  "orion-nebula": {
+    "scene": "cosmic-orion-nebula"
+  },
+  "eagle-nebula": {
+    "scene": "cosmic-eagle-nebula"
+  },
+  "triangulum": {
+    "scene": "cosmic-triangulum"
+  },
+  "milky-way": {
+    "scene": "cosmic-milky-way"
+  },
+  "andromeda": {
+    "scene": "cosmic-andromeda"
+  }
+}
