@@ -54,7 +54,7 @@ export const Video: React.FC<VideoProps> = ({ theme, title, subtitle, cta, ctaSu
 
   // Лента сдвигается, когда новому столбику не хватает места
   const cameraX=cameraOffset(frame,n,timeline,{visible,width:colW});
-  const comparison=['cosmic','sticker'].includes(skin.cardStyle??'')?comparisonState(frame,items,timeline,{visible,maxPixels:skin.cardStyle==='sticker'?580:400}):undefined;
+  const comparison=!skin.plainPhotos&&['cosmic','sticker'].includes(skin.cardStyle??'')?comparisonState(frame,items,timeline,{visible,maxPixels:skin.cardStyle==='sticker'?580:400}):undefined;
   // Перемотки назад нет: в финале последний (особый) столбик остаётся справа, вопрос — на трёх левых
   const many = n > visible;
 

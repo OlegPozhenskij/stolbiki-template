@@ -1,0 +1,227 @@
+{
+  "ingenuity": {
+    "composite": "generated/photo-cache/eac9bbb1e02ef655cf626f1e.png"
+  },
+  "curiosity": {
+    "composite": "generated/photo-cache/f54c185e8bbcf8321763e7b2.png"
+  },
+  "md2011": {
+    "composite": "generated/photo-cache/7938f6c148f4e1766a32ecbc.png"
+  },
+  "hubble": {
+    "composite": "generated/photo-cache/387c201743aa56d4f56177e0.png"
+  },
+  "falcon-heavy": {
+    "composite": "generated/photo-cache/5a815aa5b49a8c43b74c6c26.png"
+  },
+  "iss": {
+    "composite": "generated/photo-cache/ab4a3c7adee7d5a627146cc0.png"
+  },
+  "dimorphos": {
+    "composite": "generated/photo-cache/ab1d802dae1345e9f3aafa19.png"
+  },
+  "bennu": {
+    "composite": "generated/photo-cache/7620f04c400ddd460fc8ca54.png"
+  },
+  "itokawa": {
+    "composite": "generated/photo-cache/1740073e1dbe8fb41357f6b1.png"
+  },
+  "didymos": {
+    "composite": "generated/photo-cache/91e71a987fb2201b50eea80d.png"
+  },
+  "ryugu": {
+    "composite": "generated/photo-cache/ad2e9f20f686cd6ca35e0df2.png"
+  },
+  "hartley-2": {
+    "composite": "generated/photo-cache/087bf692c5ffb68202022ab4.png"
+  },
+  "67p": {
+    "composite": "generated/photo-cache/7df1c4650cfb8599c542442c.png"
+  },
+  "toutatis": {
+    "composite": "generated/photo-cache/87cf087b76b1719b0a768049.png"
+  },
+  "geographos": {
+    "composite": "generated/photo-cache/7307ad3acd545c6c18d0eba1.png"
+  },
+  "halley": {
+    "composite": "generated/photo-cache/a81dd51ce41dc7c14633d90d.png"
+  },
+  "crab-pulsar": {
+    "composite": "generated/photo-cache/a265b38f1cac4aeae69f7616.png"
+  },
+  "eros": {
+    "composite": "generated/photo-cache/cbf3bbe3814b034a206b011e.png"
+  },
+  "ida": {
+    "composite": "generated/photo-cache/2189b79fa6f759100643ba63.png"
+  },
+  "lutetia": {
+    "composite": "generated/photo-cache/f24f8b0a71f0baedb96b5a5a.png"
+  },
+  "mimas": {
+    "composite": "generated/photo-cache/728551591fe64fc4f8b2a370.png"
+  },
+  "hyperion": {
+    "composite": "generated/photo-cache/785b36ec733aa4f11ef3f3fd.png"
+  },
+  "hygiea": {
+    "composite": "generated/photo-cache/20d1d56f310353cd121fc35e.png"
+  },
+  "miranda": {
+    "composite": "generated/photo-cache/dd266257819f4c2c9e164209.png"
+  },
+  "enceladus": {
+    "composite": "generated/photo-cache/11725a43115e949a53fc61a9.png"
+  },
+  "pallas": {
+    "composite": "generated/photo-cache/10425aa037b01df6fb6fd948.png"
+  },
+  "vesta": {
+    "composite": "generated/photo-cache/c50beb47f3a1251c664d448e.png"
+  },
+  "ceres": {
+    "composite": "generated/photo-cache/c7fcdab87ae4bb7857af11e6.png"
+  },
+  "sedna": {
+    "composite": "generated/photo-cache/c13a9a2bf133b73782e4ea33.png"
+  },
+  "tethys": {
+    "composite": "generated/photo-cache/4bf1c2e8ef88d7a1e173cb7a.png"
+  },
+  "quaoar": {
+    "composite": "generated/photo-cache/b4d524752e6b42b2357a22a1.png"
+  },
+  "dione": {
+    "composite": "generated/photo-cache/52fae5f895cf6998e8141763.png"
+  },
+  "umbriel": {
+    "composite": "generated/photo-cache/facbb478abaffbeff8657c93.png"
+  },
+  "charon": {
+    "composite": "generated/photo-cache/d8c120d06d2b8ce6c3713b3e.png"
+  },
+  "makemake": {
+    "composite": "generated/photo-cache/f44f0bcbb2dc6ad25c418b66.png"
+  },
+  "iapetus": {
+    "composite": "generated/photo-cache/3fd47bbe56b01cbb9cd30513.png"
+  },
+  "rhea": {
+    "composite": "generated/photo-cache/42027efd993e895ef8c1cb78.png"
+  },
+  "titania": {
+    "composite": "generated/photo-cache/aff7f4988c9199d3a2d51f05.png"
+  },
+  "haumea": {
+    "composite": "generated/photo-cache/f4ee3cdbc414074a65835090.png"
+  },
+  "eris": {
+    "composite": "generated/photo-cache/31b3f4a6dfc58ecfe50d7aae.png"
+  },
+  "pluto": {
+    "composite": "generated/photo-cache/5b02a16ab389bc9ca31295f4.png"
+  },
+  "triton": {
+    "composite": "generated/photo-cache/f33f3728e7305509ef489e19.png"
+  },
+  "europa": {
+    "composite": "generated/photo-cache/e72fefd87bfb0272faf49bb4.png"
+  },
+  "moon": {
+    "composite": "generated/photo-cache/1037259266eca615d50fb238.png"
+  },
+  "io": {
+    "composite": "generated/photo-cache/7031e2e0eb70252492afea80.png"
+  },
+  "callisto": {
+    "composite": "generated/photo-cache/f4bfc3e5745d3c2bf350ee9c.png"
+  },
+  "mercury": {
+    "composite": "generated/photo-cache/33f1f8637ed759e6dbde5871.png"
+  },
+  "titan": {
+    "composite": "generated/photo-cache/55bfcafc404e343b7914e0af.png"
+  },
+  "ganymede": {
+    "composite": "generated/photo-cache/6d9138647ec59f432bdd52ef.png"
+  },
+  "mars": {
+    "composite": "generated/photo-cache/02cbc4e6ff009d298b513a62.png"
+  },
+  "sirius-b": {
+    "composite": "generated/photo-cache/729e03f1f0d850542691ab2f.png"
+  },
+  "venus": {
+    "composite": "generated/photo-cache/21879191ae5069746d55da4d.png"
+  },
+  "earth": {
+    "composite": "generated/photo-cache/3bd908d6922906e9c9f55187.png"
+  },
+  "neptune": {
+    "composite": "generated/photo-cache/2a654f53d8dac26fc1869928.png"
+  },
+  "uranus": {
+    "composite": "generated/photo-cache/47a66befef3fc13b22ef2e9a.png"
+  },
+  "saturn": {
+    "composite": "generated/photo-cache/cf35beaee7d78f7115480f2c.png"
+  },
+  "jupiter": {
+    "composite": "generated/photo-cache/53acb85831ddaf33fdc91615.png"
+  },
+  "sun": {
+    "composite": "generated/photo-cache/ba1aee6a3415460f9d81ca89.png"
+  },
+  "sirius": {
+    "composite": "generated/photo-cache/42560e9432548fe897c02b5a.png"
+  },
+  "sagittarius-a": {
+    "composite": "generated/photo-cache/5fb9b2cfe92ab2c0ec34b0ea.png"
+  },
+  "aldebaran": {
+    "composite": "generated/photo-cache/36b3acfd991bf3918440fd66.png"
+  },
+  "antares": {
+    "composite": "generated/photo-cache/8bceac52931b16705b743f90.png"
+  },
+  "betelgeuse": {
+    "composite": "generated/photo-cache/b1d5ac5cb0fc2a08432d75db.png"
+  },
+  "m87-black-hole": {
+    "composite": "generated/photo-cache/1f0d378e1b463069a11b8b6a.png"
+  },
+  "ring-nebula": {
+    "composite": "generated/photo-cache/b9f970025b85a6d5f431c5be.png"
+  },
+  "helix-nebula": {
+    "composite": "generated/photo-cache/d55fab093608f00b1394a1d8.png"
+  },
+  "crab-nebula": {
+    "composite": "generated/photo-cache/2b3f3c68c163e601cbc3aed7.png"
+  },
+  "pleiades": {
+    "composite": "generated/photo-cache/bf0e28d983805df88ec7125a.png"
+  },
+  "orion-nebula": {
+    "composite": "generated/photo-cache/ba524f9b45ecdb0f3401c6da.png"
+  },
+  "eagle-nebula": {
+    "composite": "generated/photo-cache/70cba08915b1ef4a268c7643.png"
+  },
+  "tuc47": {
+    "composite": "generated/photo-cache/7afe0310e5721cc75478af9f.png"
+  },
+  "m13": {
+    "composite": "generated/photo-cache/2f4b382f5d5a1a0a13df55c9.png"
+  },
+  "triangulum": {
+    "composite": "generated/photo-cache/af91c8faedefb72534024174.png"
+  },
+  "milky-way": {
+    "composite": "generated/photo-cache/c66218b9947fbda54b0b25c1.png"
+  },
+  "andromeda": {
+    "composite": "generated/photo-cache/01ed5349feeb960d08ead11d.png"
+  }
+}

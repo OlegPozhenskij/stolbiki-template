@@ -106,5 +106,21 @@
     "cardStyle": "sticker",
     "columns": 3,
     "revision": 2
+  },
+  "cosmic-plain-photos": {
+    "name": "Космос · крупные фотографии",
+    "layout": "panel",
+    "background": "#080c24",
+    "ink": "#fffaf2",
+    "title": "#fffaf2",
+    "accent": "#ffe29a",
+    "badge": "#172447",
+    "heading": "body",
+    "badgeShape": "hex",
+    "texture": false,
+    "cardStyle": "sticker",
+    "columns": 3,
+    "revision": 2,
+    "plainPhotos": true
   }
 }

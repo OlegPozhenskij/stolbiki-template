@@ -1,9 +1,9 @@
 """Rasterize code-native SVG stickers once for deterministic, fast video playback."""
 from pathlib import Path
-import json,base64,os
+import json,base64,os,sys
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
-jobs=json.loads((ROOT/'episodes/cosmic-stickers-300/render-assets.json').read_text(encoding='utf-8'))
+jobs=json.loads((ROOT/'episodes'/ (sys.argv[1] if len(sys.argv)>1 else 'cosmic-stickers-300') /'render-assets.json').read_text(encoding='utf-8'))
 created=0
 with sync_playwright() as p:
  browser=p.chromium.launch(executable_path=os.environ.get('CHROME','C:/Program Files/Google/Chrome/Application/chrome.exe'),args=['--no-sandbox'])

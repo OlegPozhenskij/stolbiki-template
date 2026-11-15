@@ -24,7 +24,7 @@ const Context:React.FC<{item:Item;f:number}>=({item,f})=>{
 export const StickerCard:React.FC<{item:Item;index:number;wash:number;skin:Design;asset?:MediaAsset;comparison?:Comparison}>=({item,index,wash,skin,asset,comparison})=>{
  const f=useCurrentFrame(),accent=item.accent??'#9bdfff',portrait=item.portraitWidth??550,updated=(skin.revision??1)>=2;
  const settled=interpolate(f,[34,60],[0,1],{...clamp,easing:ease});
- const bodyWidth=portrait+((comparison?.referencePixels??portrait)*(comparison?.ratio??1)-portrait)*settled;
+ const bodyWidth=skin.plainPhotos?600:portrait+((comparison?.referencePixels??portrait)*(comparison?.ratio??1)-portrait)*settled;
  const number=typeof item.value==='number'?item.value.toLocaleString('ru-RU'):item.value;
  const valueSize=String(number).length>5?43:57;
  return <div style={{position:'absolute',width:640,height:1080,overflow:'hidden',fontFamily:BODY,color:'#fff8ef',background:skin.background,translate:interpolate(f,[0,22],['0px 1080px','0px 0px'],{...clamp,easing:ease})}}>
