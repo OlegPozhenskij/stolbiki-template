@@ -1,0 +1,19 @@
+{
+  "provider": "ManyMotions",
+  "project_id": "vp_14ec0ec0b02f4092974c",
+  "video_id": "vv_32d5198ebd354b9d8870",
+  "workflow": "local-original-render-then-editor-import",
+  "paid_ai_generation": false,
+  "budget": 0,
+  "status": "imported",
+  "asset_id": "va_8744e3878c9c40f09f98",
+  "clip_id": "vc_6f825795179d4650806e",
+  "asset_url": "https://v3b.fal.media/files/b/0ab2986e/N_yXd39rf-1U4C8UtX1J3_cosmic-size-5-minutes-editor.mp4",
+  "local_master": "out/cosmic-size-300/video.mp4",
+  "local_editor_copy": "out/cosmic-size-300/video-editor.mp4",
+  "master_bytes": 161351661,
+  "editor_copy_bytes": 38998559,
+  "editor_copy": "1080p H.264, более сильное сжатие для лимита бесплатной загрузки; основной MP4 не изменён",
+  "timeline_clip_count": 1,
+  "timeline_duration_seconds": 300
+}
